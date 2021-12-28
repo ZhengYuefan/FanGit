@@ -1,0 +1,18 @@
+-
+   name: 学生入班申请接口
+   request:
+      method: post
+      url: /v1/school/joinClass
+      body:
+          schoolId: None
+          classId: None
+          realName: None
+          userRole: 1
+          studentNo: 6666
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      sql:
+         studentName: None

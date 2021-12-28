@@ -1,0 +1,167 @@
+{
+  "uid" : "2b19d2c20c6a7c17",
+  "name" : "学生端创建每日目标：卡路里",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_add_daily_goals",
+  "historyId" : "02598904bf45894738af06db6fc311e9",
+  "time" : {
+    "start" : 1640261053482,
+    "stop" : 1640261053548,
+    "duration" : 66
+  },
+  "description" : "学生端创建每日目标，内容为：跳绳100个",
+  "descriptionHtml" : "<p>学生端创建每日目标，内容为：跳绳100个</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640261051571,
+      "stop" : 1640261051597,
+      "duration" : 26
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640261053479,
+      "stop" : 1640261053481,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端创建每日目标，内容为：跳绳100个",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640261053482,
+        "stop" : 1640261053542,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "48a254e4d0f56f0",
+        "name" : "接口请求参数",
+        "source" : "48a254e4d0f56f0.attach",
+        "type" : "text/plain",
+        "size" : 502
+      }, {
+        "uid" : "8f33e2a2b9ffb2dc",
+        "name" : "接口请求参数",
+        "source" : "8f33e2a2b9ffb2dc.attach",
+        "type" : "text/plain",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640261053542,
+        "stop" : 1640261053548,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640261053549,
+      "stop" : 1640261053552,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生端创建每日目标"
+  }, {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "25960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "addDailyGoals_args",
+    "value" : "{'name': '学生端创建每日目标：卡路里', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '卡路里', 'contentName': 50}}, 'expect': {'msg': '成功', 'sql': {'sportName': '卡路里'}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "2b19d2c20c6a7c17.json",
+  "parameterValues" : [ "{'name': '学生端创建每日目标：卡路里', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '卡路里', 'contentName': 50}}, 'expect': {'msg': '成功', 'sql': {'sportName': '卡路里'}}}" ]
+}

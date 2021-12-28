@@ -1,0 +1,272 @@
+{
+  "uid" : "823fc08344dcc02c",
+  "name" : "学生端作业记录详情",
+  "fullName" : "TestCase.test_07_homework#test_homework_stu_homeworkDetail",
+  "historyId" : "6450be78e6ebf390b8d24e47d27e4dcb",
+  "time" : {
+    "start" : 1640656425409,
+    "stop" : 1640656425482,
+    "duration" : 73
+  },
+  "description" : "学生端查看作业记录详情",
+  "descriptionHtml" : "<p>学生端查看作业记录详情</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656425403,
+      "stop" : 1640656425408,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看作业记录详情",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656425409,
+        "stop" : 1640656425481,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "222580e491008566",
+        "name" : "接口请求参数",
+        "source" : "222580e491008566.attach",
+        "type" : "text/plain",
+        "size" : 369
+      }, {
+        "uid" : "e3e9105745ba1bd4",
+        "name" : "接口响应报文",
+        "source" : "e3e9105745ba1bd4.attach",
+        "type" : "text/plain",
+        "size" : 2562
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656425481,
+        "stop" : 1640656425482,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656425483,
+      "stop" : 1640656425489,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生作业记录详情"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkStuDetail_args",
+    "value" : "{'name': '学生端作业记录详情', 'request': {'method': 'get', 'url': '/v1/homework/task/stu/record/detail', 'headers': {'Authorization': 'None'}, 'body': {'taskId': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "44d5fa2b83ecb817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601510196,
+        "stop" : 1640601510273,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "e2969079e470c22b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598451292,
+        "stop" : 1640598451547,
+        "duration" : 255
+      }
+    }, {
+      "uid" : "d7662174238a7389",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349511592,
+        "stop" : 1640349511690,
+        "duration" : 98
+      }
+    }, {
+      "uid" : "9af682d648e0b6d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348910227,
+        "stop" : 1640348910313,
+        "duration" : 86
+      }
+    }, {
+      "uid" : "29d6df870bb5d0dc",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640347993053,
+        "stop" : 1640347993060,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "4d32ebc4e90d258",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640262976337,
+        "stop" : 1640262976342,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "1be85e2fbcee502",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640261058528,
+        "stop" : 1640261058535,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "1c8b421665f72b79",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640260252155,
+        "stop" : 1640260252162,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "dc27791d90c05dc4",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640258303039,
+        "stop" : 1640258303044,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "558123e702b8068",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640258193193,
+        "stop" : 1640258193200,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "a51cf87a5fca9895",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'homework_taskId'",
+      "time" : {
+        "start" : 1640249682871,
+        "stop" : 1640249682875,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "c8d9612b864c9071",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248506092,
+        "stop" : 1640248506174,
+        "duration" : 82
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "823fc08344dcc02c.json",
+  "parameterValues" : [ "{'name': '学生端作业记录详情', 'request': {'method': 'get', 'url': '/v1/homework/task/stu/record/detail', 'headers': {'Authorization': 'None'}, 'body': {'taskId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

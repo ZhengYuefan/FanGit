@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"学生端作业记录详情",
+    "request";{
+        "body";{
+            "dateStr";"2021-12-23",
+            "homeworkId";958
+        },
+        "headers";{
+            "Authorization";"YTEyNTgzNjItOTI0ZS00ZjE5LTg3YWMtMTBkMmFiYzRjYjc5"
+        },
+        "method";"get",
+        "url";"/v1/teach/classes/list"
+    }
+}

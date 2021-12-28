@@ -1,0 +1,24 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sports_id";2
+        }
+    },
+    "name";"学生端提交运动：计数跑步",
+    "request";{
+        "body";{
+            "distance";300,
+            "mode";2,
+            "speed";200,
+            "sportsId";2,
+            "takeTime";"00:50"
+        },
+        "headers";{
+            "Authorization";"YjdlZDU2YTYtYmY5MS00YjM1LTk3YjMtZjMzNjE3M2VhZWE0",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/sports/submitSports"
+    }
+}

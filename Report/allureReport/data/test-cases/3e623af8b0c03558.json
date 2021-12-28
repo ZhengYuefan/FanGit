@@ -1,0 +1,167 @@
+{
+  "uid" : "3e623af8b0c03558",
+  "name" : "跳绳200个--预计消耗",
+  "fullName" : "TestCase.test_08_sports#test_sports_expect_consumption",
+  "historyId" : "d0f8e19cf67b91141ff9424eef7145ba",
+  "time" : {
+    "start" : 1640349512580,
+    "stop" : 1640349512626,
+    "duration" : 46
+  },
+  "description" : "获取运动首页的运动列表",
+  "descriptionHtml" : "<p>获取运动首页的运动列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640349503973,
+      "stop" : 1640349503988,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640349512573,
+      "stop" : 1640349512579,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "获取运动首页的运动列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640349512580,
+        "stop" : 1640349512623,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ae8420f565650b59",
+        "name" : "接口请求参数",
+        "source" : "ae8420f565650b59.attach",
+        "type" : "text/plain",
+        "size" : 413
+      }, {
+        "uid" : "eab495bdcba17f8d",
+        "name" : "接口响应报文",
+        "source" : "eab495bdcba17f8d.attach",
+        "type" : "text/plain",
+        "size" : 467
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640349512623,
+        "stop" : 1640349512626,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640349512627,
+      "stop" : 1640349512635,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "预计消耗"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "32580-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsExpectConsumption_args",
+    "value" : "{'name': '跳绳200个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 200}}, 'expect': {'msg': '成功', 'totalCalories': 23.0}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "3e623af8b0c03558.json",
+  "parameterValues" : [ "{'name': '跳绳200个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 200}}, 'expect': {'msg': '成功', 'totalCalories': 23.0}}" ]
+}

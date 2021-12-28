@@ -1,0 +1,24 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sports_id";1
+        }
+    },
+    "name";"学生端提交运动：计数跳绳",
+    "request";{
+        "body";{
+            "mode";2,
+            "score";200,
+            "speed";200,
+            "sportsId";1,
+            "takeTime";"01:00"
+        },
+        "headers";{
+            "Authorization";"ODA1NTQxNWUtYjMwYS00ZjJkLWEzN2ItYzQ3NGQ2NDQyNjU0",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/sports/submitSports"
+    }
+}

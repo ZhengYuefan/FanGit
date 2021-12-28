@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功",
+        "title";"计划终止"
+    },
+    "name";"老师端计划结束详情",
+    "request";{
+        "body";{
+            "planId";205
+        },
+        "headers";{
+            "Authorization";"NjZiNzQ1MDgtMjM1Yi00NmYxLThhMzgtY2NhM2EzMmY1MjM4"
+        },
+        "method";"get",
+        "url";"/v1/plan/end/detail"
+    }
+}

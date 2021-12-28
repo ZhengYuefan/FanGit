@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"学生端作业记录详情",
+    "request";{
+        "body";{
+            "taskId";"1475402977383682048"
+        },
+        "headers";{
+            "Authorization";"NDY3ZGE3ZGYtMWZmYi00OWVkLWEzYmMtYzBhNDE3YjY0NWM5"
+        },
+        "method";"get",
+        "url";"/v1/homework/task/stu/record/detail"
+    }
+}

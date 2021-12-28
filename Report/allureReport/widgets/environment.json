@@ -1,0 +1,22 @@
+[ {
+  "values" : [ "Physical_fitness" ],
+  "name" : "projectName"
+}, {
+  "values" : [ "Zh_yueFan" ],
+  "name" : "author"
+}, {
+  "values" : [ "17756450841" ],
+  "name" : "mobile"
+}, {
+  "values" : [ "win10" ],
+  "name" : "systemVersion"
+}, {
+  "values" : [ "3.8.3" ],
+  "name" : "pythonVersion"
+}, {
+  "values" : [ "2.16.1" ],
+  "name" : "allureVersion"
+}, {
+  "values" : [ "http://192.168.0.214:9100" ],
+  "name" : "baseUrl"
+} ]

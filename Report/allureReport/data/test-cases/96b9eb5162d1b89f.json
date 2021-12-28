@@ -1,0 +1,167 @@
+{
+  "uid" : "96b9eb5162d1b89f",
+  "name" : "运动消耗",
+  "fullName" : "TestCase.test_08_sports#test_sports_consumption",
+  "historyId" : "319e69a4bdc0409287ad54c1140a3192",
+  "time" : {
+    "start" : 1640348914319,
+    "stop" : 1640348914381,
+    "duration" : 62
+  },
+  "description" : "运动结束，运动消耗页面",
+  "descriptionHtml" : "<p>运动结束，运动消耗页面</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640348902514,
+      "stop" : 1640348902530,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640348914309,
+      "stop" : 1640348914318,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "运动结束，运动消耗页面",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640348914319,
+        "stop" : 1640348914380,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6149e0cd785304a9",
+        "name" : "接口请求参数",
+        "source" : "6149e0cd785304a9.attach",
+        "type" : "text/plain",
+        "size" : 329
+      }, {
+        "uid" : "bdf918a7cdbde623",
+        "name" : "接口响应报文",
+        "source" : "bdf918a7cdbde623.attach",
+        "type" : "text/plain",
+        "size" : 463
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640348914380,
+        "stop" : 1640348914381,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640348914382,
+      "stop" : 1640348914392,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "运动消耗"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7320-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsConsumption_args",
+    "value" : "{'name': '运动消耗', 'request': {'method': 'get', 'url': '/v1/sports/getSportsBurn', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "96b9eb5162d1b89f.json",
+  "parameterValues" : [ "{'name': '运动消耗', 'request': {'method': 'get', 'url': '/v1/sports/getSportsBurn', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

@@ -1,0 +1,265 @@
+{
+  "uid" : "267016b45f7b5fb4",
+  "name" : "学生端提交运动：自由跑步",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_fulfil_task",
+  "historyId" : "9d340aaca4af9a5af0ccb1af0c6b1c89",
+  "time" : {
+    "start" : 1640656422179,
+    "stop" : 1640656422290,
+    "duration" : 111
+  },
+  "description" : "学生端提交运动记录，执行每日目标的任务",
+  "descriptionHtml" : "<p>学生端提交运动记录，执行每日目标的任务</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656422176,
+      "stop" : 1640656422179,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端提交运动记录，执行每日目标的任务",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656422179,
+        "stop" : 1640656422274,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "13d7a7a69dfc4b4b",
+        "name" : "接口请求参数",
+        "source" : "13d7a7a69dfc4b4b.attach",
+        "type" : "text/plain",
+        "size" : 556
+      }, {
+        "uid" : "2563243212ec2f2d",
+        "name" : "接口响应报文",
+        "source" : "2563243212ec2f2d.attach",
+        "type" : "text/plain",
+        "size" : 159
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656422274,
+        "stop" : 1640656422290,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656422291,
+      "stop" : 1640656422295,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "完成每日目标运动"
+  }, {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "fulfilTask_args",
+    "value" : "{'name': '学生端提交运动：自由跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "185e66ee1efc49b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601506383,
+        "stop" : 1640601506502,
+        "duration" : 119
+      }
+    }, {
+      "uid" : "f4401e3ab545b7a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598442222,
+        "stop" : 1640598442646,
+        "duration" : 424
+      }
+    }, {
+      "uid" : "e4854aeb10ee87e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349507770,
+        "stop" : 1640349507903,
+        "duration" : 133
+      }
+    }, {
+      "uid" : "80bc3e8a5158d75b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348906384,
+        "stop" : 1640348906533,
+        "duration" : 149
+      }
+    }, {
+      "uid" : "844154082be69220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347989393,
+        "stop" : 1640347989542,
+        "duration" : 149
+      }
+    }, {
+      "uid" : "25d3f0c89c78826c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262972918,
+        "stop" : 1640262973049,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "cf39ff43308aae62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261055235,
+        "stop" : 1640261055362,
+        "duration" : 127
+      }
+    }, {
+      "uid" : "dab10788f1fb6921",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260248805,
+        "stop" : 1640260248919,
+        "duration" : 114
+      }
+    }, {
+      "uid" : "e50b8ddd8baa8b1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258299499,
+        "stop" : 1640258299629,
+        "duration" : 130
+      }
+    }, {
+      "uid" : "b75f08091fcc3905",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258189551,
+        "stop" : 1640258189690,
+        "duration" : 139
+      }
+    }, {
+      "uid" : "261a55c5b4b33664",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249679429,
+        "stop" : 1640249679554,
+        "duration" : 125
+      }
+    }, {
+      "uid" : "23ff1f5fda5fa32f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248502200,
+        "stop" : 1640248502349,
+        "duration" : 149
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "267016b45f7b5fb4.json",
+  "parameterValues" : [ "{'name': '学生端提交运动：自由跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+}

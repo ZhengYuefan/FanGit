@@ -1,0 +1,18 @@
+{
+    "code";1,
+    "data";{
+        "distsMap";{
+            "糖分";0.97,
+            "脂肪";0.03
+        },
+        "dynamiCalories";2.965,
+        "evaluate";"评价：无强度",
+        "myBurn";0,
+        "normBurn";0.15,
+        "remark";"本次运动没有产生卡路里,请在运动前观看引导,确保身体入框,姿势标准。",
+        "staticCalories";0.16,
+        "totalCalories";3.125
+    },
+    "msg";"成功",
+    "timestamp";1640262983856
+}

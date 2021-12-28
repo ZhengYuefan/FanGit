@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sportName";"跳绳"
+        }
+    },
+    "name";"学生端创建每日目标：跳绳",
+    "request";{
+        "body";{
+            "contentName";100,
+            "dataName";"跳绳"
+        },
+        "headers";{
+            "Authorization";"NGQ3NGVmZDUtODk0Yy00NWNlLWI0YWYtZWEwZDNmMDQ5NWZk",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/planTask/addDayTask"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "code";1,
+    "data";{
+        "distsMap";{
+            "糖分";0.9,
+            "脂肪";0.1
+        },
+        "dynamiCalories";52.44,
+        "evaluate";"评价：强度适中",
+        "myBurn";0.23,
+        "normBurn";0.15,
+        "remark";"运动强度适中,感受身体肌肉是否有酸痛出现。",
+        "staticCalories";2.76,
+        "totalCalories";55.2
+    },
+    "msg";"成功",
+    "timestamp";1640601518706
+}

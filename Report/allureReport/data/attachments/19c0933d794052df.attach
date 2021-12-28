@@ -1,0 +1,33 @@
+{
+    "code";1,
+    "data";[
+        {
+            "createTime";"2021-12-27T17:47:36",
+            "createTimeStr";"2021-12-27",
+            "endDate";"2021-12-27T23:59:59",
+            "evaluate";"D",
+            "id";"1475402977383682048",
+            "relationId";100,
+            "speed";"50",
+            "status";"1",
+            "title";"体育作业",
+            "type";"3",
+            "userId";3578
+        },
+        {
+            "createTime";"2021-12-27T17:47:35",
+            "createTimeStr";"2021-12-27",
+            "endDate";"2021-12-27T23:59:59",
+            "evaluate";"D",
+            "id";"1475402973311012864",
+            "relationId";99,
+            "speed";"0",
+            "status";"1",
+            "title";"体育作业",
+            "type";"3",
+            "userId";3578
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640598459704
+}

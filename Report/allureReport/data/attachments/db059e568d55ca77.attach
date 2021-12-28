@@ -1,0 +1,18 @@
+{
+    "expect":{
+        "code":1,
+        "msg":"成功"
+    },
+    "name":"系统管理员登录",
+    "request":{
+        "body":{
+            "password":"admin",
+            "userName":"admin"
+        },
+        "headers":{
+            "Content-Type":"application/json;charset=UTF-8"
+        },
+        "method":"post",
+        "url":"/v1/manage/login"
+    }
+}

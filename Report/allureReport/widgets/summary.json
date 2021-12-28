@@ -1,0 +1,20 @@
+{
+    "reportName": "体测大师-接口自动化测试报告",
+    "testRuns": [],
+    "statistic": {
+        "failed": 1,
+        "broken": 1,
+        "skipped": 0,
+        "passed": 103,
+        "unknown": 0,
+        "total": 105
+    },
+    "time": {
+        "start": 1640249682458,
+        "stop": 1640656431254,
+        "duration": 406748796,
+        "minDuration": 4,
+        "maxDuration": 756,
+        "sumDuration": 11762
+    }
+}

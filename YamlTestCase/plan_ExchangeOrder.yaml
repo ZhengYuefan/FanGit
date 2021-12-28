@@ -1,0 +1,17 @@
+-
+   name: 老师端调整计划顺序
+   request:
+      method: put
+      url: /v1/plan/item
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          list:
+              - id: None
+                title: None
+              - id: None
+                title: None
+   expect:
+      msg: 成功
+      data: 修改成功

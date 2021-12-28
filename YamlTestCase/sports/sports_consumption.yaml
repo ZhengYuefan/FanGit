@@ -1,0 +1,11 @@
+-
+   name: 运动消耗
+   request:
+      method: get
+      url: /v1/sports/getSportsBurn
+      headers:
+          Authorization: None
+      body:
+          recordId: None
+   expect:
+      msg: 成功

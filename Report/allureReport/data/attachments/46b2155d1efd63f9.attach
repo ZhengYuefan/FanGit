@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sportName";"卡路里"
+        }
+    },
+    "name";"学生端创建每日目标：卡路里",
+    "request";{
+        "body";{
+            "contentName";50,
+            "dataName";"卡路里"
+        },
+        "headers";{
+            "Authorization";"NGE2NmUzYWItNTc1OC00NTFjLWIxMDMtYjBiNDAwMjhiMjEw",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/planTask/addDayTask"
+    }
+}

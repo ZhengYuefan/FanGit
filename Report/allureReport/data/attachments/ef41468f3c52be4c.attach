@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "data";"删除成功",
+        "msg";"成功"
+    },
+    "name";"老师端删除作业模板",
+    "request";{
+        "body";{
+            "homeworkId";99
+        },
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/homework/delHomework"
+    }
+}

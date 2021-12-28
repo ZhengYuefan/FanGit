@@ -1,0 +1,167 @@
+{
+  "uid" : "a7c8423fc09b4b48",
+  "name" : "老师端历史作业记录",
+  "fullName" : "TestCase.test_07_homework#test_homework_history",
+  "historyId" : "a7d2bbde1d38b75db0bcbfb27b753f9c",
+  "time" : {
+    "start" : 1640262976167,
+    "stop" : 1640262976247,
+    "duration" : 80
+  },
+  "description" : "老师端作业历史记录",
+  "descriptionHtml" : "<p>老师端作业历史记录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640262969110,
+      "stop" : 1640262969127,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640262976161,
+      "stop" : 1640262976166,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端作业历史记录",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640262976167,
+        "stop" : 1640262976241,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9d52667aa69253a",
+        "name" : "接口请求参数",
+        "source" : "9d52667aa69253a.attach",
+        "type" : "text/plain",
+        "size" : 449
+      }, {
+        "uid" : "66b0183bbcac79bd",
+        "name" : "接口响应报文",
+        "source" : "66b0183bbcac79bd.attach",
+        "type" : "text/plain",
+        "size" : 1058
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640262976241,
+        "stop" : 1640262976247,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640262976248,
+      "stop" : 1640262976253,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "历史作业记录"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkHistory_args",
+    "value" : "{'name': '老师端历史作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/history/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homeworkId': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "a7c8423fc09b4b48.json",
+  "parameterValues" : [ "{'name': '老师端历史作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/history/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homeworkId': 'None'}}" ]
+}

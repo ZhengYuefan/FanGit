@@ -1,0 +1,11 @@
+-
+   name: 老师端任务首页任务计划
+   request:
+      method: get
+      url: /v1/planTask/listTask
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功
+      planId: ${extract.plan_id}
+      fulfilSpeed: 大于0

@@ -1,0 +1,17 @@
+{
+    "code";1,
+    "data";{
+        "avgEvaluate";"D",
+        "classId";59725,
+        "className";"一年级(1)班",
+        "gradeId";284,
+        "gradeName";"一年级",
+        "list";[],
+        "schoolId";146,
+        "schoolName";"Testing测试学院",
+        "stuCompleteNumber";0,
+        "stuNumber";0
+    },
+    "msg";"成功",
+    "timestamp";1640598459395
+}

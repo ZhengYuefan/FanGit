@@ -1,0 +1,173 @@
+{
+  "uid" : "7c95fd1f69c97b1c",
+  "name" : "学生端查询当前月份有任务的日期",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_query_task_by_month",
+  "historyId" : "ce3995dac140298b0028bc349732c5dd",
+  "time" : {
+    "start" : 1640248500887,
+    "stop" : 1640248500965,
+    "duration" : 78
+  },
+  "description" : "学生端查看日程表当前月份有任务的日期",
+  "descriptionHtml" : "<p>学生端查看日程表当前月份有任务的日期</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "listTaskByMonth_args = {'expect': {'msg': '成功', 'taskName': '跳绳'}, 'name': '学生端查询当前月份有任务的日期', 'request': {'body': {'date': '2021-12'}, 'heade...ization': 'MzAwODk4YTAtNTdlYy00N2NlLWE0MGItOTI5NzhlMDQxYjA5'}, 'method': 'get', 'url': '/v1/planTask/listTaskByMonth'}}\n\n    @allure.feature('每日目标模块')\n    @allure.story('学生端查询当前月份有任务的日期')\n    @pytest.mark.dailyGoals\n    @pytest.mark.parametrize(\"listTaskByMonth_args\", listTaskByMonth_args)\n    def test_query_task_by_month(listTaskByMonth_args):\n        \"\"\"学生端查看日程表当前月份有任务的日期\"\"\"\n        allure.dynamic.title(listTaskByMonth_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + listTaskByMonth_args['request']['url']\n            method = listTaskByMonth_args['request']['method']\n            headers = listTaskByMonth_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['student_token']\n            body = listTaskByMonth_args['request']['body']\n            body['date'] = read_user_defined_variable()['currentDate']['date_month']\n            lg.info(\"获取的接口请求参数：%s\" % listTaskByMonth_args)\n            allure.attach(\n                json.dumps(listTaskByMonth_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), listTaskByMonth_args['expect']['msg'])\n            res_date = res['data'][0]\n            expect_date = str(read_user_defined_variable()['currentDate']['date_day'])\n>           AssertUtil().assert_body(res_date, expect_date)\n\nTestCase\\test_05_add_dailyGoals.py:118: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000023E7DC3D3D0>\nbody = '2021-12-23', expected_body = '2021-12-22'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640248498057,
+      "stop" : 1640248498073,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640248500883,
+      "stop" : 1640248500887,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看日程表当前月份有任务的日期",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "listTaskByMonth_args = {'expect': {'msg': '成功', 'taskName': '跳绳'}, 'name': '学生端查询当前月份有任务的日期', 'request': {'body': {'date': '2021-12'}, 'heade...ization': 'MzAwODk4YTAtNTdlYy00N2NlLWE0MGItOTI5NzhlMDQxYjA5'}, 'method': 'get', 'url': '/v1/planTask/listTaskByMonth'}}\n\n    @allure.feature('每日目标模块')\n    @allure.story('学生端查询当前月份有任务的日期')\n    @pytest.mark.dailyGoals\n    @pytest.mark.parametrize(\"listTaskByMonth_args\", listTaskByMonth_args)\n    def test_query_task_by_month(listTaskByMonth_args):\n        \"\"\"学生端查看日程表当前月份有任务的日期\"\"\"\n        allure.dynamic.title(listTaskByMonth_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + listTaskByMonth_args['request']['url']\n            method = listTaskByMonth_args['request']['method']\n            headers = listTaskByMonth_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['student_token']\n            body = listTaskByMonth_args['request']['body']\n            body['date'] = read_user_defined_variable()['currentDate']['date_month']\n            lg.info(\"获取的接口请求参数：%s\" % listTaskByMonth_args)\n            allure.attach(\n                json.dumps(listTaskByMonth_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), listTaskByMonth_args['expect']['msg'])\n            res_date = res['data'][0]\n            expect_date = str(read_user_defined_variable()['currentDate']['date_day'])\n>           AssertUtil().assert_body(res_date, expect_date)\n\nTestCase\\test_05_add_dailyGoals.py:118: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000023E7DC3D3D0>\nbody = '2021-12-23', expected_body = '2021-12-22'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640248500888,
+        "stop" : 1640248500954,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "471f696fdf0910a6",
+        "name" : "接口请求参数",
+        "source" : "471f696fdf0910a6.attach",
+        "type" : "text/plain",
+        "size" : 395
+      }, {
+        "uid" : "5790ca8ed4eab1d0",
+        "name" : "接口请求参数",
+        "source" : "5790ca8ed4eab1d0.attach",
+        "type" : "text/plain",
+        "size" : 152
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640248500954,
+        "stop" : 1640248500965,
+        "duration" : 11
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_05_add_dailyGoals.py\", line 118, in test_query_task_by_month\n    AssertUtil().assert_body(res_date, expect_date)\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640248500980,
+      "stop" : 1640248500985,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "学生端查询当前月份有任务的日期"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "21680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "listTaskByMonth_args",
+    "value" : "{'name': '学生端查询当前月份有任务的日期', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByMonth', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "7c95fd1f69c97b1c.json",
+  "parameterValues" : [ "{'name': '学生端查询当前月份有任务的日期', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByMonth', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳'}}" ]
+}

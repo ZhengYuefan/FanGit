@@ -1,0 +1,164 @@
+{
+  "uid" : "63d1bcf351099109",
+  "name" : "教师列表查询接口",
+  "fullName" : "TestCase.test_03_join_school#test_query_teacher",
+  "historyId" : "094db10715d676cd8f4334979d270441",
+  "time" : {
+    "start" : 1640347986670,
+    "stop" : 1640347986715,
+    "duration" : 45
+  },
+  "description" : "web管理后台admin查询教师列表页面，是否存在通过申请的老师",
+  "descriptionHtml" : "<p>web管理后台admin查询教师列表页面，是否存在通过申请的老师</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640347985442,
+      "stop" : 1640347985456,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640347986668,
+      "stop" : 1640347986670,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "web管理后台admin查询教师列表页面，是否存在通过申请的老师",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640347986670,
+        "stop" : 1640347986709,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7b17f89420a70436",
+        "name" : "接口请求参数",
+        "source" : "7b17f89420a70436.attach",
+        "type" : "text/plain",
+        "size" : 439
+      }, {
+        "uid" : "939864ae56c08f64",
+        "name" : "接口响应报文",
+        "source" : "939864ae56c08f64.attach",
+        "type" : "text/plain",
+        "size" : 3387
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640347986709,
+        "stop" : 1640347986715,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640347986715,
+      "stop" : 1640347986717,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin教师列表查询"
+  }, {
+    "name" : "feature",
+    "value" : "教师入校申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_join_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "26324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_03_join_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinSchool" ]
+  },
+  "source" : "63d1bcf351099109.json",
+  "parameterValues" : [ ]
+}

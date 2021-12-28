@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"运动消耗",
+    "request";{
+        "body";{
+            "recordId";52418
+        },
+        "headers";{
+            "Authorization";"ODJjZDBlMTMtNzNhZi00ZmJjLTg3NWEtYzJhNzc3MDUwYjY5"
+        },
+        "method";"get",
+        "url";"/v1/sports/getSportsBurn"
+    }
+}

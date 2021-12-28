@@ -1,0 +1,27 @@
+{
+    "expect";{
+        "data";"修改成功",
+        "msg";"成功"
+    },
+    "name";"老师端调整计划顺序",
+    "request";{
+        "body";{
+            "list";[
+                {
+                    "id";4497,
+                    "title";"跳绳速成计划"
+                },
+                {
+                    "id";4498,
+                    "title";"跳绳速成计划"
+                }
+            ]
+        },
+        "headers";{
+            "Authorization";"MTg1ZmRmYTEtN2NhYS00NDY2LWJkOTgtZWEwNzg1ZmIzM2Yw",
+            "Content-Type";"application/json"
+        },
+        "method";"put",
+        "url";"/v1/plan/item"
+    }
+}

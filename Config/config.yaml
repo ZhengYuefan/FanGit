@@ -1,0 +1,23 @@
+### 214内网测试环境IP/Port/数据库
+#appHost: http://192.168.0.214:9100
+#webHost: http://192.168.0.214:9200
+#
+#database:
+#  db_host: 192.168.0.211
+#  db_port: 3306
+#  db_name: physical_v_1.0
+#  db_user: root
+#  db_password: ytty@123
+#  db_charset: utf8
+
+## 华为云测试环境IP/port/数据库
+appHost: http://121.37.190.62:9100
+webHost: http://121.37.190.62:9200
+
+database:
+  db_host: 124.70.132.95
+  db_port: 3306
+  db_name: physical_beta_v1_0
+  db_user: beta
+  db_password: BUkT85LA%zw0iYt#
+  db_charset: utf8

@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"获取运动视频",
+    "request";{
+        "body";{
+            "recordId";437315
+        },
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/sports/getSportsVideo"
+    }
+}

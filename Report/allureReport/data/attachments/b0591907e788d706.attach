@@ -1,0 +1,25 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "teacherName";"None"
+        }
+    },
+    "name";"教师入校申请接口",
+    "request";{
+        "body";{
+            "classId";60071,
+            "mobile";13301286666,
+            "realName";"郑岳凡",
+            "schoolId";374,
+            "userRole";2,
+            "validateCode";1234
+        },
+        "headers";{
+            "Authorization";"NjZiNzQ1MDgtMjM1Yi00NmYxLThhMzgtY2NhM2EzMmY1MjM4",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/school/joinSchool"
+    }
+}

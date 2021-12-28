@@ -1,0 +1,11 @@
+-
+   name: 学生端作业记录详情
+   request:
+      method: get
+      url: /v1/homework/task/stu/record/detail
+      headers:
+          Authorization: None
+      body:
+          taskId: None
+   expect:
+      msg: 成功

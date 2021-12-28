@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "studentName";"None"
+    },
+    "name";"学生审批列表接口",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "reviewStatus";1,
+            "reviewStudent";"凡学",
+            "reviewTeacher";"凡凡"
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/manage/review/listStuReview"
+    }
+}

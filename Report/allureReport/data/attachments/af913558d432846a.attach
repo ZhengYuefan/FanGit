@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "data";"删除成功",
+        "msg";"成功"
+    },
+    "name";"班级作业详情",
+    "request";{
+        "body";{
+            "homeworkId";133
+        },
+        "headers";{
+            "Authorization";"ODJjZDBlMTMtNzNhZi00ZmJjLTg3NWEtYzJhNzc3MDUwYjY5"
+        },
+        "method";"get",
+        "url";"/v1/homework/delHomework"
+    }
+}

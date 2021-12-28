@@ -1,0 +1,167 @@
+{
+  "uid" : "1d87adb5a9607257",
+  "name" : "学生端提交运动：自由跳绳",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_fulfil_task",
+  "historyId" : "3e8e5dd1369322cf2c8efcddb19e874b",
+  "time" : {
+    "start" : 1640260248331,
+    "stop" : 1640260248448,
+    "duration" : 117
+  },
+  "description" : "学生端提交运动记录，执行每日目标的任务",
+  "descriptionHtml" : "<p>学生端提交运动记录，执行每日目标的任务</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640260244830,
+      "stop" : 1640260244846,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640260248328,
+      "stop" : 1640260248331,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端提交运动记录，执行每日目标的任务",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640260248331,
+        "stop" : 1640260248444,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37cbb1b11685498a",
+        "name" : "接口请求参数",
+        "source" : "37cbb1b11685498a.attach",
+        "type" : "text/plain",
+        "size" : 553
+      }, {
+        "uid" : "aaf33a3e1da16d",
+        "name" : "接口响应报文",
+        "source" : "aaf33a3e1da16d.attach",
+        "type" : "text/plain",
+        "size" : 158
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640260248444,
+        "stop" : 1640260248448,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640260248449,
+      "stop" : 1640260248452,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "完成每日目标运动"
+  }, {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "29852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "fulfilTask_args",
+    "value" : "{'name': '学生端提交运动：自由跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 500, 'takeTime': '02:30', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "1d87adb5a9607257.json",
+  "parameterValues" : [ "{'name': '学生端提交运动：自由跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 500, 'takeTime': '02:30', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+}

@@ -1,0 +1,15 @@
+-
+   name: 老师端更新学生审批状态
+   request:
+      method: put
+      url: /v1/school/review
+      body:
+          reviewIds: None
+          reviewStatus: 1
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      sql:
+         status: 1

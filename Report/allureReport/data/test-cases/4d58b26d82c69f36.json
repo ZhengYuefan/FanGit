@@ -1,0 +1,182 @@
+{
+  "uid" : "4d58b26d82c69f36",
+  "name" : "教师端查询我的主页",
+  "fullName" : "TestCase.test_03_join_school#test_teacher_home_page",
+  "historyId" : "210bff03d7f365b91a24d757f6472cd1",
+  "time" : {
+    "start" : 1640258186131,
+    "stop" : 1640258186243,
+    "duration" : 112
+  },
+  "description" : "查询教师用户我的主页接口，并且提取userId",
+  "descriptionHtml" : "<p>查询教师用户我的主页接口，并且提取userId</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640258185510,
+      "stop" : 1640258185525,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640258186130,
+      "stop" : 1640258186131,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "查询教师用户我的主页接口，并且提取userId",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640258186131,
+        "stop" : 1640258186239,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9ada580e57e51e6a",
+        "name" : "接口请求参数",
+        "source" : "9ada580e57e51e6a.attach",
+        "type" : "text/plain",
+        "size" : 280
+      }, {
+        "uid" : "59290f1497006a23",
+        "name" : "接口响应报文",
+        "source" : "59290f1497006a23.attach",
+        "type" : "text/plain",
+        "size" : 3223
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640258186239,
+        "stop" : 1640258186241,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取teacher_userId",
+      "time" : {
+        "start" : 1640258186241,
+        "stop" : 1640258186242,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640258186243,
+      "stop" : 1640258186245,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "教师端我的主页"
+  }, {
+    "name" : "feature",
+    "value" : "教师入校申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_join_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_03_join_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homepage_args",
+    "value" : "{'name': '教师端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinSchool" ]
+  },
+  "source" : "4d58b26d82c69f36.json",
+  "parameterValues" : [ "{'name': '教师端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

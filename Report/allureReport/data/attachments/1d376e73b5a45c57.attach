@@ -1,0 +1,103 @@
+{
+    "code";1,
+    "data";[
+        {
+            "actionVal";"3000/100",
+            "evaluate";"D",
+            "id";"1473322458424676352",
+            "status";"3",
+            "title";"每日目标-跳绳",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473322458424676352&type=2"
+        },
+        {
+            "actionVal";"1000.00/200",
+            "evaluate";"D",
+            "id";"1473322458613420032",
+            "status";"3",
+            "title";"每日目标-跑步",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473322458613420032&type=2"
+        },
+        {
+            "actionVal";"408.0/50",
+            "evaluate";"D",
+            "id";"1473322458756026368",
+            "status";"3",
+            "title";"每日目标-卡路里",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473322458756026368&type=2"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473569934129893376",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473569934129893376&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473569512673644544",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473569512673644544&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473569153561530368",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473569153561530368&type=3"
+        },
+        {
+            "actionVal";"已完成 评价S",
+            "evaluate";"S",
+            "id";"1473567236957540352",
+            "status";"3",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473567236957540352&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473563032490741760",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473563032490741760&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473563013318578176",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473563013318578176&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473554700845584384",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473554700845584384&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473552853913178112",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473552853913178112&type=3"
+        },
+        {
+            "actionVal";"未完成 评价D",
+            "evaluate";"D",
+            "id";"1473551155966644224",
+            "status";"2",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473551155966644224&type=3"
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640248507270
+}

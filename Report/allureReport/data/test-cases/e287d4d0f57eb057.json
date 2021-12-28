@@ -1,0 +1,182 @@
+{
+  "uid" : "e287d4d0f57eb057",
+  "name" : "用户登入接口-v.12  学生",
+  "fullName" : "TestCase.test_01_login#test_student_login",
+  "historyId" : "0b906dc26f4408a5910ea7c223203c51",
+  "time" : {
+    "start" : 1640598428002,
+    "stop" : 1640598428243,
+    "duration" : 241
+  },
+  "description" : "测试学生角色用户登录，采用正向和反向场景来针对手机号和用户类型id进行组合后验证",
+  "descriptionHtml" : "<p>测试学生角色用户登录，采用正向和反向场景来针对手机号和用户类型id进行组合后验证</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598428001,
+      "stop" : 1640598428002,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "测试学生角色用户登录，采用正向和反向场景来针对手机号和用户类型id进行组合后验证",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598428002,
+        "stop" : 1640598428240,
+        "duration" : 238
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6c5e0ae11abfe178",
+        "name" : "接口请求参数",
+        "source" : "6c5e0ae11abfe178.attach",
+        "type" : "text/plain",
+        "size" : 434
+      }, {
+        "uid" : "eb9464e6a9818d0a",
+        "name" : "接口响应报文",
+        "source" : "eb9464e6a9818d0a.attach",
+        "type" : "text/plain",
+        "size" : 361
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598428240,
+        "stop" : 1640598428242,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取student_token",
+      "time" : {
+        "start" : 1640598428242,
+        "stop" : 1640598428243,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598428244,
+      "stop" : 1640598428244,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生用户登录"
+  }, {
+    "name" : "feature",
+    "value" : "用户登录模块"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_01_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "student_args",
+    "value" : "{'name': '用户登入接口-v.12  学生', 'request': {'method': 'post', 'url': '/v1/user/register', 'body': {'mobile': 'None', 'validateCode': 1234, 'clientIP': 'None', 'userType': 1, 'uniqueId': 'None'}, 'headers': {'Content-Type': 'application/json'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "e287d4d0f57eb057.json",
+  "parameterValues" : [ "{'name': '用户登入接口-v.12  学生', 'request': {'method': 'post', 'url': '/v1/user/register', 'body': {'mobile': 'None', 'validateCode': 1234, 'clientIP': 'None', 'userType': 1, 'uniqueId': 'None'}, 'headers': {'Content-Type': 'application/json'}}, 'expect': {'msg': '成功'}}" ]
+}

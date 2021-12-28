@@ -1,0 +1,34 @@
+{
+    "expect";{
+        "data_code";200,
+        "msg";"成功"
+    },
+    "name";"老师端创建作业--自动发布",
+    "request";{
+        "body";{
+            "classId";59726,
+            "list";[
+                {
+                    "id";2,
+                    "itemList";[
+                        "100m",
+                        "1组"
+                    ],
+                    "name";"跑步",
+                    "typeName";"计数"
+                }
+            ],
+            "noticeType";1,
+            "publishMode";1,
+            "publishType";1,
+            "status";1
+        },
+        "headers";{
+            "Authorization";"OTE4OGVjZWQtMGJiNy00YTAzLWIyN2UtMzMzMGQ5NmVjNWJm",
+            "Content-Type";"application/json",
+            "version";"1.1.0"
+        },
+        "method";"post",
+        "url";"/v1/homework/addHomeworkNew"
+    }
+}

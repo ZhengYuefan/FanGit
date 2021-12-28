@@ -1,0 +1,11 @@
+{
+    "code":1,
+    "data":{
+        "id":2,
+        "schoolId":25,
+        "userImage":"http://125.77.202.90:9010/cervix/header/female.png",
+        "userName":"admin"
+    },
+    "msg":"成功",
+    "timestamp":1640347992475
+}

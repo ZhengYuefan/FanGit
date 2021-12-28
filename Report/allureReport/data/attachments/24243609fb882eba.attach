@@ -1,0 +1,18 @@
+{
+    "code";1,
+    "data";{
+        "currentPage";1,
+        "pageSize";10,
+        "records";[
+            {
+                "classId";60070,
+                "className";"一年级(1)班",
+                "gradeId";537
+            }
+        ],
+        "total";1,
+        "totalPage";1
+    },
+    "msg";"成功",
+    "timestamp";1640347992801
+}

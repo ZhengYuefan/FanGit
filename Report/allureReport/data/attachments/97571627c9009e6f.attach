@@ -1,0 +1,34 @@
+{
+    "code";1,
+    "data";{
+        "abilities";[
+            {
+                "evalue";184.03,
+                "name";"上肢",
+                "numValue";0.0,
+                "svalue";184.03
+            },
+            {
+                "evalue";38.81,
+                "name";"腹部",
+                "numValue";0.0,
+                "svalue";38.81
+            },
+            {
+                "evalue";34.4,
+                "name";"协调",
+                "numValue";0.0,
+                "svalue";34.4
+            }
+        ],
+        "backUrl";"http://125.77.202.90:9010/cervix/task/wulunbanner@3x.png",
+        "comment";"无论如何，指定好的计划都是成功的开始。",
+        "speed";"0",
+        "title";"计划终止",
+        "totalCalorie";"0千卡",
+        "totalProject";12,
+        "totalTime";"0"
+    },
+    "msg";"成功",
+    "timestamp";1640248510518
+}

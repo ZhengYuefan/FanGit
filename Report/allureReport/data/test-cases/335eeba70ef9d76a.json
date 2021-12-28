@@ -1,0 +1,265 @@
+{
+  "uid" : "335eeba70ef9d76a",
+  "name" : "老师端历史作业记录",
+  "fullName" : "TestCase.test_07_homework#test_homework_history",
+  "historyId" : "a7d2bbde1d38b75db0bcbfb27b753f9c",
+  "time" : {
+    "start" : 1640656425126,
+    "stop" : 1640656425306,
+    "duration" : 180
+  },
+  "description" : "老师端作业历史记录",
+  "descriptionHtml" : "<p>老师端作业历史记录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656425120,
+      "stop" : 1640656425125,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端作业历史记录",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656425126,
+        "stop" : 1640656425295,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d70dc607acbedb6",
+        "name" : "接口请求参数",
+        "source" : "2d70dc607acbedb6.attach",
+        "type" : "text/plain",
+        "size" : 449
+      }, {
+        "uid" : "cae06ed59fd853d9",
+        "name" : "接口响应报文",
+        "source" : "cae06ed59fd853d9.attach",
+        "type" : "text/plain",
+        "size" : 1081
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656425295,
+        "stop" : 1640656425306,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656425307,
+      "stop" : 1640656425313,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "历史作业记录"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkHistory_args",
+    "value" : "{'name': '老师端历史作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/history/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homeworkId': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5053186add32c8c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601509899,
+        "stop" : 1640601510094,
+        "duration" : 195
+      }
+    }, {
+      "uid" : "1dde9a5e4a0e57e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598450557,
+        "stop" : 1640598450971,
+        "duration" : 414
+      }
+    }, {
+      "uid" : "a2ec95f0f152a544",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349511405,
+        "stop" : 1640349511496,
+        "duration" : 91
+      }
+    }, {
+      "uid" : "d0aed2032ed6833f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348910038,
+        "stop" : 1640348910138,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "511b82b02fe5c97f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347992875,
+        "stop" : 1640347992960,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "a7c8423fc09b4b48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262976167,
+        "stop" : 1640262976247,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "87707f9ca5487fe0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261058347,
+        "stop" : 1640261058430,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "795ff16b2f1534f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260251949,
+        "stop" : 1640260252062,
+        "duration" : 113
+      }
+    }, {
+      "uid" : "707fb6f997bc12e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258302858,
+        "stop" : 1640258302945,
+        "duration" : 87
+      }
+    }, {
+      "uid" : "af3de7d9dc3c987d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258192985,
+        "stop" : 1640258193086,
+        "duration" : 101
+      }
+    }, {
+      "uid" : "d9b854a62e802320",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249682692,
+        "stop" : 1640249682777,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "d58db3893931b23c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248505888,
+        "stop" : 1640248506002,
+        "duration" : 114
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "335eeba70ef9d76a.json",
+  "parameterValues" : [ "{'name': '老师端历史作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/history/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homeworkId': 'None'}}" ]
+}

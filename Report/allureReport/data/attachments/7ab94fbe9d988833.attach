@@ -1,0 +1,14 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"创建计划时的选择条件",
+    "request";{
+        "headers";{
+            "Authorization";"Y2U2MGIwNjAtY2RiYS00MTM5LWI2Y2MtYTgxMzM2OGJlNjQ5",
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/plan/dictionary"
+    }
+}

@@ -1,0 +1,167 @@
+{
+  "uid" : "aa252610708006e7",
+  "name" : "老师端查询班级列表",
+  "fullName" : "TestCase.test_04_join_class#test_query_class_list",
+  "historyId" : "9ee7cbbc6a1c9a5e3e6a7e68d10a9ea0",
+  "time" : {
+    "start" : 1640598434514,
+    "stop" : 1640598434798,
+    "duration" : 284
+  },
+  "description" : "老师端审批管理页面查询班级列表",
+  "descriptionHtml" : "<p>老师端审批管理页面查询班级列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598434511,
+      "stop" : 1640598434513,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端审批管理页面查询班级列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598434514,
+        "stop" : 1640598434797,
+        "duration" : 283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1465a075a3ab6e22",
+        "name" : "接口请求参数",
+        "source" : "1465a075a3ab6e22.attach",
+        "type" : "text/plain",
+        "size" : 338
+      }, {
+        "uid" : "ea49633e8795cd15",
+        "name" : "接口响应参数",
+        "source" : "ea49633e8795cd15.attach",
+        "type" : "text/plain",
+        "size" : 413
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598434797,
+        "stop" : 1640598434798,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598434799,
+      "stop" : 1640598434801,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师端查询班级列表学生申请"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "queryClassList_args",
+    "value" : "{'name': '老师端查询班级列表', 'request': {'method': 'get', 'url': '/v1/school/listClass', 'body': {'schoolId': 'None'}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "aa252610708006e7.json",
+  "parameterValues" : [ "{'name': '老师端查询班级列表', 'request': {'method': 'get', 'url': '/v1/school/listClass', 'body': {'schoolId': 'None'}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

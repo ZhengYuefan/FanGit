@@ -1,0 +1,265 @@
+{
+  "uid" : "839d277a5ca4218d",
+  "name" : "跑步5分钟--预计消耗",
+  "fullName" : "TestCase.test_08_sports#test_sports_expect_consumption",
+  "historyId" : "e74a0fa51fe259482604085eff0b75e7",
+  "time" : {
+    "start" : 1640656428693,
+    "stop" : 1640656428842,
+    "duration" : 149
+  },
+  "description" : "获取运动首页的运动列表",
+  "descriptionHtml" : "<p>获取运动首页的运动列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656428685,
+      "stop" : 1640656428693,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "获取运动首页的运动列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656428693,
+        "stop" : 1640656428839,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d05b8a2c41c7f732",
+        "name" : "接口请求参数",
+        "source" : "d05b8a2c41c7f732.attach",
+        "type" : "text/plain",
+        "size" : 421
+      }, {
+        "uid" : "7214b0edd6714382",
+        "name" : "接口响应报文",
+        "source" : "7214b0edd6714382.attach",
+        "type" : "text/plain",
+        "size" : 440
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656428839,
+        "stop" : 1640656428841,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656428842,
+      "stop" : 1640656428851,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "预计消耗"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsExpectConsumption_args",
+    "value" : "{'name': '跑步5分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '05:00'}}, 'expect': {'msg': '成功', 'totalCalories': 18.0}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a2ae89fd75f4c82e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601513318,
+        "stop" : 1640601513402,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "87621100a9a2c85c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598460350,
+        "stop" : 1640598460649,
+        "duration" : 299
+      }
+    }, {
+      "uid" : "972cf887d4babcb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349513842,
+        "stop" : 1640349513905,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "2382359d9302f4ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348912381,
+        "stop" : 1640348912450,
+        "duration" : 69
+      }
+    }, {
+      "uid" : "59898566882f298",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347995069,
+        "stop" : 1640347995132,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "7baf3380046c351f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262978404,
+        "stop" : 1640262978461,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "55a7899f43e1af99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261060523,
+        "stop" : 1640261060577,
+        "duration" : 54
+      }
+    }, {
+      "uid" : "11222e6fdc45341b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260254155,
+        "stop" : 1640260254204,
+        "duration" : 49
+      }
+    }, {
+      "uid" : "adc615c9a2a74c8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258305047,
+        "stop" : 1640258305098,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "660596d926334f36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258195230,
+        "stop" : 1640258195284,
+        "duration" : 54
+      }
+    }, {
+      "uid" : "7006752e592e5be5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249684928,
+        "stop" : 1640249684982,
+        "duration" : 54
+      }
+    }, {
+      "uid" : "29415a2fb68a5fa7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248508231,
+        "stop" : 1640248508294,
+        "duration" : 63
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "839d277a5ca4218d.json",
+  "parameterValues" : [ "{'name': '跑步5分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '05:00'}}, 'expect': {'msg': '成功', 'totalCalories': 18.0}}" ]
+}

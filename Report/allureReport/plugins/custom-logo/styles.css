@@ -1,0 +1,13 @@
+.side-nav__brand {
+  background: url('YiTi_logo.png') no-repeat left center !important;	
+  margin-left: 10px;
+  height: 70px;
+  background-size: contain !important;
+}
+.side-nav__brand span{
+	display: none;
+}
+.side-nav__brand:after{
+	content: "";
+	margin-left: 20px;
+}

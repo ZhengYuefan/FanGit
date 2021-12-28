@@ -1,0 +1,24 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sports_id";1
+        }
+    },
+    "name";"提交运动：计数跳绳200个",
+    "request";{
+        "body";{
+            "mode";2,
+            "score";200,
+            "speed";200,
+            "sportsId";1,
+            "takeTime";"01:00"
+        },
+        "headers";{
+            "Authorization";"ODJjZDBlMTMtNzNhZi00ZmJjLTg3NWEtYzJhNzc3MDUwYjY5",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/sports/submitSports"
+    }
+}

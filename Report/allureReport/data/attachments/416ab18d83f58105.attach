@@ -1,0 +1,15 @@
+{
+    "expect";{
+        "fulfilSpeed";"大于0",
+        "msg";"成功",
+        "planId";"${extract.plan_id}"
+    },
+    "name";"老师端任务首页任务计划",
+    "request";{
+        "headers";{
+            "Authorization";"OTE4OGVjZWQtMGJiNy00YTAzLWIyN2UtMzMzMGQ5NmVjNWJm"
+        },
+        "method";"get",
+        "url";"/v1/planTask/listTask"
+    }
+}

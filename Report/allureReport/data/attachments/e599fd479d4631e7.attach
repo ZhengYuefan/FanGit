@@ -1,0 +1,23 @@
+{
+    "code";1,
+    "data";{
+        "currentPage";1,
+        "pageSize";10,
+        "records";[
+            {
+                "classId";"60068",
+                "className";"一年级(1)班",
+                "mobile";"13301266666",
+                "schoolId";371,
+                "schoolName";"Test测试学",
+                "teacherId";157,
+                "teacherName";"郑凡凡",
+                "userId";1083
+            }
+        ],
+        "total";1,
+        "totalPage";1
+    },
+    "msg";"成功",
+    "timestamp";1640261058921
+}

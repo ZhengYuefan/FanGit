@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "totalCalories";3.125
+    },
+    "name";"跑步50m--预计消耗",
+    "request";{
+        "body";{
+            "distance";50,
+            "mode";2,
+            "sportsId";2
+        },
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/sports/getPreBurn"
+    }
+}

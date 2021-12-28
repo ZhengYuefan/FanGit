@@ -1,0 +1,2082 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "作业模块",
+    "children" : [ {
+      "name" : "提交作业",
+      "children" : [ {
+        "name" : "学生端提交作业：计数跑步",
+        "uid" : "22a0bd779907de7a",
+        "parentUid" : "82bc6fbc6772780d595664a620f64879",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640249682458,
+          "stop" : 1640249682462,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端提交作业：计数跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'taskId': 'None', 'distance': 100, 'takeTime': '00:15', 'speed': 400, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      }, {
+        "name" : "学生端提交作业：计时跳绳",
+        "uid" : "fdef6b1fb5b0734d",
+        "parentUid" : "82bc6fbc6772780d595664a620f64879",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424828,
+          "stop" : 1640656424979,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端提交作业：计时跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'taskId': 'None', 'score': 300, 'takeTime': '01:00', 'speed': 300, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      } ],
+      "uid" : "82bc6fbc6772780d595664a620f64879"
+    }, {
+      "name" : "创建作业",
+      "children" : [ {
+        "name" : "老师端创建作业--自动发布",
+        "uid" : "c631d541ea1d47bf",
+        "parentUid" : "7e8ea9e27c2abc0de77f8633c5a7b5bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423980,
+          "stop" : 1640656424099,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端创建作业--自动发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'classId': 'None', 'status': 1, 'publishMode': 1, 'publishType': 1, 'noticeType': 1, 'list': [{'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}" ]
+      }, {
+        "name" : "老师端创建作业--手动保存，不发布",
+        "uid" : "f3a0b890ac58c884",
+        "parentUid" : "7e8ea9e27c2abc0de77f8633c5a7b5bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424111,
+          "stop" : 1640656424188,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端创建作业--手动保存，不发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'classId': 'None', 'status': 0, 'publishMode': 2, 'noticeType': 0, 'list': [{'id': 1, 'name': '跳绳', 'typeName': '计时', 'itemList': ['1分钟', '1组']}, {'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}" ]
+      } ],
+      "uid" : "7e8ea9e27c2abc0de77f8633c5a7b5bc"
+    }, {
+      "name" : "查看作业模板",
+      "children" : [ {
+        "name" : "老师端查看作业模板",
+        "uid" : "40437f089d9d1354",
+        "parentUid" : "846cf603e7bda20c3c9c7cb366e40bca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424201,
+          "stop" : 1640656424275,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端查看作业模板', 'request': {'method': 'post', 'url': '/v1/homework/teach/template', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "846cf603e7bda20c3c9c7cb366e40bca"
+    }, {
+      "name" : "老师手动发布作业",
+      "children" : [ {
+        "name" : "老师端手动发布作业",
+        "uid" : "deda58d1a3361a8e",
+        "parentUid" : "5a9ad21a2a835fc6393066c75b9986c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424288,
+          "stop" : 1640656424510,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '老师端手动发布作业', 'request': {'method': 'put', 'url': '/v1/homework/publish', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'homeworkId': 'None'}}, 'expect': {'msg': '成功', 'data': '发布成功'}}" ]
+      } ],
+      "uid" : "5a9ad21a2a835fc6393066c75b9986c4"
+    }, {
+      "name" : "老师端今日作业记录",
+      "children" : [ {
+        "name" : "老师端今日作业记录",
+        "uid" : "cf5c5d3b8584e48e",
+        "parentUid" : "e4b8005e64bfd6bc410c3b382c836987",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424522,
+          "stop" : 1640656424696,
+          "duration" : 174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端今日作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/today/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dateStr': 'None', 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homework_id': 'None'}}" ]
+      } ],
+      "uid" : "e4b8005e64bfd6bc410c3b382c836987"
+    }, {
+      "name" : "学生查看作业，提取homework_taskId",
+      "children" : [ {
+        "name" : "学生端任务页首页作业完成进度",
+        "uid" : "c07f626215278bbb",
+        "parentUid" : "fb614317e93b2cf172d6937cc5c45126",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424710,
+          "stop" : 1640656424814,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端任务页首页作业完成进度', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': 'None', 'fulfilSpeed': '大于0'}}" ]
+      } ],
+      "uid" : "fb614317e93b2cf172d6937cc5c45126"
+    }, {
+      "name" : "查看作业完成进度",
+      "children" : [ {
+        "name" : "学生端任务页首页作业完成进度",
+        "uid" : "32634f60e5a08a20",
+        "parentUid" : "32e1659047135c1e9e031794225247b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656424993,
+          "stop" : 1640656425112,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页作业完成进度', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': 'None', 'fulfilSpeed': '大于0'}}" ]
+      } ],
+      "uid" : "32e1659047135c1e9e031794225247b8"
+    }, {
+      "name" : "历史作业记录",
+      "children" : [ {
+        "name" : "老师端历史作业记录",
+        "uid" : "335eeba70ef9d76a",
+        "parentUid" : "5b5d434f5328945712d2ac55f92117dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425126,
+          "stop" : 1640656425306,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端历史作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/history/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homeworkId': 'None'}}" ]
+      } ],
+      "uid" : "5b5d434f5328945712d2ac55f92117dd"
+    }, {
+      "name" : "作业选择条件",
+      "children" : [ {
+        "name" : "老师端作业选择条件",
+        "uid" : "b5a0144548edc711",
+        "parentUid" : "645e097da36cb99ba90669e0e08e8942",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425320,
+          "stop" : 1640656425395,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端作业选择条件', 'request': {'method': 'get', 'url': '/v1/homework/listSportNew', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "645e097da36cb99ba90669e0e08e8942"
+    }, {
+      "name" : "学生作业记录详情",
+      "children" : [ {
+        "name" : "学生端作业记录详情",
+        "uid" : "823fc08344dcc02c",
+        "parentUid" : "60a88a263fd096722a12065bdacade26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425409,
+          "stop" : 1640656425482,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端作业记录详情', 'request': {'method': 'get', 'url': '/v1/homework/task/stu/record/detail', 'headers': {'Authorization': 'None'}, 'body': {'taskId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "60a88a263fd096722a12065bdacade26"
+    }, {
+      "name" : "作业记录-我的班级--老师端",
+      "children" : [ {
+        "name" : "老师端我的班级--作业记录",
+        "uid" : "d76011ee2c4e1c31",
+        "parentUid" : "f93c803796640b37ec64d5168b915743",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425497,
+          "stop" : 1640656425562,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '老师端我的班级--作业记录', 'request': {'method': 'get', 'url': '/v1/teach/classes/list', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None', 'dateStr': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "f93c803796640b37ec64d5168b915743"
+    }, {
+      "name" : "班级作业详情",
+      "children" : [ {
+        "name" : "班级作业详情",
+        "uid" : "b44c9e013bde8c6d",
+        "parentUid" : "2f29c10c9d06ec5b846648e7d4dd8a9a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425576,
+          "stop" : 1640656425667,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '班级作业详情', 'request': {'method': 'get', 'url': '/v1/homework/task/clazz/work/detail', 'headers': {'Authorization': 'None'}, 'body': {'classId': 'None', 'dateStr': 'None', 'relationId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "2f29c10c9d06ec5b846648e7d4dd8a9a"
+    }, {
+      "name" : "老师查看学生作业详情",
+      "children" : [ {
+        "name" : "老师查看学生作业详情",
+        "uid" : "313e2d3200b0e6b1",
+        "parentUid" : "5a3d35d112fdbaa5637477fef9926cd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425681,
+          "stop" : 1640656425751,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 14,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师查看学生作业详情', 'request': {'method': 'post', 'url': '/v1/homework/task/stu/detail', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'userId': 'None', 'pageNo': 1, 'pageSize': 10, 'type': 3}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "5a3d35d112fdbaa5637477fef9926cd8"
+    }, {
+      "name" : "删除作业模板",
+      "children" : [ {
+        "name" : "老师端删除作业模板",
+        "uid" : "47a7d6739d350dbf",
+        "parentUid" : "cbc76e923666c5d789fa4b64ccbc82bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425765,
+          "stop" : 1640656425849,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端删除作业模板', 'request': {'method': 'get', 'url': '/v1/homework/delHomework', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None'}}, 'expect': {'msg': '成功', 'data': '删除成功'}}" ]
+      } ],
+      "uid" : "cbc76e923666c5d789fa4b64ccbc82bc"
+    } ],
+    "uid" : "e306f281a982843960aa9d830c9f03a0"
+  }, {
+    "name" : "用户登录模块",
+    "children" : [ {
+      "name" : "老师用户登录",
+      "children" : [ {
+        "name" : "用户登入接口-v.12  老师",
+        "uid" : "15c203febabb3baa",
+        "parentUid" : "e08f435f54969444a8e887dcf3b02333",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418124,
+          "stop" : 1640656418223,
+          "duration" : 99
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '用户登入接口-v.12  老师', 'request': {'method': 'post', 'url': '/v1/user/register', 'body': {'mobile': 'None', 'validateCode': 1234, 'clientIP': 'None', 'userType': 1, 'uniqueId': 'None'}, 'headers': {'Content-Type': 'application/json'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "e08f435f54969444a8e887dcf3b02333"
+    }, {
+      "name" : "学生用户登录",
+      "children" : [ {
+        "name" : "用户登入接口-v.12  学生",
+        "uid" : "b488510d3e3447ca",
+        "parentUid" : "2b2c45d50924649dfd024a37c2e2685f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418227,
+          "stop" : 1640656418289,
+          "duration" : 62
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '用户登入接口-v.12  学生', 'request': {'method': 'post', 'url': '/v1/user/register', 'body': {'mobile': 'None', 'validateCode': 1234, 'clientIP': 'None', 'userType': 1, 'uniqueId': 'None'}, 'headers': {'Content-Type': 'application/json'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "2b2c45d50924649dfd024a37c2e2685f"
+    }, {
+      "name" : "admin用户登录管理后台",
+      "children" : [ {
+        "name" : "系统管理员登录",
+        "uid" : "a2fe565bdc9f0c09",
+        "parentUid" : "ae67b75d6ac22f4faf6b2333bc6927f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418293,
+          "stop" : 1640656418344,
+          "duration" : 51
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '系统管理员登录', 'request': {'method': 'post', 'url': '/v1/manage/login', 'body': {'userName': 'admin', 'password': 'admin'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}}, 'expect': {'msg': '成功', 'code': 1}}" ]
+      } ],
+      "uid" : "ae67b75d6ac22f4faf6b2333bc6927f4"
+    } ],
+    "uid" : "05646e648af63fcfbd8167c4ad0a2d02"
+  }, {
+    "name" : "web后台创建学校模块",
+    "children" : [ {
+      "name" : "校验学校名称",
+      "children" : [ {
+        "name" : "校验学校名称是否重复",
+        "uid" : "b443feb66838afb6",
+        "parentUid" : "dd2e31871de73ab05635ca379dc4c35d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418349,
+          "stop" : 1640656418414,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dd2e31871de73ab05635ca379dc4c35d"
+    }, {
+      "name" : "创建学校",
+      "children" : [ {
+        "name" : "创建学校",
+        "uid" : "b847ce5f51f749b",
+        "parentUid" : "c002018d19355156a0680a278163653d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418417,
+          "stop" : 1640656418518,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c002018d19355156a0680a278163653d"
+    }, {
+      "name" : "查询学校列表，提取school_id",
+      "children" : [ {
+        "name" : "学校列表查询",
+        "uid" : "64c11bf2a58d2939",
+        "parentUid" : "7b5d71f67647e167168affe91031f3cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418522,
+          "stop" : 1640656418577,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b5d71f67647e167168affe91031f3cb"
+    }, {
+      "name" : "查询学校，提取年级grade_id",
+      "children" : [ {
+        "name" : "学校年级信息查询",
+        "uid" : "9987434a5641d644",
+        "parentUid" : "23c576b68df136dfe6bfff83c8751fd9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418583,
+          "stop" : 1640656418646,
+          "duration" : 63
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23c576b68df136dfe6bfff83c8751fd9"
+    }, {
+      "name" : "查询班级，提取班级class_id",
+      "children" : [ {
+        "name" : "学校班级信息查询",
+        "uid" : "e7a849189bd00da0",
+        "parentUid" : "f0434a9e6552f5bbad3f327541ca8ba8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418653,
+          "stop" : 1640656418707,
+          "duration" : 54
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f0434a9e6552f5bbad3f327541ca8ba8"
+    } ],
+    "uid" : "b75f2e9a63e366064967ec571c6dd1fd"
+  }, {
+    "name" : "教师入校申请模块",
+    "children" : [ {
+      "name" : "教师端我的主页",
+      "children" : [ {
+        "name" : "教师端查询我的主页",
+        "uid" : "d0dcac86751002eb",
+        "parentUid" : "529d808c0392c72e611acddd585bb03a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418715,
+          "stop" : 1640656418812,
+          "duration" : 97
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '教师端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "529d808c0392c72e611acddd585bb03a"
+    }, {
+      "name" : "教师申请入校",
+      "children" : [ {
+        "name" : "教师入校申请接口",
+        "uid" : "1f2f9e05be8de768",
+        "parentUid" : "bf077900d294b8f81c87d464781a2a26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418818,
+          "stop" : 1640656418929,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '教师入校申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinSchool', 'body': {'schoolId': 'None', 'realName': 'None', 'classId': 'None', 'mobile': 'None', 'validateCode': 1234, 'userRole': 2}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'teacherName': 'None'}}}" ]
+      } ],
+      "uid" : "bf077900d294b8f81c87d464781a2a26"
+    }, {
+      "name" : "admin查询教师申请，提取review_id",
+      "children" : [ {
+        "name" : "教师申请列表接口",
+        "uid" : "feb7c536d1c6414f",
+        "parentUid" : "ee6d178afdc2eabf31785b768d744942",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656418935,
+          "stop" : 1640656419005,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee6d178afdc2eabf31785b768d744942"
+    }, {
+      "name" : "admin通过教师申请",
+      "children" : [ {
+        "name" : "更新教师审批状态接口",
+        "uid" : "85d75498e27abd7d",
+        "parentUid" : "3e4374b1c4c76f68b45193c95ba94e21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419011,
+          "stop" : 1640656419151,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e4374b1c4c76f68b45193c95ba94e21"
+    }, {
+      "name" : "admin删除教师审批记录",
+      "children" : [ {
+        "name" : "删除教师审批记录接口",
+        "uid" : "910c9aafd82e0fdf",
+        "parentUid" : "35cb903ddd5039d311186a1ade401c13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419157,
+          "stop" : 1640656419223,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35cb903ddd5039d311186a1ade401c13"
+    }, {
+      "name" : "admin教师列表查询",
+      "children" : [ {
+        "name" : "教师列表查询接口",
+        "uid" : "40b1778cdaadc08",
+        "parentUid" : "fbe0098bed9cbd1d39340b9d7971a1f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419229,
+          "stop" : 1640656419309,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fbe0098bed9cbd1d39340b9d7971a1f6"
+    } ],
+    "uid" : "670c649093bd4c24fdd5173581cfd892"
+  }, {
+    "name" : "学生入班申请模块",
+    "children" : [ {
+      "name" : "学生端我的主页",
+      "children" : [ {
+        "name" : "学生端查询我的主页",
+        "uid" : "99ecd17738ff0de4",
+        "parentUid" : "30f85b580424d638a665cdadcb6cb011",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419315,
+          "stop" : 1640656419380,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "30f85b580424d638a665cdadcb6cb011"
+    }, {
+      "name" : "学生申请入班",
+      "children" : [ {
+        "name" : "学生入班申请接口",
+        "uid" : "21639d20d597833b",
+        "parentUid" : "c50ec9aa68df3142cafada1d27ea9071",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419387,
+          "stop" : 1640656419518,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生入班申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinClass', 'body': {'schoolId': 'None', 'classId': 'None', 'realName': 'None', 'userRole': 1, 'studentNo': 6666}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'studentName': 'None'}}}" ]
+      } ],
+      "uid" : "c50ec9aa68df3142cafada1d27ea9071"
+    }, {
+      "name" : "老师端查询学生申请，提取review_id",
+      "children" : [ {
+        "name" : "老师端查询学生审批列表",
+        "uid" : "b57e554221bc52af",
+        "parentUid" : "8c1eb84fb1c6b2ba688f406c09018a0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419524,
+          "stop" : 1640656419609,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端查询学生审批列表', 'request': {'method': 'get', 'url': '/v1/school/listStudentReview', 'body': {'pageNo': 1, 'pageSize': 10, 'classIds': 'None', 'studentName': 'None', 'studentNo': 6666}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'studentName': 'None'}}" ]
+      } ],
+      "uid" : "8c1eb84fb1c6b2ba688f406c09018a0d"
+    }, {
+      "name" : "老师端查询班级列表学生申请",
+      "children" : [ {
+        "name" : "老师端查询班级列表",
+        "uid" : "f3a5e50e07de4e89",
+        "parentUid" : "f351745650e7cd5c9df1e3c0f15a50db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419616,
+          "stop" : 1640656419664,
+          "duration" : 48
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端查询班级列表', 'request': {'method': 'get', 'url': '/v1/school/listClass', 'body': {'schoolId': 'None'}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "f351745650e7cd5c9df1e3c0f15a50db"
+    }, {
+      "name" : "老师端更新学生审批状态",
+      "children" : [ {
+        "name" : "老师端更新学生审批状态",
+        "uid" : "7c978a6e4124bf31",
+        "parentUid" : "f4c3283b82bbacc88ac430f2b8065007",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419671,
+          "stop" : 1640656419817,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端更新学生审批状态', 'request': {'method': 'put', 'url': '/v1/school/review', 'body': {'reviewIds': 'None', 'reviewStatus': 1}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'status': 1}}}" ]
+      } ],
+      "uid" : "f4c3283b82bbacc88ac430f2b8065007"
+    }, {
+      "name" : "web管理学生申请列表查询",
+      "children" : [ {
+        "name" : "学生审批列表接口",
+        "uid" : "285a372912bd6317",
+        "parentUid" : "a4eeabd607cdd93544cd7b7068a1ed42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419824,
+          "stop" : 1640656419935,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a4eeabd607cdd93544cd7b7068a1ed42"
+    }, {
+      "name" : "web管理学生列表查询",
+      "children" : [ {
+        "name" : "学生列表查询接口",
+        "uid" : "d7c829d3c8ede671",
+        "parentUid" : "84a5ac02a98eb625d8e79e6a3e0234fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656419942,
+          "stop" : 1640656420698,
+          "duration" : 756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84a5ac02a98eb625d8e79e6a3e0234fd"
+    } ],
+    "uid" : "8fd5e5dc8f1a6340683fab026758ab1c"
+  }, {
+    "name" : "每日目标模块",
+    "children" : [ {
+      "name" : "学生端创建每日目标",
+      "children" : [ {
+        "name" : "学生端创建每日目标：跳绳",
+        "uid" : "15c974c1ebee1253",
+        "parentUid" : "ebfda056735b6a10c73ae26ed9b88a10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656420706,
+          "stop" : 1640656420789,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端创建每日目标：跳绳', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '跳绳', 'contentName': 100}}, 'expect': {'msg': '成功', 'sql': {'sportName': '跳绳'}}}" ]
+      }, {
+        "name" : "学生端创建每日目标：跑步",
+        "uid" : "b20cf26920af0a86",
+        "parentUid" : "ebfda056735b6a10c73ae26ed9b88a10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656420796,
+          "stop" : 1640656420884,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端创建每日目标：跑步', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '跑步', 'contentName': 200}}, 'expect': {'msg': '成功', 'sql': {'sportName': '跑步'}}}" ]
+      }, {
+        "name" : "学生端创建每日目标：卡路里",
+        "uid" : "cdfb6e4cc669d123",
+        "parentUid" : "ebfda056735b6a10c73ae26ed9b88a10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656420892,
+          "stop" : 1640656420981,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端创建每日目标：卡路里', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '卡路里', 'contentName': 50}}, 'expect': {'msg': '成功', 'sql': {'sportName': '卡路里'}}}" ]
+      } ],
+      "uid" : "ebfda056735b6a10c73ae26ed9b88a10"
+    }, {
+      "name" : "学生端查看任务首页每日目标",
+      "children" : [ {
+        "name" : "学生端任务页首页每日目标：跳绳",
+        "uid" : "69af7e7b780f5476",
+        "parentUid" : "5366e58cb2c205adbbb2693c0529cc61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656420989,
+          "stop" : 1640656421083,
+          "duration" : 94
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：跳绳', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳', 'fulfilSpeed': 100}}" ]
+      }, {
+        "name" : "学生端任务页首页每日目标：跑步",
+        "uid" : "8dd4f92e35b2f23e",
+        "parentUid" : "5366e58cb2c205adbbb2693c0529cc61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421091,
+          "stop" : 1640656421183,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：跑步', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跑步', 'fulfilSpeed': 100}}" ]
+      }, {
+        "name" : "学生端任务页首页每日目标：卡路里",
+        "uid" : "17443de36d91049b",
+        "parentUid" : "5366e58cb2c205adbbb2693c0529cc61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421191,
+          "stop" : 1640656421299,
+          "duration" : 108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：卡路里', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '卡路里', 'fulfilSpeed': 100}}" ]
+      } ],
+      "uid" : "5366e58cb2c205adbbb2693c0529cc61"
+    }, {
+      "name" : "学生端查询当前月份有任务的日期",
+      "children" : [ {
+        "name" : "学生端查询当前月份有任务的日期",
+        "uid" : "4c7591a4c1cafeb9",
+        "parentUid" : "3c974617d993125194f8a069dce96bf9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421309,
+          "stop" : 1640656421363,
+          "duration" : 54
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '学生端查询当前月份有任务的日期', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByMonth', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳'}}" ]
+      } ],
+      "uid" : "3c974617d993125194f8a069dce96bf9"
+    }, {
+      "name" : "学生端查询当前日期的每日目标",
+      "children" : [ {
+        "name" : "学生端查询当前日期的每日目标",
+        "uid" : "e269583bca0c7a8a",
+        "parentUid" : "d40dd8021f492c414a1b5b08663794ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421372,
+          "stop" : 1640656421441,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端查询当前日期的每日目标', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByDay', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "d40dd8021f492c414a1b5b08663794ad"
+    }, {
+      "name" : "我的_任务记录",
+      "children" : [ {
+        "name" : "学生端我的--任务记录",
+        "uid" : "7e79f0864422cc88",
+        "parentUid" : "07c64974605ad4d0b15853244b09fcc6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421450,
+          "stop" : 1640656421506,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端我的--任务记录', 'request': {'method': 'post', 'url': '/v1/homework/queryTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'createTime': 'None'}}" ]
+      } ],
+      "uid" : "07c64974605ad4d0b15853244b09fcc6"
+    }, {
+      "name" : "完成每日目标运动",
+      "children" : [ {
+        "name" : "学生端提交运动：计数跳绳",
+        "uid" : "c374e854e9349213",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421515,
+          "stop" : 1640656421647,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：计数跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 200, 'takeTime': '01:00', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "学生端提交运动：计时跳绳",
+        "uid" : "e315149332e72b83",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421655,
+          "stop" : 1640656421779,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：计时跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 300, 'takeTime': '01:30', 'speed': 200, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "学生端提交运动：自由跳绳",
+        "uid" : "e9d7db38700d1c2c",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421789,
+          "stop" : 1640656421896,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：自由跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 500, 'takeTime': '02:30', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "学生端提交运动：计时跑步",
+        "uid" : "7c4f3594de9a33b0",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656421905,
+          "stop" : 1640656422030,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：计时跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 200, 'takeTime': '00:20', 'speed': 600, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      }, {
+        "name" : "学生端提交运动：计数跑步",
+        "uid" : "c01767b6a219df5e",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422040,
+          "stop" : 1640656422170,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：计数跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      }, {
+        "name" : "学生端提交运动：自由跑步",
+        "uid" : "267016b45f7b5fb4",
+        "parentUid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422179,
+          "stop" : 1640656422290,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端提交运动：自由跑步', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      } ],
+      "uid" : "fc0c13e1e65b6b9e0b6d2168372b8ccb"
+    }, {
+      "name" : "查看任务完成进度",
+      "children" : [ {
+        "name" : "查看任务首页的每日目标完成进度",
+        "uid" : "c10ea4a0848119a6",
+        "parentUid" : "fb335084523d7022381257e4f68a8737",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422301,
+          "stop" : 1640656422398,
+          "duration" : 97
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：跳绳', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳', 'fulfilSpeed': 100}}" ]
+      }, {
+        "name" : "查看任务首页的每日目标完成进度",
+        "uid" : "dfc191c71744669f",
+        "parentUid" : "fb335084523d7022381257e4f68a8737",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422408,
+          "stop" : 1640656422514,
+          "duration" : 106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：跑步', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跑步', 'fulfilSpeed': 100}}" ]
+      }, {
+        "name" : "查看任务首页的每日目标完成进度",
+        "uid" : "f6b94d9bd1150b19",
+        "parentUid" : "fb335084523d7022381257e4f68a8737",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422525,
+          "stop" : 1640656422649,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '学生端任务页首页每日目标：卡路里', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '卡路里', 'fulfilSpeed': 100}}" ]
+      } ],
+      "uid" : "fb335084523d7022381257e4f68a8737"
+    } ],
+    "uid" : "a5ff3a166c385b907c39c7c1c5549120"
+  }, {
+    "name" : "任务计划模块",
+    "children" : [ {
+      "name" : "创建计划",
+      "children" : [ {
+        "name" : "老师端创建任务计划：提升成绩_跳绳",
+        "uid" : "356d5b0d8eaa57e7",
+        "parentUid" : "f4bf044d4ddbebe9715f739cc415583d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422662,
+          "stop" : 1640656422858,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端创建任务计划：提升成绩_跳绳', 'request': {'method': 'post', 'url': '/v1/plan/plans', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'motionTarget': 23, 'homeworkProjectId': 1, 'planCreateCondition': '1,3,3', 'planPublished': 1}}, 'expect': {'msg': '成功', 'sql': {'motionTarget': 23}}}" ]
+      } ],
+      "uid" : "f4bf044d4ddbebe9715f739cc415583d"
+    }, {
+      "name" : "计划记录列表",
+      "children" : [ {
+        "name" : "老师端查看计划记录列表",
+        "uid" : "ec099fcf2b7f5960",
+        "parentUid" : "223e312fa1a995d1adaf1c33d2502a12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422869,
+          "stop" : 1640656422933,
+          "duration" : 64
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端查看计划记录列表', 'request': {'method': 'get', 'url': '/v1/plan/record', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': '${extract.planId}'}}" ]
+      } ],
+      "uid" : "223e312fa1a995d1adaf1c33d2502a12"
+    }, {
+      "name" : "根据计划id获取计划信息",
+      "children" : [ {
+        "name" : "老师端根据计划Id获取计划信息",
+        "uid" : "101f3e7c4bf0e59e",
+        "parentUid" : "96123284f0fd39511f1da03b5a2a5f0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656422944,
+          "stop" : 1640656423042,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端根据计划Id获取计划信息', 'request': {'method': 'get', 'url': '/v1/plan/info', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'motionTarget': 23}}" ]
+      } ],
+      "uid" : "96123284f0fd39511f1da03b5a2a5f0e"
+    }, {
+      "name" : "计划选择条件",
+      "children" : [ {
+        "name" : "创建计划时的选择条件",
+        "uid" : "52f094d9220d17d1",
+        "parentUid" : "05f694775a37d09ff1a7676eaae6de81",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423053,
+          "stop" : 1640656423119,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '创建计划时的选择条件', 'request': {'method': 'get', 'url': '/v1/plan/dictionary', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "05f694775a37d09ff1a7676eaae6de81"
+    }, {
+      "name" : "今日计划详情",
+      "children" : [ {
+        "name" : "老师端今日计划详情",
+        "uid" : "b963640491a1ac03",
+        "parentUid" : "2665ba8946f2f807e8ebfd2da3c016e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423130,
+          "stop" : 1640656423242,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '老师端今日计划详情', 'request': {'method': 'get', 'url': '/v1/plan/detail/dateStr', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None', 'dateStr': '${date_day}'}}, 'expect': {'msg': '成功', 'title': '今日计划目标'}}" ]
+      } ],
+      "uid" : "2665ba8946f2f807e8ebfd2da3c016e5"
+    }, {
+      "name" : "调换计划顺序",
+      "children" : [ {
+        "name" : "老师端调整计划顺序",
+        "uid" : "e2af18b3bcf0f212",
+        "parentUid" : "2e9adc7201b29eaf3a00da04a44f9949",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423253,
+          "stop" : 1640656423348,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端调整计划顺序', 'request': {'method': 'put', 'url': '/v1/plan/item', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'list': [{'id': 'None', 'title': 'None'}, {'id': 'None', 'title': 'None'}]}}, 'expect': {'msg': '成功', 'data': '修改成功'}}" ]
+      } ],
+      "uid" : "2e9adc7201b29eaf3a00da04a44f9949"
+    }, {
+      "name" : "执行运动计划",
+      "children" : [ {
+        "name" : "老师端提交运动：计时跳绳",
+        "uid" : "9af8eb5854f34799",
+        "parentUid" : "7816583af43aab2f1657209ec22895c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423364,
+          "stop" : 1640656423496,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端提交运动：计时跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 300, 'takeTime': '01:00', 'speed': 200, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      } ],
+      "uid" : "7816583af43aab2f1657209ec22895c0"
+    }, {
+      "name" : "查看计划完成进度",
+      "children" : [ {
+        "name" : "查看任务首页的计划完成进度",
+        "uid" : "f6ce1997bc2feba4",
+        "parentUid" : "92410d265ff6ff6c951e2a9aed07b6c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423509,
+          "stop" : 1640656423661,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端任务首页任务计划', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': '${extract.plan_id}', 'fulfilSpeed': '大于0'}}" ]
+      } ],
+      "uid" : "92410d265ff6ff6c951e2a9aed07b6c2"
+    }, {
+      "name" : "终止计划",
+      "children" : [ {
+        "name" : "老师端终止计划",
+        "uid" : "5b1c98d659b5c3bc",
+        "parentUid" : "5e84234355a39d1e146dab3eaa786b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423673,
+          "stop" : 1640656423863,
+          "duration" : 190
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端终止计划', 'request': {'method': 'get', 'url': '/v1/plan/info/status', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'sql': {'status': 5}}}" ]
+      } ],
+      "uid" : "5e84234355a39d1e146dab3eaa786b80"
+    }, {
+      "name" : "计划结束详情",
+      "children" : [ {
+        "name" : "老师端计划结束详情",
+        "uid" : "774c2bde5b8b56ba",
+        "parentUid" : "8225684dce704078511ad8565b4fc57a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656423875,
+          "stop" : 1640656423968,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '老师端计划结束详情', 'request': {'method': 'get', 'url': '/v1/plan/end/detail', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'title': '计划终止'}}" ]
+      } ],
+      "uid" : "8225684dce704078511ad8565b4fc57a"
+    } ],
+    "uid" : "87a076662840da38154cc17bf29cb3dc"
+  }, {
+    "name" : "运动模块",
+    "children" : [ {
+      "name" : "运动列表--首页",
+      "children" : [ {
+        "name" : "运动列表页面接口",
+        "uid" : "a70c36e916209594",
+        "parentUid" : "891b0de2994bcb2ae70b45d3b52f4baa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425863,
+          "stop" : 1640656425920,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '运动列表页面接口', 'request': {'method': 'get', 'url': '/v1/sports/listSports', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "891b0de2994bcb2ae70b45d3b52f4baa"
+    }, {
+      "name" : "预计消耗",
+      "children" : [ {
+        "name" : "跳绳半分钟--预计消耗",
+        "uid" : "9c7a4b1a79d15a97",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656425935,
+          "stop" : 1640656426009,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳半分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '00:30'}}, 'expect': {'msg': '成功', 'totalCalories': 6.9}}" ]
+      }, {
+        "name" : "跳绳1分钟--预计消耗",
+        "uid" : "a44124f8e28fd843",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426023,
+          "stop" : 1640656426091,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳1分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '01:00'}}, 'expect': {'msg': '成功', 'totalCalories': 13.8}}" ]
+      }, {
+        "name" : "跳绳2分钟--预计消耗",
+        "uid" : "b333cc10f80a2a3d",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426107,
+          "stop" : 1640656426171,
+          "duration" : 64
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳2分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '02:00'}}, 'expect': {'msg': '成功', 'totalCalories': 27.6}}" ]
+      }, {
+        "name" : "跳绳3分钟--预计消耗",
+        "uid" : "6d6b341c061395c3",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426186,
+          "stop" : 1640656426262,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳3分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '03:00'}}, 'expect': {'msg': '成功', 'totalCalories': 41.4}}" ]
+      }, {
+        "name" : "跳绳4分钟--预计消耗",
+        "uid" : "995178946b033fc2",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426285,
+          "stop" : 1640656426374,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳4分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '04:00'}}, 'expect': {'msg': '成功', 'totalCalories': 55.2}}" ]
+      }, {
+        "name" : "跳绳5分钟--预计消耗",
+        "uid" : "61fc3412c43a96d2",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426393,
+          "stop" : 1640656426454,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳5分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '05:00'}}, 'expect': {'msg': '成功', 'totalCalories': 69.0}}" ]
+      }, {
+        "name" : "跳绳100个--预计消耗",
+        "uid" : "466e681f71d632cb",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426472,
+          "stop" : 1640656426537,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳100个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 100}}, 'expect': {'msg': '成功', 'totalCalories': 11.5}}" ]
+      }, {
+        "name" : "跳绳200个--预计消耗",
+        "uid" : "4706fb8ff85689f1",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426553,
+          "stop" : 1640656426625,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳200个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 200}}, 'expect': {'msg': '成功', 'totalCalories': 23.0}}" ]
+      }, {
+        "name" : "跳绳300个--预计消耗",
+        "uid" : "f23ead40a7ebf455",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426641,
+          "stop" : 1640656426706,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳300个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 300}}, 'expect': {'msg': '成功', 'totalCalories': 34.5}}" ]
+      }, {
+        "name" : "跳绳400个--预计消耗",
+        "uid" : "4be1cd0d9503a4e7",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426723,
+          "stop" : 1640656426789,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳400个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 400}}, 'expect': {'msg': '成功', 'totalCalories': 46.0}}" ]
+      }, {
+        "name" : "跳绳500个--预计消耗",
+        "uid" : "f295e8af951bc380",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426806,
+          "stop" : 1640656426875,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳500个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 500}}, 'expect': {'msg': '成功', 'totalCalories': 57.5}}" ]
+      }, {
+        "name" : "跳绳1000个--预计消耗",
+        "uid" : "1b3a5bceb5b5ca38",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426892,
+          "stop" : 1640656426950,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跳绳1000个--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 2, 'score': 1000}}, 'expect': {'msg': '成功', 'totalCalories': 115.0}}" ]
+      }, {
+        "name" : "跑步50m--预计消耗",
+        "uid" : "1a6156357f1fe89f",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656426968,
+          "stop" : 1640656427034,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步50m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 50}}, 'expect': {'msg': '成功', 'totalCalories': 3.125}}" ]
+      }, {
+        "name" : "跑步100m--预计消耗",
+        "uid" : "ade31e7a46b9678f",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427051,
+          "stop" : 1640656427132,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步100m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 100}}, 'expect': {'msg': '成功', 'totalCalories': 6.25}}" ]
+      }, {
+        "name" : "跑步200m--预计消耗",
+        "uid" : "609060e92c3cb4aa",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427150,
+          "stop" : 1640656427223,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步200m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 200}}, 'expect': {'msg': '成功', 'totalCalories': 12.5}}" ]
+      }, {
+        "name" : "跑步300m--预计消耗",
+        "uid" : "15df2229f5ad012c",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427244,
+          "stop" : 1640656427325,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步300m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 300}}, 'expect': {'msg': '成功', 'totalCalories': 18.75}}" ]
+      }, {
+        "name" : "跑步400m--预计消耗",
+        "uid" : "318cf60de67c7015",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427353,
+          "stop" : 1640656427497,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步400m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 400}}, 'expect': {'msg': '成功', 'totalCalories': 25.0}}" ]
+      }, {
+        "name" : "跑步500m--预计消耗",
+        "uid" : "e996cc55a53bb1fb",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427516,
+          "stop" : 1640656427670,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步500m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 500}}, 'expect': {'msg': '成功', 'totalCalories': 31.25}}" ]
+      }, {
+        "name" : "跑步1000m--预计消耗",
+        "uid" : "798f633caf26c40a",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427688,
+          "stop" : 1640656427864,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步1000m--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 2, 'distance': 1000}}, 'expect': {'msg': '成功', 'totalCalories': 62.5}}" ]
+      }, {
+        "name" : "跑步1分钟--预计消耗",
+        "uid" : "93ec9983befd903b",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656427883,
+          "stop" : 1640656428098,
+          "duration" : 215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步1分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '01:00'}}, 'expect': {'msg': '成功', 'totalCalories': 3.6}}" ]
+      }, {
+        "name" : "跑步2分钟--预计消耗",
+        "uid" : "544d979dd2bde825",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656428116,
+          "stop" : 1640656428305,
+          "duration" : 189
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步2分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '02:00'}}, 'expect': {'msg': '成功', 'totalCalories': 7.2}}" ]
+      }, {
+        "name" : "跑步3分钟--预计消耗",
+        "uid" : "1146cd921580d8f5",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656428324,
+          "stop" : 1640656428498,
+          "duration" : 174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步3分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '03:00'}}, 'expect': {'msg': '成功', 'totalCalories': 10.8}}" ]
+      }, {
+        "name" : "跑步4分钟--预计消耗",
+        "uid" : "a8bff7a3dfa57662",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656428518,
+          "stop" : 1640656428674,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步4分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '04:00'}}, 'expect': {'msg': '成功', 'totalCalories': 14.4}}" ]
+      }, {
+        "name" : "跑步5分钟--预计消耗",
+        "uid" : "839d277a5ca4218d",
+        "parentUid" : "873fd38d9cae260089b3f37ca5dba444",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656428693,
+          "stop" : 1640656428842,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '跑步5分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 2, 'mode': 1, 'takeTime': '05:00'}}, 'expect': {'msg': '成功', 'totalCalories': 18.0}}" ]
+      } ],
+      "uid" : "873fd38d9cae260089b3f37ca5dba444"
+    }, {
+      "name" : "提交运动记录",
+      "children" : [ {
+        "name" : "提交运动：计数跳绳200个",
+        "uid" : "4cdf253b58cabb52",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656428861,
+          "stop" : 1640656429085,
+          "duration" : 224
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：计数跳绳200个', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 200, 'takeTime': '01:00', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "提交运动：计时跳绳1分30秒",
+        "uid" : "f9339fb7cfbeeba8",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656429105,
+          "stop" : 1640656429298,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：计时跳绳1分30秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 300, 'takeTime': '01:30', 'speed': 200, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "提交运动：自由跳绳500个，用时2分30秒",
+        "uid" : "4bc4f494c190abb9",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656429318,
+          "stop" : 1640656429489,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：自由跳绳500个，用时2分30秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 500, 'takeTime': '02:30', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      }, {
+        "name" : "提交运动：计时跑步20秒",
+        "uid" : "8f3ef82fb111e214",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656429510,
+          "stop" : 1640656429656,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：计时跑步20秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 200, 'takeTime': '00:20', 'speed': 600, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      }, {
+        "name" : "提交运动：计数跑步300米",
+        "uid" : "1c27afa21777c130",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656429676,
+          "stop" : 1640656429842,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：计数跑步300米', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      }, {
+        "name" : "提交运动：自由跑步300米，用时50秒",
+        "uid" : "2b39c866feece745",
+        "parentUid" : "bc8aa5433c7a1db47212cfb6d8544244",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656429864,
+          "stop" : 1640656430023,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动：自由跑步300米，用时50秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+      } ],
+      "uid" : "bc8aa5433c7a1db47212cfb6d8544244"
+    }, {
+      "name" : "提交运动，获取运动记录id",
+      "children" : [ {
+        "name" : "提交运动，提取响应报文中的recordId",
+        "uid" : "ffc5f47c53d4dc7",
+        "parentUid" : "a9afc1cd585c8d4c02aa2f07da9dcfce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430043,
+          "stop" : 1640656430187,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '提交运动，提取响应报文中的recordId', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 400, 'takeTime': '02:00', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+      } ],
+      "uid" : "a9afc1cd585c8d4c02aa2f07da9dcfce"
+    }, {
+      "name" : "运动成绩",
+      "children" : [ {
+        "name" : "运动成绩",
+        "uid" : "527b751932d1d02f",
+        "parentUid" : "d680b38aafd7b8256424ef37f7988dc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430207,
+          "stop" : 1640656430287,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '运动成绩', 'request': {'method': 'get', 'url': '/v1/sports/getSportsResult', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功', 'realName': 'None'}}" ]
+      } ],
+      "uid" : "d680b38aafd7b8256424ef37f7988dc8"
+    }, {
+      "name" : "运动消耗",
+      "children" : [ {
+        "name" : "运动消耗",
+        "uid" : "d30a483e68251ec0",
+        "parentUid" : "f0b95938a5cf1c24c5935bdb095de010",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430308,
+          "stop" : 1640656430401,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '运动消耗', 'request': {'method': 'get', 'url': '/v1/sports/getSportsBurn', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "f0b95938a5cf1c24c5935bdb095de010"
+    }, {
+      "name" : "运动能力",
+      "children" : [ {
+        "name" : "运动能力",
+        "uid" : "5872d647e825bbe",
+        "parentUid" : "0f3adb05613f681a695a14ff3c112d83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430427,
+          "stop" : 1640656430554,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '运动能力', 'request': {'method': 'get', 'url': '/v1/sports/getSportsLevel', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "0f3adb05613f681a695a14ff3c112d83"
+    }, {
+      "name" : "获取运动视频",
+      "children" : [ {
+        "name" : "获取运动视频",
+        "uid" : "b589a5c4b10bc2c3",
+        "parentUid" : "c3393c57cf2c9b45bcc5341a550658a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430576,
+          "stop" : 1640656430668,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '获取运动视频', 'request': {'method': 'get', 'url': '/v1/sports/getSportsVideo', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "c3393c57cf2c9b45bcc5341a550658a4"
+    }, {
+      "name" : "逻辑删除运动视频记录",
+      "children" : [ {
+        "name" : "逻辑删除运动视频记录",
+        "uid" : "2408ef1bf5238894",
+        "parentUid" : "7068b507d43c54d77f9584a58db6b8b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430690,
+          "stop" : 1640656430768,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '逻辑删除运动视频记录', 'request': {'method': 'post', 'url': '/v1/sports/deleteSportsVideo', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+      } ],
+      "uid" : "7068b507d43c54d77f9584a58db6b8b3"
+    }, {
+      "name" : "我的--运动记录",
+      "children" : [ {
+        "name" : "我的页面--运动记录",
+        "uid" : "4889aa84b9124bdc",
+        "parentUid" : "174e275b2752d867dbfd1837ba1d7108",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430789,
+          "stop" : 1640656430863,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '我的页面--运动记录', 'request': {'method': 'get', 'url': '/v1/sports/listSportsRecord', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'recordId': 'None'}}" ]
+      } ],
+      "uid" : "174e275b2752d867dbfd1837ba1d7108"
+    } ],
+    "uid" : "3c19c79ffc2eab9c9b8ab4af25c4b8e9"
+  }, {
+    "name" : "web后台删除学校模块",
+    "children" : [ {
+      "name" : "删除班级",
+      "children" : [ {
+        "name" : "删除班级",
+        "uid" : "22c4ee41d9e9706f",
+        "parentUid" : "2aa4b7a447c6e0a64ee6ce0e9d539f15",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640656430885,
+          "stop" : 1640656431081,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 13,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2aa4b7a447c6e0a64ee6ce0e9d539f15"
+    }, {
+      "name" : "删除学校",
+      "children" : [ {
+        "name" : "删除学校",
+        "uid" : "f3b5bc1f90815d58",
+        "parentUid" : "42902b38c516211e4501a6a92008f176",
+        "status" : "failed",
+        "time" : {
+          "start" : 1640656431102,
+          "stop" : 1640656431254,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 12,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "42902b38c516211e4501a6a92008f176"
+    } ],
+    "uid" : "fdc2f61628a450b0dfe086024930d7be"
+  } ]
+}

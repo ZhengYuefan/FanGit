@@ -1,0 +1,167 @@
+{
+  "uid" : "2548a697d7dbb86a",
+  "name" : "老师端今日计划详情",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_today_planInfo",
+  "historyId" : "26a9b6fc93cc46b1122b8bb7d7dda20c",
+  "time" : {
+    "start" : 1640348907573,
+    "stop" : 1640348907707,
+    "duration" : 134
+  },
+  "description" : "创建计划时的计划选择条件是接口返回的",
+  "descriptionHtml" : "<p>创建计划时的计划选择条件是接口返回的</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640348902514,
+      "stop" : 1640348902530,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640348907566,
+      "stop" : 1640348907572,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "创建计划时的计划选择条件是接口返回的",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640348907573,
+        "stop" : 1640348907704,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "55ede5c5f0b19aba",
+        "name" : "接口请求参数",
+        "source" : "55ede5c5f0b19aba.attach",
+        "type" : "text/plain",
+        "size" : 413
+      }, {
+        "uid" : "7bd3bcd92577322c",
+        "name" : "接口响应报文",
+        "source" : "7bd3bcd92577322c.attach",
+        "type" : "text/plain",
+        "size" : 4408
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640348907704,
+        "stop" : 1640348907707,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640348907708,
+      "stop" : 1640348907714,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "story",
+    "value" : "今日计划详情"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7320-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planDetail_args",
+    "value" : "{'name': '老师端今日计划详情', 'request': {'method': 'get', 'url': '/v1/plan/detail/dateStr', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None', 'dateStr': '${date_day}'}}, 'expect': {'msg': '成功', 'title': '今日计划目标'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "2548a697d7dbb86a.json",
+  "parameterValues" : [ "{'name': '老师端今日计划详情', 'request': {'method': 'get', 'url': '/v1/plan/detail/dateStr', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None', 'dateStr': '${date_day}'}}, 'expect': {'msg': '成功', 'title': '今日计划目标'}}" ]
+}

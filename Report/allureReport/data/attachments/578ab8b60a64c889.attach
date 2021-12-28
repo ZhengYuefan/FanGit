@@ -1,0 +1,13 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"运动列表页面接口",
+    "request";{
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/sports/listSports"
+    }
+}

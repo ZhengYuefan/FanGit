@@ -1,0 +1,182 @@
+{
+  "uid" : "5577a69e92cb9875",
+  "name" : "学生入班申请接口",
+  "fullName" : "TestCase.test_04_join_class#test_join_class",
+  "historyId" : "fdd6267587c751ad076921b2eb55242f",
+  "time" : {
+    "start" : 1640258296988,
+    "stop" : 1640258297112,
+    "duration" : 124
+  },
+  "description" : "预设学生手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在",
+  "descriptionHtml" : "<p>预设学生手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640258295581,
+      "stop" : 1640258295597,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640258296986,
+      "stop" : 1640258296988,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "预设学生手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "查询数据库",
+      "time" : {
+        "start" : 1640258296988,
+        "stop" : 1640258297059,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640258297059,
+        "stop" : 1640258297105,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "83b83794e2503c4b",
+        "name" : "接口请求参数",
+        "source" : "83b83794e2503c4b.attach",
+        "type" : "text/plain",
+        "size" : 561
+      }, {
+        "uid" : "ca53fa2e56a3189f",
+        "name" : "接口响应参数",
+        "source" : "ca53fa2e56a3189f.attach",
+        "type" : "text/plain",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640258297105,
+        "stop" : 1640258297112,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640258297113,
+      "stop" : 1640258297115,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生申请入班"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "32728-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "joinClass_args",
+    "value" : "{'name': '学生入班申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinClass', 'body': {'schoolId': 'None', 'classId': 'None', 'realName': 'None', 'userRole': 1, 'studentNo': 6666}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'studentName': 'None'}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "5577a69e92cb9875.json",
+  "parameterValues" : [ "{'name': '学生入班申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinClass', 'body': {'schoolId': 'None', 'classId': 'None', 'realName': 'None', 'userRole': 1, 'studentNo': 6666}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'studentName': 'None'}}}" ]
+}

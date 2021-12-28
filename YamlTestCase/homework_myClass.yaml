@@ -1,0 +1,12 @@
+-
+   name: 老师端我的班级--作业记录
+   request:
+      method: get
+      url: /v1/teach/classes/list
+      headers:
+          Authorization: None
+      body:
+          homeworkId: None
+          dateStr: None
+   expect:
+      msg: 成功

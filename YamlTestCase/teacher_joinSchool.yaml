@@ -1,0 +1,19 @@
+-
+   name: 教师入校申请接口
+   request:
+      method: post
+      url: /v1/school/joinSchool
+      body:
+          schoolId: None
+          realName: None
+          classId: None
+          mobile: None
+          validateCode: 1234
+          userRole: 2
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      sql:
+         teacherName: None

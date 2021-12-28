@@ -1,0 +1,10 @@
+-
+   name: 老师端查看计划记录列表
+   request:
+      method: get
+      url: /v1/plan/record
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功
+      planId: ${extract.planId}

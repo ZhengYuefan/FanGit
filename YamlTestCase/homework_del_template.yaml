@@ -1,0 +1,12 @@
+-
+   name: 老师端删除作业模板
+   request:
+      method: get
+      url: /v1/homework/delHomework
+      headers:
+          Authorization: None
+      body:
+          homeworkId: None
+   expect:
+      msg: 成功
+      data: 删除成功

@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "totalCalories";18.0
+    },
+    "name";"跑步5分钟--预计消耗",
+    "request";{
+        "body";{
+            "mode";1,
+            "sportsId";2,
+            "takeTime";"05:00"
+        },
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/sports/getPreBurn"
+    }
+}

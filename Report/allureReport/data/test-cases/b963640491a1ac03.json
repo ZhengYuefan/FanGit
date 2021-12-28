@@ -1,0 +1,267 @@
+{
+  "uid" : "b963640491a1ac03",
+  "name" : "老师端今日计划详情",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_today_planInfo",
+  "historyId" : "26a9b6fc93cc46b1122b8bb7d7dda20c",
+  "time" : {
+    "start" : 1640656423130,
+    "stop" : 1640656423242,
+    "duration" : 112
+  },
+  "description" : "创建计划时的计划选择条件是接口返回的",
+  "descriptionHtml" : "<p>创建计划时的计划选择条件是接口返回的</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656423125,
+      "stop" : 1640656423130,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "创建计划时的计划选择条件是接口返回的",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656423130,
+        "stop" : 1640656423239,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "da19ef7608904ed7",
+        "name" : "接口请求参数",
+        "source" : "da19ef7608904ed7.attach",
+        "type" : "text/plain",
+        "size" : 414
+      }, {
+        "uid" : "67cb65025274849",
+        "name" : "接口响应报文",
+        "source" : "67cb65025274849.attach",
+        "type" : "text/plain",
+        "size" : 4422
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656423239,
+        "stop" : 1640656423242,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656423243,
+      "stop" : 1640656423247,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "story",
+    "value" : "今日计划详情"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planDetail_args",
+    "value" : "{'name': '老师端今日计划详情', 'request': {'method': 'get', 'url': '/v1/plan/detail/dateStr', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None', 'dateStr': '${date_day}'}}, 'expect': {'msg': '成功', 'title': '今日计划目标'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ddd1755891715c8c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601507522,
+        "stop" : 1640601507649,
+        "duration" : 127
+      }
+    }, {
+      "uid" : "73308808ca1cdd4",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'msg'",
+      "time" : {
+        "start" : 1640598445154,
+        "stop" : 1640598445462,
+        "duration" : 308
+      }
+    }, {
+      "uid" : "e68c9e618b45b6e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349508958,
+        "stop" : 1640349509099,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "2548a697d7dbb86a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348907573,
+        "stop" : 1640348907707,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "8e8f534e201d8443",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347990657,
+        "stop" : 1640347990829,
+        "duration" : 172
+      }
+    }, {
+      "uid" : "a50a46a88b4fdf85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262974035,
+        "stop" : 1640262974179,
+        "duration" : 144
+      }
+    }, {
+      "uid" : "eda29650222ef9ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261056361,
+        "stop" : 1640261056501,
+        "duration" : 140
+      }
+    }, {
+      "uid" : "65b7eaa447fe9061",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260249991,
+        "stop" : 1640260250116,
+        "duration" : 125
+      }
+    }, {
+      "uid" : "61ef2b53c5853944",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258300745,
+        "stop" : 1640258300893,
+        "duration" : 148
+      }
+    }, {
+      "uid" : "1e44da0a71c82c3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258190711,
+        "stop" : 1640258190848,
+        "duration" : 137
+      }
+    }, {
+      "uid" : "237a2d4cdd32fa64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249680588,
+        "stop" : 1640249680724,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "79885c7c798466b3",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'msg'",
+      "time" : {
+        "start" : 1640248503382,
+        "stop" : 1640248503447,
+        "duration" : 65
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "b963640491a1ac03.json",
+  "parameterValues" : [ "{'name': '老师端今日计划详情', 'request': {'method': 'get', 'url': '/v1/plan/detail/dateStr', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None', 'dateStr': '${date_day}'}}, 'expect': {'msg': '成功', 'title': '今日计划目标'}}" ]
+}

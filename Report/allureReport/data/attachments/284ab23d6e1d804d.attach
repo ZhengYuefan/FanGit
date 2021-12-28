@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "delete_flag";1
+        }
+    },
+    "name";"删除班级",
+    "request";{
+        "body";{
+            "classId";59725,
+            "updater";null
+        },
+        "headers";{
+            "Content-Type";"application/x-www-form-urlencoded"
+        },
+        "method";"delete",
+        "url";"/v1/manage/school/deleteClasses"
+    }
+}

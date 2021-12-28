@@ -1,0 +1,182 @@
+{
+  "uid" : "545381291b5602cc",
+  "name" : "学生端查询我的主页",
+  "fullName" : "TestCase.test_04_join_class#test_student_home_page",
+  "historyId" : "58d389983bc0c4874022763597ab0033",
+  "time" : {
+    "start" : 1640349505174,
+    "stop" : 1640349505234,
+    "duration" : 60
+  },
+  "description" : "查询学生用户我的主页接口，并且提取userId",
+  "descriptionHtml" : "<p>查询学生用户我的主页接口，并且提取userId</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640349503973,
+      "stop" : 1640349503988,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640349505172,
+      "stop" : 1640349505174,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "查询学生用户我的主页接口，并且提取userId",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640349505174,
+        "stop" : 1640349505231,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "658c07ac07e3459",
+        "name" : "接口请求参数",
+        "source" : "658c07ac07e3459.attach",
+        "type" : "text/plain",
+        "size" : 280
+      }, {
+        "uid" : "45f14e6e803552d3",
+        "name" : "接口响应参数",
+        "source" : "45f14e6e803552d3.attach",
+        "type" : "text/plain",
+        "size" : 3211
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640349505231,
+        "stop" : 1640349505232,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取student_userId",
+      "time" : {
+        "start" : 1640349505232,
+        "stop" : 1640349505234,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640349505235,
+      "stop" : 1640349505237,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生端我的主页"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "32580-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homePage_args",
+    "value" : "{'name': '学生端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "545381291b5602cc.json",
+  "parameterValues" : [ "{'name': '学生端查询我的主页', 'request': {'method': 'get', 'url': '/v1/user/homepage', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

@@ -1,0 +1,265 @@
+{
+  "uid" : "2b39c866feece745",
+  "name" : "提交运动：自由跑步300米，用时50秒",
+  "fullName" : "TestCase.test_08_sports#test_sports_submit",
+  "historyId" : "1995b993fff34b843bbc54c886da9a73",
+  "time" : {
+    "start" : 1640656429864,
+    "stop" : 1640656430023,
+    "duration" : 159
+  },
+  "description" : "提交运动记录，包括计时、计数、自由模式的跳绳、跑步",
+  "descriptionHtml" : "<p>提交运动记录，包括计时、计数、自由模式的跳绳、跑步</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656429854,
+      "stop" : 1640656429863,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "提交运动记录，包括计时、计数、自由模式的跳绳、跑步",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656429864,
+        "stop" : 1640656429995,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b0b4d39db4e45524",
+        "name" : "接口请求参数",
+        "source" : "b0b4d39db4e45524.attach",
+        "type" : "text/plain",
+        "size" : 567
+      }, {
+        "uid" : "66398741e41987c6",
+        "name" : "接口响应报文",
+        "source" : "66398741e41987c6.attach",
+        "type" : "text/plain",
+        "size" : 159
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656429995,
+        "stop" : 1640656430023,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656430024,
+      "stop" : 1640656430033,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "提交运动记录"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsSubmit_args",
+    "value" : "{'name': '提交运动：自由跑步300米，用时50秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "68ddf5db49469a9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601514356,
+        "stop" : 1640601514508,
+        "duration" : 152
+      }
+    }, {
+      "uid" : "49eed5ed68f7cdbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598463270,
+        "stop" : 1640598463759,
+        "duration" : 489
+      }
+    }, {
+      "uid" : "88bc48ef1b10b6ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349515087,
+        "stop" : 1640349515265,
+        "duration" : 178
+      }
+    }, {
+      "uid" : "464ae5eddecd96a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348913868,
+        "stop" : 1640348914009,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "ed1ad7dd8121fe9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347996714,
+        "stop" : 1640347996846,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "ac6d84a3a95aeec2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262979744,
+        "stop" : 1640262979867,
+        "duration" : 123
+      }
+    }, {
+      "uid" : "30d79f8b07f13f2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261061585,
+        "stop" : 1640261061729,
+        "duration" : 144
+      }
+    }, {
+      "uid" : "d710028692c5f0ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260255184,
+        "stop" : 1640260255345,
+        "duration" : 161
+      }
+    }, {
+      "uid" : "4ba8898341d08a02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258306052,
+        "stop" : 1640258306197,
+        "duration" : 145
+      }
+    }, {
+      "uid" : "a4dac106134a9174",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258196314,
+        "stop" : 1640258196446,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "9d4f32531c4505f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249686282,
+        "stop" : 1640249686494,
+        "duration" : 212
+      }
+    }, {
+      "uid" : "5b7f7e75435fb4fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248509396,
+        "stop" : 1640248509549,
+        "duration" : 153
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "2b39c866feece745.json",
+  "parameterValues" : [ "{'name': '提交运动：自由跑步300米，用时50秒', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 2, 'distance': 300, 'takeTime': '00:50', 'speed': 200, 'mode': 3}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 2}}}" ]
+}

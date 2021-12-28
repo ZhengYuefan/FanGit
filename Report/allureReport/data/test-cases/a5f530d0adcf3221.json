@@ -1,0 +1,164 @@
+{
+  "uid" : "a5f530d0adcf3221",
+  "name" : "更新教师审批状态接口",
+  "fullName" : "TestCase.test_03_join_school#test_update_teacher_review",
+  "historyId" : "5e18db52cf2aa896710c29f055ce8482",
+  "time" : {
+    "start" : 1640598431657,
+    "stop" : 1640598432166,
+    "duration" : 509
+  },
+  "description" : "web管理后台admin更新教师申请状态为通过，并且通过查询数据库该申请记录，验证通过申请",
+  "descriptionHtml" : "<p>web管理后台admin更新教师申请状态为通过，并且通过查询数据库该申请记录，验证通过申请</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598431655,
+      "stop" : 1640598431657,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "web管理后台admin更新教师申请状态为通过，并且通过查询数据库该申请记录，验证通过申请",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598431657,
+        "stop" : 1640598432043,
+        "duration" : 386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5372c66f0af102ad",
+        "name" : "接口请求参数",
+        "source" : "5372c66f0af102ad.attach",
+        "type" : "text/plain",
+        "size" : 476
+      }, {
+        "uid" : "f2bc0506e62f2346",
+        "name" : "接口响应报文",
+        "source" : "f2bc0506e62f2346.attach",
+        "type" : "text/plain",
+        "size" : 84
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598432043,
+        "stop" : 1640598432166,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598432167,
+      "stop" : 1640598432168,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin通过教师申请"
+  }, {
+    "name" : "feature",
+    "value" : "教师入校申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_join_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_03_join_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinSchool" ]
+  },
+  "source" : "a5f530d0adcf3221.json",
+  "parameterValues" : [ ]
+}

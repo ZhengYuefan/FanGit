@@ -1,0 +1,170 @@
+{
+  "uid" : "c56a9f8db6f0e78a",
+  "name" : "学生审批列表接口",
+  "fullName" : "TestCase.test_04_join_class#test_student_review_list",
+  "historyId" : "5ec549a23628b22fc56552102270bc9e",
+  "time" : {
+    "start" : 1640249677320,
+    "stop" : 1640249677368,
+    "duration" : 48
+  },
+  "description" : "查询学生列表页面，是否存在通过申请的学生",
+  "descriptionHtml" : "<p>查询学生列表页面，是否存在通过申请的学生</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "@allure.feature('学生入班申请模块')\n    # @pytest.mark.run(order=12)\n    @pytest.mark.joinClass\n    def test_student_review_list():\n        \"\"\"查询学生列表页面，是否存在通过申请的学生\"\"\"\n        args = args_all['listStudentReview']\n        allure.dynamic.story('web管理学生列表查询')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['reviewTeacher'] = read_user_defined_variable()['name']['teacher_name']\n            body['reviewStudent'] = read_user_defined_variable()['name']['student_name']\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n            if res['msg'] == '成功':\n                records_list = res['data']['records']\n                for i in records_list:\n                    expect_value = read_user_defined_variable()['name']['student_name']\n                    if i['reviewId'] == read_extract_yaml()['student_review_id']:\n                        studentName = i['studentName']\n>                       AssertUtil().assert_body(studentName, expect_value)\n\nTestCase\\test_04_join_class.py:250: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000017B041F3B80>\nbody = '郑学生', expected_body = '学生'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640249675876,
+      "stop" : 1640249675891,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640249677317,
+      "stop" : 1640249677319,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "查询学生列表页面，是否存在通过申请的学生",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "@allure.feature('学生入班申请模块')\n    # @pytest.mark.run(order=12)\n    @pytest.mark.joinClass\n    def test_student_review_list():\n        \"\"\"查询学生列表页面，是否存在通过申请的学生\"\"\"\n        args = args_all['listStudentReview']\n        allure.dynamic.story('web管理学生列表查询')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['reviewTeacher'] = read_user_defined_variable()['name']['teacher_name']\n            body['reviewStudent'] = read_user_defined_variable()['name']['student_name']\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n            if res['msg'] == '成功':\n                records_list = res['data']['records']\n                for i in records_list:\n                    expect_value = read_user_defined_variable()['name']['student_name']\n                    if i['reviewId'] == read_extract_yaml()['student_review_id']:\n                        studentName = i['studentName']\n>                       AssertUtil().assert_body(studentName, expect_value)\n\nTestCase\\test_04_join_class.py:250: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000017B041F3B80>\nbody = '郑学生', expected_body = '学生'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640249677320,
+        "stop" : 1640249677361,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a5168227bb04dbbf",
+        "name" : "接口请求参数",
+        "source" : "a5168227bb04dbbf.attach",
+        "type" : "text/plain",
+        "size" : 472
+      }, {
+        "uid" : "b7dc58f2cc95e7c3",
+        "name" : "接口响应报文",
+        "source" : "b7dc58f2cc95e7c3.attach",
+        "type" : "text/plain",
+        "size" : 4340
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640249677361,
+        "stop" : 1640249677367,
+        "duration" : 6
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_04_join_class.py\", line 250, in test_student_review_list\n    AssertUtil().assert_body(studentName, expect_value)\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640249677437,
+      "stop" : 1640249677440,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "web管理学生列表查询"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "c56a9f8db6f0e78a.json",
+  "parameterValues" : [ ]
+}

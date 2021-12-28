@@ -1,0 +1,47 @@
+{
+    "code";1,
+    "data";[
+        {
+            "actionVal";"165.1/50",
+            "evaluate";"D",
+            "id";"1474352463908835328",
+            "status";"3",
+            "title";"每日目标-卡路里",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1474352463908835328&type=2"
+        },
+        {
+            "actionVal";"800.00/200",
+            "evaluate";"D",
+            "id";"1474352463619428352",
+            "status";"3",
+            "title";"每日目标-跑步",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1474352463619428352&type=2"
+        },
+        {
+            "actionVal";"1000/100",
+            "evaluate";"D",
+            "id";"1474352463166443520",
+            "status";"3",
+            "title";"每日目标-跳绳",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1474352463166443520&type=2"
+        },
+        {
+            "actionVal";"进行中 评价D",
+            "evaluate";"D",
+            "id";"1474352482284081152",
+            "status";"1",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1474352482284081152&type=3"
+        },
+        {
+            "actionVal";"进行中 评价D",
+            "evaluate";"D",
+            "id";"1474352483529789440",
+            "status";"1",
+            "title";"体育作业",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1474352483529789440&type=3"
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640348911996
+}

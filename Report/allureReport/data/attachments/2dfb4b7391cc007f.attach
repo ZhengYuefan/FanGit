@@ -1,0 +1,27 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "school_name";"None"
+        }
+    },
+    "name";"创建学校",
+    "request";{
+        "body";{
+            "address";"杭州市滨江区江陵路聚光中心",
+            "classList";[
+                {
+                    "classNumber";1,
+                    "gradeName";0
+                }
+            ],
+            "name";"Test测试小学",
+            "type";0
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"put",
+        "url";"/v1/manage/school/addSchool"
+    }
+}

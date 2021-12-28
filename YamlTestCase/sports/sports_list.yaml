@@ -1,0 +1,9 @@
+-
+   name: 运动列表页面接口
+   request:
+      method: get
+      url: /v1/sports/listSports
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功

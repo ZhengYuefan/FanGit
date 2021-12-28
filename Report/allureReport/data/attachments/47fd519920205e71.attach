@@ -1,0 +1,22 @@
+{
+    "code";1,
+    "data";[
+        {
+            "classItems";[
+                {
+                    "classId";60062,
+                    "className";"一年级(1)班",
+                    "gradeId";529,
+                    "gradeName";"一年级",
+                    "schoolId";365,
+                    "schoolName";""
+                }
+            ],
+            "gradeId";529,
+            "gradeName";"一年级",
+            "schoolId";365
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640248512392
+}

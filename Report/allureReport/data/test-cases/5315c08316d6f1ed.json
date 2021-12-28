@@ -1,0 +1,167 @@
+{
+  "uid" : "5315c08316d6f1ed",
+  "name" : "老师端提交运动：计时跳绳",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_execute",
+  "historyId" : "fcbda06b9e694bfb0ab63ab0272402f0",
+  "time" : {
+    "start" : 1640601507757,
+    "stop" : 1640601507955,
+    "duration" : 198
+  },
+  "description" : "老师端提交运动记录，执行每日目标的任务",
+  "descriptionHtml" : "<p>老师端提交运动记录，执行每日目标的任务</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640601501337,
+      "stop" : 1640601501375,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640601507752,
+      "stop" : 1640601507757,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端提交运动记录，执行每日目标的任务",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640601507757,
+        "stop" : 1640601507905,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1e0d20e2a2948d91",
+        "name" : "接口请求参数",
+        "source" : "1e0d20e2a2948d91.attach",
+        "type" : "text/plain",
+        "size" : 553
+      }, {
+        "uid" : "d1184522b63a9ef6",
+        "name" : "接口响应报文",
+        "source" : "d1184522b63a9ef6.attach",
+        "type" : "text/plain",
+        "size" : 159
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640601507905,
+        "stop" : 1640601507954,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640601507955,
+      "stop" : 1640601507960,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "story",
+    "value" : "执行运动计划"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "24684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planExecute_args",
+    "value" : "{'name': '老师端提交运动：计时跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 300, 'takeTime': '01:00', 'speed': 200, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "5315c08316d6f1ed.json",
+  "parameterValues" : [ "{'name': '老师端提交运动：计时跳绳', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 300, 'takeTime': '01:00', 'speed': 200, 'mode': 1}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+}

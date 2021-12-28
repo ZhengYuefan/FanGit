@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"运动能力",
+    "request";{
+        "body";{
+            "sportsId";1
+        },
+        "headers";{
+            "Authorization";"NzJmMDM1ZDQtMDQ5Yy00ZDExLThiNjctZTM0ZDNmNzZhMWRk"
+        },
+        "method";"get",
+        "url";"/v1/sports/getSportsLevel"
+    }
+}

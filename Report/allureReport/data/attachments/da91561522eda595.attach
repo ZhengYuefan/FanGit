@@ -1,0 +1,22 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "delete_flag";1
+        }
+    },
+    "name";"删除教师审批记录接口",
+    "request";{
+        "body";{
+            "operator";"admin",
+            "reviewIds";[
+                192
+            ]
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"delete",
+        "url";"/v1/manage/review/deleteTeacherReview"
+    }
+}

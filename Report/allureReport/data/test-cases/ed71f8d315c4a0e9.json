@@ -1,0 +1,167 @@
+{
+  "uid" : "ed71f8d315c4a0e9",
+  "name" : "查看任务首页的每日目标完成进度",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_query_task_speed",
+  "historyId" : "71007c7bec51969f3e83f327cfc85935",
+  "time" : {
+    "start" : 1640260249344,
+    "stop" : 1640260249519,
+    "duration" : 175
+  },
+  "description" : "学生端再次查看任务首页，验证提交运动记录后是否跳绳、跑步、卡路里全部完成进度都是100%",
+  "descriptionHtml" : "<p>学生端再次查看任务首页，验证提交运动记录后是否跳绳、跑步、卡路里全部完成进度都是100%</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640260244830,
+      "stop" : 1640260244846,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640260249338,
+      "stop" : 1640260249344,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端再次查看任务首页，验证提交运动记录后是否跳绳、跑步、卡路里全部完成进度都是100%",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640260249344,
+        "stop" : 1640260249512,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b3702113689358a3",
+        "name" : "接口请求参数",
+        "source" : "b3702113689358a3.attach",
+        "type" : "text/plain",
+        "size" : 411
+      }, {
+        "uid" : "1251b50667db5ee8",
+        "name" : "接口请求参数",
+        "source" : "1251b50667db5ee8.attach",
+        "type" : "text/plain",
+        "size" : 5034
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640260249512,
+        "stop" : 1640260249518,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640260249519,
+      "stop" : 1640260249523,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "查看任务完成进度"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "29852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "queryTaskSpeed_args",
+    "value" : "{'name': '学生端任务页首页每日目标：卡路里', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '卡路里', 'fulfilSpeed': 100}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "ed71f8d315c4a0e9.json",
+  "parameterValues" : [ "{'name': '学生端任务页首页每日目标：卡路里', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'taskName': '卡路里', 'fulfilSpeed': 100}}" ]
+}

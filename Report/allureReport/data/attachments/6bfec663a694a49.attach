@@ -1,0 +1,18 @@
+{
+    "code";1,
+    "data";{
+        "distsMap";{
+            "糖分";0.97,
+            "脂肪";0.03
+        },
+        "dynamiCalories";3.42,
+        "evaluate";"评价：强度较低",
+        "myBurn";0.06,
+        "normBurn";0.15,
+        "remark";"运动强度较低,适当休息1分钟可以继续进行运动。",
+        "staticCalories";0.18,
+        "totalCalories";3.6
+    },
+    "msg";"成功",
+    "timestamp";1640349520225
+}

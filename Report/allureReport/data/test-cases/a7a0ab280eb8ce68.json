@@ -1,0 +1,167 @@
+{
+  "uid" : "a7a0ab280eb8ce68",
+  "name" : "老师端查看计划记录列表",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_recordList",
+  "historyId" : "f7a3f192934b11d5e10333533b39ff35",
+  "time" : {
+    "start" : 1640261056142,
+    "stop" : 1640261056187,
+    "duration" : 45
+  },
+  "description" : "查看计划记录页面列表中是否存在本次创建的任务计划",
+  "descriptionHtml" : "<p>查看计划记录页面列表中是否存在本次创建的任务计划</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640261051571,
+      "stop" : 1640261051597,
+      "duration" : 26
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640261056135,
+      "stop" : 1640261056142,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "查看计划记录页面列表中是否存在本次创建的任务计划",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640261056143,
+        "stop" : 1640261056181,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c79575cf3155ca7e",
+        "name" : "接口请求参数",
+        "source" : "c79575cf3155ca7e.attach",
+        "type" : "text/plain",
+        "size" : 322
+      }, {
+        "uid" : "c7943cf2999d0147",
+        "name" : "接口响应报文",
+        "source" : "c7943cf2999d0147.attach",
+        "type" : "text/plain",
+        "size" : 233
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640261056182,
+        "stop" : 1640261056187,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640261056188,
+      "stop" : 1640261056192,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "story",
+    "value" : "计划记录列表"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "25960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planRecord_args",
+    "value" : "{'name': '老师端查看计划记录列表', 'request': {'method': 'get', 'url': '/v1/plan/record', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': '${extract.planId}'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "a7a0ab280eb8ce68.json",
+  "parameterValues" : [ "{'name': '老师端查看计划记录列表', 'request': {'method': 'get', 'url': '/v1/plan/record', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': '${extract.planId}'}}" ]
+}

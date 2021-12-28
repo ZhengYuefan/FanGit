@@ -1,0 +1,12 @@
+mobile:
+   teacher_mobile: 13301206666
+   student_mobile: 13001206666
+name:
+   teacher_name: 郑岳凡
+   student_name: 郑学生
+schoolInfo:
+   school_name: Testing测试学院
+   address: 杭州市滨江区江陵路聚光中心
+currentDate:
+   date_month: 2021-12
+   date_day: 2021-12-28

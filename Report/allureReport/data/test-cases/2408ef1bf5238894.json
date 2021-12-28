@@ -1,0 +1,265 @@
+{
+  "uid" : "2408ef1bf5238894",
+  "name" : "逻辑删除运动视频记录",
+  "fullName" : "TestCase.test_08_sports#test_sports_del_video",
+  "historyId" : "836a606f38b6d2ed5751e1a36db47d03",
+  "time" : {
+    "start" : 1640656430690,
+    "stop" : 1640656430768,
+    "duration" : 78
+  },
+  "description" : "逻辑删除运动视频记录",
+  "descriptionHtml" : "<p>逻辑删除运动视频记录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656430680,
+      "stop" : 1640656430689,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "逻辑删除运动视频记录",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656430690,
+        "stop" : 1640656430766,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "30eb753fdb9a8454",
+        "name" : "接口请求参数",
+        "source" : "30eb753fdb9a8454.attach",
+        "type" : "text/plain",
+        "size" : 400
+      }, {
+        "uid" : "ab52feac968101fd",
+        "name" : "接口响应报文",
+        "source" : "ab52feac968101fd.attach",
+        "type" : "text/plain",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656430766,
+        "stop" : 1640656430768,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656430768,
+      "stop" : 1640656430778,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "逻辑删除运动视频记录"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsDelVideo_args",
+    "value" : "{'name': '逻辑删除运动视频记录', 'request': {'method': 'post', 'url': '/v1/sports/deleteSportsVideo', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e113639219d63685",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601515236,
+        "stop" : 1640601515337,
+        "duration" : 101
+      }
+    }, {
+      "uid" : "ac6dda549282d65b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598465445,
+        "stop" : 1640598465722,
+        "duration" : 277
+      }
+    }, {
+      "uid" : "248c56246e534066",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349515857,
+        "stop" : 1640349515913,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "a764e2557984d646",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348914571,
+        "stop" : 1640348914653,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "7bb76cc3b3c06532",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347997348,
+        "stop" : 1640347997406,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "8a04ac37909cfda3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262980381,
+        "stop" : 1640262980445,
+        "duration" : 64
+      }
+    }, {
+      "uid" : "f4fb55a734217697",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261062298,
+        "stop" : 1640261062359,
+        "duration" : 61
+      }
+    }, {
+      "uid" : "1e7820df8e978d08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260255889,
+        "stop" : 1640260255949,
+        "duration" : 60
+      }
+    }, {
+      "uid" : "56be4e074f15ec77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258306716,
+        "stop" : 1640258306768,
+        "duration" : 52
+      }
+    }, {
+      "uid" : "8501b532307c4dbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258196984,
+        "stop" : 1640258197041,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "e7b1045b8336faf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249687044,
+        "stop" : 1640249687097,
+        "duration" : 53
+      }
+    }, {
+      "uid" : "d6d693c6457e7e01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248510116,
+        "stop" : 1640248510174,
+        "duration" : 58
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "2408ef1bf5238894.json",
+  "parameterValues" : [ "{'name': '逻辑删除运动视频记录', 'request': {'method': 'post', 'url': '/v1/sports/deleteSportsVideo', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

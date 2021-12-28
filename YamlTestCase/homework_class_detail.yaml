@@ -1,0 +1,13 @@
+-
+   name: 班级作业详情
+   request:
+      method: get
+      url: /v1/homework/task/clazz/work/detail
+      headers:
+          Authorization: None
+      body:
+          classId: None
+          dateStr: None
+          relationId: None
+   expect:
+      msg: 成功

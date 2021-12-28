@@ -1,0 +1,11 @@
+-
+   name: 学生端任务页首页作业完成进度
+   request:
+      method: get
+      url: /v1/planTask/listTask
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功
+      planId: None
+      fulfilSpeed: 大于0

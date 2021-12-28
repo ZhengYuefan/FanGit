@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功",
+        "taskName";"跳绳"
+    },
+    "name";"学生端查询当前月份有任务的日期",
+    "request";{
+        "body";{
+            "date";"2021-12"
+        },
+        "headers";{
+            "Authorization";"MzAwODk4YTAtNTdlYy00N2NlLWE0MGItOTI5NzhlMDQxYjA5"
+        },
+        "method";"get",
+        "url";"/v1/planTask/listTaskByMonth"
+    }
+}

@@ -1,0 +1,167 @@
+{
+  "uid" : "ffc5c3ed599658ac",
+  "name" : "我的页面--运动记录",
+  "fullName" : "TestCase.test_08_sports#test_sports_mine_record",
+  "historyId" : "4db481685e8fac753a303827735c2b97",
+  "time" : {
+    "start" : 1640249687118,
+    "stop" : 1640249687174,
+    "duration" : 56
+  },
+  "description" : "我的页面--运动记录",
+  "descriptionHtml" : "<p>我的页面--运动记录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640249675876,
+      "stop" : 1640249675891,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640249687109,
+      "stop" : 1640249687117,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "我的页面--运动记录",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640249687118,
+        "stop" : 1640249687170,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cc0af20276c40808",
+        "name" : "接口请求参数",
+        "source" : "cc0af20276c40808.attach",
+        "type" : "text/plain",
+        "size" : 420
+      }, {
+        "uid" : "2c4f7f350246446d",
+        "name" : "接口响应报文",
+        "source" : "2c4f7f350246446d.attach",
+        "type" : "text/plain",
+        "size" : 1036
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640249687170,
+        "stop" : 1640249687174,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640249687175,
+      "stop" : 1640249687184,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "我的--运动记录"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsMyRecord_args",
+    "value" : "{'name': '我的页面--运动记录', 'request': {'method': 'get', 'url': '/v1/sports/listSportsRecord', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'recordId': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "ffc5c3ed599658ac.json",
+  "parameterValues" : [ "{'name': '我的页面--运动记录', 'request': {'method': 'get', 'url': '/v1/sports/listSportsRecord', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'recordId': 'None'}}" ]
+}

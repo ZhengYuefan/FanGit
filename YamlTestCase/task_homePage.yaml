@@ -1,0 +1,38 @@
+-
+   name: 学生端任务页首页每日目标：跳绳
+   request:
+      method: get
+      url: /v1/planTask/listTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      taskName: 跳绳
+      fulfilSpeed: 100
+
+-
+   name: 学生端任务页首页每日目标：跑步
+   request:
+      method: get
+      url: /v1/planTask/listTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      taskName: 跑步
+      fulfilSpeed: 100
+
+-
+   name: 学生端任务页首页每日目标：卡路里
+   request:
+      method: get
+      url: /v1/planTask/listTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功
+      taskName: 卡路里
+      fulfilSpeed: 100

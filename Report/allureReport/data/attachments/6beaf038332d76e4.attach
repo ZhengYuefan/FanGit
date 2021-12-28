@@ -1,0 +1,13 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"老师端作业选择条件",
+    "request";{
+        "headers";{
+            "Authorization";"YTEyNTgzNjItOTI0ZS00ZjE5LTg3YWMtMTBkMmFiYzRjYjc5"
+        },
+        "method";"get",
+        "url";"/v1/homework/listSportNew"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "homeworkId";"None",
+        "msg";"成功"
+    },
+    "name";"老师端历史作业记录",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10
+        },
+        "headers";{
+            "Authorization";"NGU1YTc5MjItYzc4Ny00YjQ3LWIzYzQtZDc3Njc5NTNiMTg1",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/homework/teach/history/list"
+    }
+}

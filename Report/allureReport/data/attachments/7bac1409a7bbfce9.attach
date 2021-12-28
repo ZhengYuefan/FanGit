@@ -1,0 +1,31 @@
+{
+    "code";1,
+    "data";[
+        {
+            "actionVal";"0/100",
+            "evaluate";"D",
+            "id";"1473995876958605312",
+            "status";"1",
+            "title";"每日目标-跳绳",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473995876958605312&type=2"
+        },
+        {
+            "actionVal";"0/200",
+            "evaluate";"D",
+            "id";"1473995877294149632",
+            "status";"1",
+            "title";"每日目标-跑步",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473995877294149632&type=2"
+        },
+        {
+            "actionVal";"0/50",
+            "evaluate";"D",
+            "id";"1473995877600333824",
+            "status";"1",
+            "title";"每日目标-卡路里",
+            "url";"http://192.168.0.214:9100/gms/physicalmaster_web/index.html?pageId=16&id=1473995877600333824&type=2"
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640262978136
+}

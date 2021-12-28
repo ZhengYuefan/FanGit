@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"老师端查询班级列表",
+    "request";{
+        "body";{
+            "schoolId";369
+        },
+        "headers";{
+            "Authorization";"ODJjZDBlMTMtNzNhZi00ZmJjLTg3NWEtYzJhNzc3MDUwYjY5"
+        },
+        "method";"get",
+        "url";"/v1/school/listClass"
+    }
+}

@@ -1,0 +1,167 @@
+{
+  "uid" : "dcc3f14354ba1ddb",
+  "name" : "老师端调整计划顺序",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_change_order",
+  "historyId" : "ee2ff771ec0d113c1ed31b6190100e9e",
+  "time" : {
+    "start" : 1640349509111,
+    "stop" : 1640349509223,
+    "duration" : 112
+  },
+  "description" : "老师端调整运动计划的顺序",
+  "descriptionHtml" : "<p>老师端调整运动计划的顺序</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640349503973,
+      "stop" : 1640349503988,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640349509106,
+      "stop" : 1640349509110,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端调整运动计划的顺序",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640349509111,
+        "stop" : 1640349509220,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1640ef882ee87d7f",
+        "name" : "接口请求参数",
+        "source" : "1640ef882ee87d7f.attach",
+        "type" : "text/plain",
+        "size" : 650
+      }, {
+        "uid" : "3e43bf37ce37d007",
+        "name" : "接口响应报文",
+        "source" : "3e43bf37ce37d007.attach",
+        "type" : "text/plain",
+        "size" : 94
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640349509220,
+        "stop" : 1640349509223,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640349509224,
+      "stop" : 1640349509228,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "调换计划顺序"
+  }, {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "32580-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planExchangeOrder_args",
+    "value" : "{'name': '老师端调整计划顺序', 'request': {'method': 'put', 'url': '/v1/plan/item', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'list': [{'id': 'None', 'title': 'None'}, {'id': 'None', 'title': 'None'}]}}, 'expect': {'msg': '成功', 'data': '修改成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "dcc3f14354ba1ddb.json",
+  "parameterValues" : [ "{'name': '老师端调整计划顺序', 'request': {'method': 'put', 'url': '/v1/plan/item', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'list': [{'id': 'None', 'title': 'None'}, {'id': 'None', 'title': 'None'}]}}, 'expect': {'msg': '成功', 'data': '修改成功'}}" ]
+}

@@ -1,0 +1,9 @@
+-
+   name: 老师端作业选择条件
+   request:
+      method: get
+      url: /v1/homework/listSportNew
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功

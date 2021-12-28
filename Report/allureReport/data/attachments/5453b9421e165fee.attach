@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sportTeacher";"郑岳凡"
+        }
+    },
+    "name";"老师端查询班级列表",
+    "request";{
+        "body";{
+            "schoolId";367
+        },
+        "headers";{
+            "Authorization";"ZTg5NGQ3ZWItN2JlMS00YTdiLWE2YWQtMmZiYzU4MjI3MmU3"
+        },
+        "method";"get",
+        "url";"/v1/school/listClass"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "createTime";"None",
+        "msg";"成功"
+    },
+    "name";"学生端我的--任务记录",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10
+        },
+        "headers";{
+            "Authorization";"MjE0OWU0NmItOTcwMi00ODUzLWEwYTgtODhmYmEwYjg3NTVi",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/homework/queryTask"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "studentName";"None"
+        }
+    },
+    "name";"学生入班申请接口",
+    "request";{
+        "body";{
+            "classId";60067,
+            "realName";"郑学",
+            "schoolId";370,
+            "studentNo";6666,
+            "userRole";1
+        },
+        "headers";{
+            "Authorization";"NDIyMmM3MmYtZjAzZS00NDI3LTkzNDUtZWNlY2Q5NmVmOTEz",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/school/joinClass"
+    }
+}

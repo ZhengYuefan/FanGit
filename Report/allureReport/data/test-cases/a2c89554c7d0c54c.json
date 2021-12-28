@@ -1,0 +1,182 @@
+{
+  "uid" : "a2c89554c7d0c54c",
+  "name" : "老师端根据计划Id获取计划信息",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_get_planInfo",
+  "historyId" : "add8ac737c87f466c9672b8aa7e71c8b",
+  "time" : {
+    "start" : 1640249680382,
+    "stop" : 1640249680490,
+    "duration" : 108
+  },
+  "description" : "根据计划id获取计划信息，提取计划中单个计划的id和title",
+  "descriptionHtml" : "<p>根据计划id获取计划信息，提取计划中单个计划的id和title</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640249675876,
+      "stop" : 1640249675891,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640249680377,
+      "stop" : 1640249680381,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "根据计划id获取计划信息，提取计划中单个计划的id和title",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640249680382,
+        "stop" : 1640249680486,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b75ee38b2baca34f",
+        "name" : "接口请求参数",
+        "source" : "b75ee38b2baca34f.attach",
+        "type" : "text/plain",
+        "size" : 370
+      }, {
+        "uid" : "e8190c9de6ca0377",
+        "name" : "接口响应报文",
+        "source" : "e8190c9de6ca0377.attach",
+        "type" : "text/plain",
+        "size" : 13771
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640249680486,
+        "stop" : 1640249680489,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取single_plan_id和对应title",
+      "time" : {
+        "start" : 1640249680489,
+        "stop" : 1640249680490,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640249680491,
+      "stop" : 1640249680496,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "根据计划id获取计划信息"
+  }, {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planInfo_args",
+    "value" : "{'name': '老师端根据计划Id获取计划信息', 'request': {'method': 'get', 'url': '/v1/plan/info', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'motionTarget': 23}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "a2c89554c7d0c54c.json",
+  "parameterValues" : [ "{'name': '老师端根据计划Id获取计划信息', 'request': {'method': 'get', 'url': '/v1/plan/info', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'motionTarget': 23}}" ]
+}

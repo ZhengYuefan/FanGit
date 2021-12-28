@@ -1,0 +1,18 @@
+{
+    "expect";{
+        "msg";"成功",
+        "title";"今日计划目标"
+    },
+    "name";"老师端今日计划详情",
+    "request";{
+        "body";{
+            "dateStr";"2021-12-23",
+            "planId";198
+        },
+        "headers";{
+            "Authorization";"YTEyNTgzNjItOTI0ZS00ZjE5LTg3YWMtMTBkMmFiYzRjYjc5"
+        },
+        "method";"get",
+        "url";"/v1/plan/detail/dateStr"
+    }
+}

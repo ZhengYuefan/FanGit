@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "totalCalories";55.2
+    },
+    "name";"跳绳4分钟--预计消耗",
+    "request";{
+        "body";{
+            "mode";1,
+            "sportsId";1,
+            "takeTime";"04:00"
+        },
+        "headers";{
+            "Authorization";"YTEyNTgzNjItOTI0ZS00ZjE5LTg3YWMtMTBkMmFiYzRjYjc5"
+        },
+        "method";"get",
+        "url";"/v1/sports/getPreBurn"
+    }
+}

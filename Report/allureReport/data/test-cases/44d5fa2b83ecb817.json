@@ -1,0 +1,167 @@
+{
+  "uid" : "44d5fa2b83ecb817",
+  "name" : "学生端作业记录详情",
+  "fullName" : "TestCase.test_07_homework#test_homework_stu_homeworkDetail",
+  "historyId" : "6450be78e6ebf390b8d24e47d27e4dcb",
+  "time" : {
+    "start" : 1640601510196,
+    "stop" : 1640601510273,
+    "duration" : 77
+  },
+  "description" : "学生端查看作业记录详情",
+  "descriptionHtml" : "<p>学生端查看作业记录详情</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640601501337,
+      "stop" : 1640601501375,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640601510190,
+      "stop" : 1640601510196,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看作业记录详情",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640601510196,
+        "stop" : 1640601510272,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "41553f8cd5577dca",
+        "name" : "接口请求参数",
+        "source" : "41553f8cd5577dca.attach",
+        "type" : "text/plain",
+        "size" : 369
+      }, {
+        "uid" : "831b3bb3dcfc9d9f",
+        "name" : "接口响应报文",
+        "source" : "831b3bb3dcfc9d9f.attach",
+        "type" : "text/plain",
+        "size" : 2562
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640601510272,
+        "stop" : 1640601510273,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640601510274,
+      "stop" : 1640601510280,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "story",
+    "value" : "学生作业记录详情"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "24684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkStuDetail_args",
+    "value" : "{'name': '学生端作业记录详情', 'request': {'method': 'get', 'url': '/v1/homework/task/stu/record/detail', 'headers': {'Authorization': 'None'}, 'body': {'taskId': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "44d5fa2b83ecb817.json",
+  "parameterValues" : [ "{'name': '学生端作业记录详情', 'request': {'method': 'get', 'url': '/v1/homework/task/stu/record/detail', 'headers': {'Authorization': 'None'}, 'body': {'taskId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

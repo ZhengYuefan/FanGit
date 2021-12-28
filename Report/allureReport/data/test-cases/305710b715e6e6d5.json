@@ -1,0 +1,164 @@
+{
+  "uid" : "305710b715e6e6d5",
+  "name" : "校验学校名称是否重复",
+  "fullName" : "TestCase.test_02_add_school#test_verify_schoolNameNotDuplicated",
+  "historyId" : "1792e86513c859a14b68b5a944193d3d",
+  "time" : {
+    "start" : 1640598428497,
+    "stop" : 1640598428749,
+    "duration" : 252
+  },
+  "description" : "校验学校名称是否已经存在于系统内或数据库内，存在需要删除",
+  "descriptionHtml" : "<p>校验学校名称是否已经存在于系统内或数据库内，存在需要删除</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598428496,
+      "stop" : 1640598428497,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "校验学校名称是否已经存在于系统内或数据库内，存在需要删除",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598428497,
+        "stop" : 1640598428747,
+        "duration" : 250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "193f1288d62401b0",
+        "name" : "接口请求参数",
+        "source" : "193f1288d62401b0.attach",
+        "type" : "text/plain",
+        "size" : 270
+      }, {
+        "uid" : "c794ab8e883e4dcb",
+        "name" : "接口响应报文",
+        "source" : "c794ab8e883e4dcb.attach",
+        "type" : "text/plain",
+        "size" : 118
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598428747,
+        "stop" : 1640598428748,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598428750,
+      "stop" : 1640598428751,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "校验学校名称"
+  }, {
+    "name" : "feature",
+    "value" : "web后台创建学校模块"
+  }, {
+    "name" : "tag",
+    "value" : "addSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_add_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_02_add_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "addSchool" ]
+  },
+  "source" : "305710b715e6e6d5.json",
+  "parameterValues" : [ ]
+}

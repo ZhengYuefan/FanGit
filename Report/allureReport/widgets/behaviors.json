@@ -1,0 +1,103 @@
+{
+  "total" : 9,
+  "items" : [ {
+    "uid" : "fdc2f61628a450b0dfe086024930d7be",
+    "name" : "web后台删除学校模块",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "e306f281a982843960aa9d830c9f03a0",
+    "name" : "作业模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "87a076662840da38154cc17bf29cb3dc",
+    "name" : "任务计划模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "3c19c79ffc2eab9c9b8ab4af25c4b8e9",
+    "name" : "运动模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "8fd5e5dc8f1a6340683fab026758ab1c",
+    "name" : "学生入班申请模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "a5ff3a166c385b907c39c7c1c5549120",
+    "name" : "每日目标模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "670c649093bd4c24fdd5173581cfd892",
+    "name" : "教师入校申请模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "b75f2e9a63e366064967ec571c6dd1fd",
+    "name" : "web后台创建学校模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "05646e648af63fcfbd8167c4ad0a2d02",
+    "name" : "用户登录模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  } ]
+}

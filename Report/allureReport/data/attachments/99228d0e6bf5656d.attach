@@ -1,0 +1,20 @@
+{
+    "expect": {
+        "msg": "成功"
+    },
+    "name": "用户登入接口-v.12  老师",
+    "request": {
+        "body": {
+            "clientIP": "None",
+            "mobile": 13301286666,
+            "uniqueId": "None",
+            "userType": 1,
+            "validateCode": 1234
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "method": "post",
+        "url": "/v1/user/register"
+    }
+}

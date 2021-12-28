@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功",
+        "schoolName";"None"
+    },
+    "name";"学校年级信息查询",
+    "request";{
+        "body";{
+            "schoolId";366
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/manage/school/detail"
+    }
+}

@@ -1,0 +1,170 @@
+{
+  "uid" : "5d27b1608f4cfdb4",
+  "name" : "删除班级",
+  "fullName" : "TestCase.test_09_delete_school#test_delete_class",
+  "historyId" : "b54b0090800c8f9c58b83ade4e1d9236",
+  "time" : {
+    "start" : 1640347997508,
+    "stop" : 1640347997568,
+    "duration" : 60
+  },
+  "description" : "删除班级",
+  "descriptionHtml" : "<p>删除班级</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "@allure.feature('web后台删除学校模块')\n    # @pytest.mark.second_to_last\n    @pytest.mark.deleteSchool\n    def test_delete_class():\n        \"\"\"删除班级\"\"\"\n        args = args_all['deleteClasses']\n        allure.dynamic.story('删除班级')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['classId'] = read_extract_yaml()['class_id']\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n\nTestCase\\test_09_delete_school.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000019D1AA9C640>\nbody = \"Required String parameter 'updater' is not present\"\nexpected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640347985442,
+      "stop" : 1640347985456,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640347997497,
+      "stop" : 1640347997508,
+      "duration" : 11
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "删除班级",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "@allure.feature('web后台删除学校模块')\n    # @pytest.mark.second_to_last\n    @pytest.mark.deleteSchool\n    def test_delete_class():\n        \"\"\"删除班级\"\"\"\n        args = args_all['deleteClasses']\n        allure.dynamic.story('删除班级')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['classId'] = read_extract_yaml()['class_id']\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n\nTestCase\\test_09_delete_school.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000019D1AA9C640>\nbody = \"Required String parameter 'updater' is not present\"\nexpected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640347997508,
+        "stop" : 1640347997556,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ac5c0062add1925",
+        "name" : "接口请求参数",
+        "source" : "5ac5c0062add1925.attach",
+        "type" : "text/plain",
+        "size" : 404
+      }, {
+        "uid" : "afc5f92f99592175",
+        "name" : "接口响应报文",
+        "source" : "afc5f92f99592175.attach",
+        "type" : "text/plain",
+        "size" : 130
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640347997556,
+        "stop" : 1640347997567,
+        "duration" : 11
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_09_delete_school.py\", line 41, in test_delete_class\n    AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640347997572,
+      "stop" : 1640347997582,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除班级"
+  }, {
+    "name" : "feature",
+    "value" : "web后台删除学校模块"
+  }, {
+    "name" : "tag",
+    "value" : "deleteSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_09_delete_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "26324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_09_delete_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "deleteSchool" ]
+  },
+  "source" : "5d27b1608f4cfdb4.json",
+  "parameterValues" : [ ]
+}

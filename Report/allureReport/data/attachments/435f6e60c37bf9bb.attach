@@ -1,0 +1,17 @@
+{
+    "code";1,
+    "data";[
+        {
+            "avatarUrl";"http://125.77.202.90:9010/cervix/header/male.png",
+            "classId";60066,
+            "className";"一年级(1)班",
+            "reviewId";179,
+            "schoolId";369,
+            "studentName";"凡学",
+            "studentNo";"6666",
+            "userId";1082
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640258303385
+}

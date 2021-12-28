@@ -1,0 +1,167 @@
+{
+  "uid" : "8504cff52cca09e1",
+  "name" : "提交运动：计数跳绳200个",
+  "fullName" : "TestCase.test_08_sports#test_sports_submit",
+  "historyId" : "40c4011294e869c2f8b5ba397701e1f8",
+  "time" : {
+    "start" : 1640249685001,
+    "stop" : 1640249685398,
+    "duration" : 397
+  },
+  "description" : "提交运动记录，包括计时、计数、自由模式的跳绳、跑步",
+  "descriptionHtml" : "<p>提交运动记录，包括计时、计数、自由模式的跳绳、跑步</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640249675876,
+      "stop" : 1640249675891,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640249684993,
+      "stop" : 1640249685001,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "提交运动记录，包括计时、计数、自由模式的跳绳、跑步",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640249685001,
+        "stop" : 1640249685379,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "afc27a7b4fea889b",
+        "name" : "接口请求参数",
+        "source" : "afc27a7b4fea889b.attach",
+        "type" : "text/plain",
+        "size" : 550
+      }, {
+        "uid" : "f28d0e79698bc707",
+        "name" : "接口响应报文",
+        "source" : "f28d0e79698bc707.attach",
+        "type" : "text/plain",
+        "size" : 158
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640249685379,
+        "stop" : 1640249685398,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640249685399,
+      "stop" : 1640249685407,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "提交运动记录"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsSubmit_args",
+    "value" : "{'name': '提交运动：计数跳绳200个', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 200, 'takeTime': '01:00', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "8504cff52cca09e1.json",
+  "parameterValues" : [ "{'name': '提交运动：计数跳绳200个', 'request': {'method': 'post', 'url': '/v1/sports/submitSports', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'sportsId': 1, 'score': 200, 'takeTime': '01:00', 'speed': 200, 'mode': 2}}, 'expect': {'msg': '成功', 'sql': {'sports_id': 1}}}" ]
+}

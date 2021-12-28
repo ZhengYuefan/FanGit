@@ -1,0 +1,262 @@
+{
+  "uid" : "40b1778cdaadc08",
+  "name" : "教师列表查询接口",
+  "fullName" : "TestCase.test_03_join_school#test_query_teacher",
+  "historyId" : "094db10715d676cd8f4334979d270441",
+  "time" : {
+    "start" : 1640656419229,
+    "stop" : 1640656419309,
+    "duration" : 80
+  },
+  "description" : "web管理后台admin查询教师列表页面，是否存在通过申请的老师",
+  "descriptionHtml" : "<p>web管理后台admin查询教师列表页面，是否存在通过申请的老师</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656419227,
+      "stop" : 1640656419228,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "web管理后台admin查询教师列表页面，是否存在通过申请的老师",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656419229,
+        "stop" : 1640656419291,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9d96f45a18a7240d",
+        "name" : "接口请求参数",
+        "source" : "9d96f45a18a7240d.attach",
+        "type" : "text/plain",
+        "size" : 439
+      }, {
+        "uid" : "ac6e6bfc3f082685",
+        "name" : "接口响应报文",
+        "source" : "ac6e6bfc3f082685.attach",
+        "type" : "text/plain",
+        "size" : 870
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656419291,
+        "stop" : 1640656419309,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656419310,
+      "stop" : 1640656419312,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin教师列表查询"
+  }, {
+    "name" : "feature",
+    "value" : "教师入校申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_join_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_03_join_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "af7c856c164f2f53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601502781,
+        "stop" : 1640601502861,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "51341146198e3816",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598432626,
+        "stop" : 1640598433056,
+        "duration" : 430
+      }
+    }, {
+      "uid" : "4b6e09a1c8ce587f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349505128,
+        "stop" : 1640349505168,
+        "duration" : 40
+      }
+    }, {
+      "uid" : "b443caae6601325c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348903628,
+        "stop" : 1640348903674,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "63d1bcf351099109",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347986670,
+        "stop" : 1640347986715,
+        "duration" : 45
+      }
+    }, {
+      "uid" : "e2b25e1a95fb4624",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262970173,
+        "stop" : 1640262970219,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "9e488c2298c7db6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261052663,
+        "stop" : 1640261052703,
+        "duration" : 40
+      }
+    }, {
+      "uid" : "5fd4bdd7442c309c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260245991,
+        "stop" : 1640260246034,
+        "duration" : 43
+      }
+    }, {
+      "uid" : "a1332f65e0515308",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258296859,
+        "stop" : 1640258296911,
+        "duration" : 52
+      }
+    }, {
+      "uid" : "b6d8f6c48098ef07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258186602,
+        "stop" : 1640258186648,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "2a78693499c5c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249676867,
+        "stop" : 1640249676913,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "96cc91080f5808eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248499217,
+        "stop" : 1640248499260,
+        "duration" : 43
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "joinSchool" ]
+  },
+  "source" : "40b1778cdaadc08.json",
+  "parameterValues" : [ ]
+}

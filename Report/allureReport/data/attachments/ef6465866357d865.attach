@@ -1,0 +1,19 @@
+{
+    "code";1,
+    "data";{
+        "currentPage";1,
+        "pageSize";10,
+        "records";[
+            {
+                "id";147,
+                "schoolAddress";"杭州市滨江区江陵路聚光中心",
+                "schoolName";"Testing测试学院",
+                "schoolType";0
+            }
+        ],
+        "total";1,
+        "totalPage";1
+    },
+    "msg";"成功",
+    "timestamp";1640601509419
+}

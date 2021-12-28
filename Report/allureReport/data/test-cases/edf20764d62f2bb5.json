@@ -1,0 +1,167 @@
+{
+  "uid" : "edf20764d62f2bb5",
+  "name" : "获取运动视频",
+  "fullName" : "TestCase.test_08_sports#test_sports_video",
+  "historyId" : "e78462b0004a6b9034770f5c9cd04ac3",
+  "time" : {
+    "start" : 1640262980315,
+    "stop" : 1640262980360,
+    "duration" : 45
+  },
+  "description" : "获取运动记录视频地址",
+  "descriptionHtml" : "<p>获取运动记录视频地址</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640262969110,
+      "stop" : 1640262969127,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640262980306,
+      "stop" : 1640262980315,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "获取运动记录视频地址",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640262980315,
+        "stop" : 1640262980359,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d259398a230b5132",
+        "name" : "接口请求参数",
+        "source" : "d259398a230b5132.attach",
+        "type" : "text/plain",
+        "size" : 336
+      }, {
+        "uid" : "68893b37de80edab",
+        "name" : "接口响应报文",
+        "source" : "68893b37de80edab.attach",
+        "type" : "text/plain",
+        "size" : 111
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640262980359,
+        "stop" : 1640262980360,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640262980361,
+      "stop" : 1640262980370,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "获取运动视频"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsVideo_args",
+    "value" : "{'name': '获取运动视频', 'request': {'method': 'get', 'url': '/v1/sports/getSportsVideo', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "edf20764d62f2bb5.json",
+  "parameterValues" : [ "{'name': '获取运动视频', 'request': {'method': 'get', 'url': '/v1/sports/getSportsVideo', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

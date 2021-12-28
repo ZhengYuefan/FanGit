@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "realName";"None"
+    },
+    "name";"学生列表查询接口",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "userNameAndMobile";13001246666
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/manage/school/listStudentPage"
+    }
+}

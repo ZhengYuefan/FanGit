@@ -1,0 +1,14 @@
+{
+    "expect";{
+        "msg";"成功",
+        "planId";"${extract.planId}"
+    },
+    "name";"老师端查看计划记录列表",
+    "request";{
+        "headers";{
+            "Authorization";"ZDMwYmFmNWUtOThiYi00N2YxLWIzOWEtY2RmYmE4ZDE4NTE2"
+        },
+        "method";"get",
+        "url";"/v1/plan/record"
+    }
+}

@@ -1,0 +1,267 @@
+{
+  "uid" : "4c7591a4c1cafeb9",
+  "name" : "学生端查询当前月份有任务的日期",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_query_task_by_month",
+  "historyId" : "ce3995dac140298b0028bc349732c5dd",
+  "time" : {
+    "start" : 1640656421309,
+    "stop" : 1640656421363,
+    "duration" : 54
+  },
+  "description" : "学生端查看日程表当前月份有任务的日期",
+  "descriptionHtml" : "<p>学生端查看日程表当前月份有任务的日期</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656421306,
+      "stop" : 1640656421309,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看日程表当前月份有任务的日期",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656421309,
+        "stop" : 1640656421359,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f743c52523289b51",
+        "name" : "接口请求参数",
+        "source" : "f743c52523289b51.attach",
+        "type" : "text/plain",
+        "size" : 395
+      }, {
+        "uid" : "f34697f8f2643918",
+        "name" : "接口请求参数",
+        "source" : "f34697f8f2643918.attach",
+        "type" : "text/plain",
+        "size" : 108
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656421359,
+        "stop" : 1640656421363,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656421364,
+      "stop" : 1640656421367,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "学生端查询当前月份有任务的日期"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "listTaskByMonth_args",
+    "value" : "{'name': '学生端查询当前月份有任务的日期', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByMonth', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5568e286482c063f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601505157,
+        "stop" : 1640601505241,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "34ec01043e3339cb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640598438863,
+        "stop" : 1640598439152,
+        "duration" : 289
+      }
+    }, {
+      "uid" : "541d9030dfbf7423",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349506565,
+        "stop" : 1640349506638,
+        "duration" : 73
+      }
+    }, {
+      "uid" : "fc520742cc6c717a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348905177,
+        "stop" : 1640348905235,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "3c579928fc0fbbed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347988156,
+        "stop" : 1640347988208,
+        "duration" : 52
+      }
+    }, {
+      "uid" : "b5639bc14f825458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262971748,
+        "stop" : 1640262971804,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "d700c09cefd57f0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261054125,
+        "stop" : 1640261054183,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "58eed837ec022d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260247667,
+        "stop" : 1640260247726,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "c78e4a7612970959",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258298429,
+        "stop" : 1640258298488,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "d5a645335620b2d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258188319,
+        "stop" : 1640258188373,
+        "duration" : 54
+      }
+    }, {
+      "uid" : "7cd8ae5a01a9a578",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249678277,
+        "stop" : 1640249678338,
+        "duration" : 61
+      }
+    }, {
+      "uid" : "7c95fd1f69c97b1c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640248500887,
+        "stop" : 1640248500965,
+        "duration" : 78
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "4c7591a4c1cafeb9.json",
+  "parameterValues" : [ "{'name': '学生端查询当前月份有任务的日期', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByMonth', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功', 'taskName': '跳绳'}}" ]
+}

@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "totalCalories";34.5
+    },
+    "name";"跳绳300个--预计消耗",
+    "request";{
+        "body";{
+            "mode";2,
+            "score";300,
+            "sportsId";1
+        },
+        "headers";{
+            "Authorization";"NjZiNzQ1MDgtMjM1Yi00NmYxLThhMzgtY2NhM2EzMmY1MjM4"
+        },
+        "method";"get",
+        "url";"/v1/sports/getPreBurn"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sports_id";2
+        }
+    },
+    "name";"提交运动：自由跑步300米，用时50秒",
+    "request";{
+        "body";{
+            "distance";300,
+            "mode";3,
+            "speed";200,
+            "sportsId";2,
+            "takeTime";"00:50"
+        },
+        "headers";{
+            "Authorization";"ZDMwYmFmNWUtOThiYi00N2YxLWIzOWEtY2RmYmE4ZDE4NTE2",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/sports/submitSports"
+    }
+}

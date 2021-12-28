@@ -1,0 +1,11 @@
+-
+   name: 学生端查询当前日期的每日目标
+   request:
+      method: get
+      url: /v1/planTask/listTaskByDay
+      headers:
+          Authorization: None
+      body:
+          date: None
+   expect:
+      msg: 成功

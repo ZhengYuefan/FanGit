@@ -1,0 +1,11 @@
+-
+   name: 老师端查询班级列表
+   request:
+      method: get
+      url: /v1/school/listClass
+      body:
+          schoolId: None
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功

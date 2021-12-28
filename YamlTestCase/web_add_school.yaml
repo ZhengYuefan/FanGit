@@ -1,0 +1,198 @@
+getSchoolBySchoolName:
+  name: 校验学校名称是否重复
+  request:
+     method: get
+     url:  /v1/manage/school/getSchoolBySchoolName
+     body:
+        schoolName: None
+  expect:
+     msg: 成功
+
+addSchool:
+  name: 创建学校
+  request:
+     method: put
+     url:  /v1/manage/school/addSchool
+     body:
+        name: None
+        type: 0
+        address: None
+        classList:
+           - gradeName: 0
+             classNumber: 1
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     sql:
+        school_name: None
+
+listSchoolQuery:
+  name: 学校列表查询
+  request:
+     method: post
+     url:  /v1/manage/school/listSchool
+     body:
+        schoolType: 0
+        schoolName: None
+        pageNo: 1
+        pageSize: 10
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     schoolName: None
+
+getGradeDetail:
+  name: 学校年级信息查询
+  request:
+     method: post
+     url:  /v1/manage/school/detail
+     body:
+        schoolId: None
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     schoolName: None
+
+getClassDetail:
+  name: 学校班级信息查询
+  request:
+     method: post
+     url:  /v1/manage/school/getClassDetail
+     body:
+        gradeId: None
+        pageNo: 1
+        pageSize: 10
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     className: 一年级(1)班
+
+
+listTeacherReview:
+  name: 教师申请列表接口
+  request:
+     method: get
+     url: /v1/manage/review/listTeacherReview
+     body:
+        reviewTeacher: None
+        reviewStatus: 0
+        pageNo: 1
+        pageSize: 10
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     teacher_name: None
+
+updateTeacherReviewStatus:
+  name: 更新教师审批状态接口
+  request:
+     method: put
+     url: /v1/manage/review/updateTeacherReviewStatus
+     body:
+        reviewIds:
+            - None
+        operator: admin
+        reviewStatus: 1
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     sql:
+        status: 1
+
+deleteTeacherReview:
+  name: 删除教师审批记录接口
+  request:
+     method: delete
+     url: /v1/manage/review/deleteTeacherReview
+     body:
+        reviewIds: None
+        operator: admin
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     sql:
+        delete_flag: 1
+
+listTeacherQuery:
+  name: 教师列表查询接口
+  request:
+     method: get
+     url: /v1/manage/school/listTeacher
+     body:
+        teacherNameOrMobile: None
+        pageNo: 1
+        pageSize: 10
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     sql:
+       user_name: None
+
+listStudentReview:
+  name: 学生审批列表接口
+  request:
+     method: get
+     url: /v1/manage/review/listStuReview
+     body:
+        reviewTeacher: None
+        reviewStudent: None
+        reviewStatus: 1
+        pageNo: 1
+        pageSize: 10
+     headers:
+        Content-Type: application/json
+  expect:
+     msg: 成功
+     studentName: None
+
+listStudentPage:
+  name: 学生列表查询接口
+  request:
+     method: get
+     url: /v1/manage/school/listStudentPage
+     body:
+        pageNo: 1
+        pageSize: 10
+        userNameAndMobile: None
+     headers:
+        Content-Type: application/json
+  expect:
+    msg: 成功
+    realName: None
+
+deleteClasses:
+  name: 删除班级
+  request:
+     method: delete
+     url: /v1/manage/school/deleteClasses
+     body:
+        classId: None
+        updater: None
+     headers:
+        Content-Type: application/x-www-form-urlencoded
+  expect:
+    msg: 成功
+    sql:
+       delete_flag: 1
+
+deleteSchool:
+  name: 删除学校
+  request:
+     method: delete
+     url: /v1/manage/school/deleteSchool
+     body:
+        schoolId: None
+     headers:
+        Content-Type: application/x-www-form-urlencoded
+  expect:
+    msg: 成功
+    sql:
+       delete_flag: 1

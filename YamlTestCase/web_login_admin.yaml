@@ -1,0 +1,13 @@
+-
+  name: 系统管理员登录
+  request:
+     method: post
+     url:  /v1/manage/login
+     body:
+        userName: admin
+        password: admin
+     headers:
+        Content-Type: application/json;charset=UTF-8
+  expect:
+     msg: 成功
+     code: 1

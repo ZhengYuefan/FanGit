@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "msg";"成功",
+        "teacher_name";"None"
+    },
+    "name";"教师申请列表接口",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "reviewStatus";0,
+            "reviewTeacher";"岳凡"
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/manage/review/listTeacherReview"
+    }
+}

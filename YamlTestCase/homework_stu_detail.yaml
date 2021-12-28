@@ -1,0 +1,15 @@
+-
+   name: 老师查看学生作业详情
+   request:
+      method: post
+      url: /v1/homework/task/stu/detail
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          userId: None
+          pageNo: 1
+          pageSize: 10
+          type: 3
+   expect:
+      msg: 成功

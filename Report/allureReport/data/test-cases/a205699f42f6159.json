@@ -1,0 +1,173 @@
+{
+  "uid" : "a205699f42f6159",
+  "name" : "我的页面--运动记录",
+  "fullName" : "TestCase.test_08_sports#test_sports_mine_record",
+  "historyId" : "4db481685e8fac753a303827735c2b97",
+  "time" : {
+    "start" : 1640248510195,
+    "stop" : 1640248510261,
+    "duration" : 66
+  },
+  "description" : "我的页面--运动记录",
+  "descriptionHtml" : "<p>我的页面--运动记录</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "sportsMyRecord_args = {'expect': {'msg': '成功', 'recordId': 'None'}, 'name': '我的页面--运动记录', 'request': {'body': {'pageNo': 1, 'pageSize': 10, ...rization': 'MTg1ZmRmYTEtN2NhYS00NDY2LWJkOTgtZWEwNzg1ZmIzM2Yw'}, 'method': 'get', 'url': '/v1/sports/listSportsRecord'}}\n\n    @allure.feature('运动模块')\n    @allure.story('我的--运动记录')\n    @pytest.mark.sport\n    @pytest.mark.parametrize(\"sportsMyRecord_args\", sportsMyRecord_args)\n    def test_sports_mine_record(sportsMyRecord_args):\n        \"\"\"我的页面--运动记录\"\"\"\n        allure.dynamic.title(sportsMyRecord_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + sportsMyRecord_args['request']['url']\n            method = sportsMyRecord_args['request']['method']\n            headers = sportsMyRecord_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['teacher_token']\n            body = sportsMyRecord_args['request']['body']\n            lg.info(\"获取的接口请求参数：%s\" % sportsMyRecord_args)\n            allure.attach(json.dumps(sportsMyRecord_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), sportsMyRecord_args['expect']['msg'])\n            date_day = res['data'][0]['recordId']\n            expect_value = read_extract_yaml()['sport_record_id']\n>           AssertUtil().assert_body(date_day, expect_value)\n\nTestCase\\test_08_sports.py:294: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000023E7DD69370>\nbody = 52370, expected_body = 52374\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640248498057,
+      "stop" : 1640248498073,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640248510185,
+      "stop" : 1640248510194,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "我的页面--运动记录",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "sportsMyRecord_args = {'expect': {'msg': '成功', 'recordId': 'None'}, 'name': '我的页面--运动记录', 'request': {'body': {'pageNo': 1, 'pageSize': 10, ...rization': 'MTg1ZmRmYTEtN2NhYS00NDY2LWJkOTgtZWEwNzg1ZmIzM2Yw'}, 'method': 'get', 'url': '/v1/sports/listSportsRecord'}}\n\n    @allure.feature('运动模块')\n    @allure.story('我的--运动记录')\n    @pytest.mark.sport\n    @pytest.mark.parametrize(\"sportsMyRecord_args\", sportsMyRecord_args)\n    def test_sports_mine_record(sportsMyRecord_args):\n        \"\"\"我的页面--运动记录\"\"\"\n        allure.dynamic.title(sportsMyRecord_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + sportsMyRecord_args['request']['url']\n            method = sportsMyRecord_args['request']['method']\n            headers = sportsMyRecord_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['teacher_token']\n            body = sportsMyRecord_args['request']['body']\n            lg.info(\"获取的接口请求参数：%s\" % sportsMyRecord_args)\n            allure.attach(json.dumps(sportsMyRecord_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n            AssertUtil().assert_body(str(res['msg']), sportsMyRecord_args['expect']['msg'])\n            date_day = res['data'][0]['recordId']\n            expect_value = read_extract_yaml()['sport_record_id']\n>           AssertUtil().assert_body(date_day, expect_value)\n\nTestCase\\test_08_sports.py:294: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x0000023E7DD69370>\nbody = 52370, expected_body = 52374\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640248510195,
+        "stop" : 1640248510246,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "482259d8a4ca863b",
+        "name" : "接口请求参数",
+        "source" : "482259d8a4ca863b.attach",
+        "type" : "text/plain",
+        "size" : 420
+      }, {
+        "uid" : "91543629634c92c9",
+        "name" : "接口响应报文",
+        "source" : "91543629634c92c9.attach",
+        "type" : "text/plain",
+        "size" : 1986
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640248510246,
+        "stop" : 1640248510260,
+        "duration" : 14
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_08_sports.py\", line 294, in test_sports_mine_record\n    AssertUtil().assert_body(date_day, expect_value)\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640248510268,
+      "stop" : 1640248510278,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "我的--运动记录"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "21680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsMyRecord_args",
+    "value" : "{'name': '我的页面--运动记录', 'request': {'method': 'get', 'url': '/v1/sports/listSportsRecord', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'recordId': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "a205699f42f6159.json",
+  "parameterValues" : [ "{'name': '我的页面--运动记录', 'request': {'method': 'get', 'url': '/v1/sports/listSportsRecord', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'recordId': 'None'}}" ]
+}

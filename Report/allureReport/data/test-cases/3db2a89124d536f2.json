@@ -1,0 +1,167 @@
+{
+  "uid" : "3db2a89124d536f2",
+  "name" : "学生端任务页首页作业完成进度",
+  "fullName" : "TestCase.test_07_homework#test_homework_speed",
+  "historyId" : "e08fb6c48fdd2bdf738397c800335de4",
+  "time" : {
+    "start" : 1640258302663,
+    "stop" : 1640258302845,
+    "duration" : 182
+  },
+  "description" : "学生端查看任务首页，验证提交运动记录后作业完成进度是否大于0%",
+  "descriptionHtml" : "<p>学生端查看任务首页，验证提交运动记录后作业完成进度是否大于0%</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640258295581,
+      "stop" : 1640258295597,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640258302658,
+      "stop" : 1640258302663,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看任务首页，验证提交运动记录后作业完成进度是否大于0%",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640258302663,
+        "stop" : 1640258302835,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8eeb4e29f6be07b2",
+        "name" : "接口请求参数",
+        "source" : "8eeb4e29f6be07b2.attach",
+        "type" : "text/plain",
+        "size" : 357
+      }, {
+        "uid" : "5ef2ff6fda190a44",
+        "name" : "接口请求参数",
+        "source" : "5ef2ff6fda190a44.attach",
+        "type" : "text/plain",
+        "size" : 5034
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640258302835,
+        "stop" : 1640258302845,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640258302845,
+      "stop" : 1640258302851,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "查看作业完成进度"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "32728-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkSpeed_args",
+    "value" : "{'name': '学生端任务页首页作业完成进度', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': 'None', 'fulfilSpeed': '大于0'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "3db2a89124d536f2.json",
+  "parameterValues" : [ "{'name': '学生端任务页首页作业完成进度', 'request': {'method': 'get', 'url': '/v1/planTask/listTask', 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'planId': 'None', 'fulfilSpeed': '大于0'}}" ]
+}

@@ -1,0 +1,182 @@
+{
+  "uid" : "8b1d43ca5e183aa1",
+  "name" : "学生端查询当前日期的每日目标",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_query_task_by_day",
+  "historyId" : "445bf4c3ee6632f9a3f2f71ccf87621d",
+  "time" : {
+    "start" : 1640260247735,
+    "stop" : 1640260247836,
+    "duration" : 101
+  },
+  "description" : "学生端查询日程表当前日期的任务目标",
+  "descriptionHtml" : "<p>学生端查询日程表当前日期的任务目标</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640260244830,
+      "stop" : 1640260244846,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640260247732,
+      "stop" : 1640260247735,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查询日程表当前日期的任务目标",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640260247735,
+        "stop" : 1640260247834,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1985bd3f8281f977",
+        "name" : "接口请求参数",
+        "source" : "1985bd3f8281f977.attach",
+        "type" : "text/plain",
+        "size" : 364
+      }, {
+        "uid" : "8b9cb8f41904c6f5",
+        "name" : "接口请求参数",
+        "source" : "8b9cb8f41904c6f5.attach",
+        "type" : "text/plain",
+        "size" : 2298
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640260247834,
+        "stop" : 1640260247835,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取task_id",
+      "time" : {
+        "start" : 1640260247835,
+        "stop" : 1640260247836,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640260247837,
+      "stop" : 1640260247840,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生端查询当前日期的每日目标"
+  }, {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "29852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "listTaskByDay_args",
+    "value" : "{'name': '学生端查询当前日期的每日目标', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByDay', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "8b1d43ca5e183aa1.json",
+  "parameterValues" : [ "{'name': '学生端查询当前日期的每日目标', 'request': {'method': 'get', 'url': '/v1/planTask/listTaskByDay', 'headers': {'Authorization': 'None'}, 'body': {'date': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

@@ -1,0 +1,265 @@
+{
+  "uid" : "c631d541ea1d47bf",
+  "name" : "老师端创建作业--自动发布",
+  "fullName" : "TestCase.test_07_homework#test_homework_add",
+  "historyId" : "ee07ca179eab698d0371145bb7233cbc",
+  "time" : {
+    "start" : 1640656423980,
+    "stop" : 1640656424099,
+    "duration" : 119
+  },
+  "description" : "老师端创建作业",
+  "descriptionHtml" : "<p>老师端创建作业</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656423975,
+      "stop" : 1640656423980,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端创建作业",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656423980,
+        "stop" : 1640656424096,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "950321dde02bbc2f",
+        "name" : "接口请求参数",
+        "source" : "950321dde02bbc2f.attach",
+        "type" : "text/plain",
+        "size" : 864
+      }, {
+        "uid" : "345fccd7980adf79",
+        "name" : "接口请求参数",
+        "source" : "345fccd7980adf79.attach",
+        "type" : "text/plain",
+        "size" : 141
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656424096,
+        "stop" : 1640656424098,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656424099,
+      "stop" : 1640656424104,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "创建作业"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "addHomework_args",
+    "value" : "{'name': '老师端创建作业--自动发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'classId': 'None', 'status': 1, 'publishMode': 1, 'publishType': 1, 'noticeType': 1, 'list': [{'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e5121f50fb87d28c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601508564,
+        "stop" : 1640601508700,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "729a31317cfc9051",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598447598,
+        "stop" : 1640598447950,
+        "duration" : 352
+      }
+    }, {
+      "uid" : "8f988a43b42fa625",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349510000,
+        "stop" : 1640349510136,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "92e48823e50ab577",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348908573,
+        "stop" : 1640348908743,
+        "duration" : 170
+      }
+    }, {
+      "uid" : "65fbfe8f2d6b2242",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347991807,
+        "stop" : 1640347991984,
+        "duration" : 177
+      }
+    }, {
+      "uid" : "ef9201f4cdfce952",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262975080,
+        "stop" : 1640262975241,
+        "duration" : 161
+      }
+    }, {
+      "uid" : "d218db17394be8cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261057473,
+        "stop" : 1640261057669,
+        "duration" : 196
+      }
+    }, {
+      "uid" : "7553c2c1e11e141b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260251092,
+        "stop" : 1640260251253,
+        "duration" : 161
+      }
+    }, {
+      "uid" : "fc065b0c9c16f000",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258301890,
+        "stop" : 1640258302035,
+        "duration" : 145
+      }
+    }, {
+      "uid" : "9b6f496b6c546a29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258191890,
+        "stop" : 1640258192111,
+        "duration" : 221
+      }
+    }, {
+      "uid" : "e5d9051d53df5b79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249681674,
+        "stop" : 1640249681833,
+        "duration" : 159
+      }
+    }, {
+      "uid" : "22056094d53c4b4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248504375,
+        "stop" : 1640248504569,
+        "duration" : 194
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "c631d541ea1d47bf.json",
+  "parameterValues" : [ "{'name': '老师端创建作业--自动发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'classId': 'None', 'status': 1, 'publishMode': 1, 'publishType': 1, 'noticeType': 1, 'list': [{'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}" ]
+}

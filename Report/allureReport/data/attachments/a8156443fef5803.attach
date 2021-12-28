@@ -1,0 +1,23 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "status";1
+        }
+    },
+    "name";"更新教师审批状态接口",
+    "request";{
+        "body";{
+            "operator";"admin",
+            "reviewIds";[
+                188
+            ],
+            "reviewStatus";1
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"put",
+        "url";"/v1/manage/review/updateTeacherReviewStatus"
+    }
+}

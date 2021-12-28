@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "sportName";"跑步"
+        }
+    },
+    "name";"学生端创建每日目标：跑步",
+    "request";{
+        "body";{
+            "contentName";200,
+            "dataName";"跑步"
+        },
+        "headers";{
+            "Authorization";"NGE2NmUzYWItNTc1OC00NTFjLWIxMDMtYjBiNDAwMjhiMjEw",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/planTask/addDayTask"
+    }
+}

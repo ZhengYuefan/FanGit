@@ -1,0 +1,15 @@
+{
+    "code":1,
+    "data":{
+        "isBindAlipay":false,
+        "isBindMobile":true,
+        "isBindQq":false,
+        "isBindWx":false,
+        "isFillBasicInfo":true,
+        "token":"NGQ3NGVmZDUtODk0Yy00NWNlLWI0YWYtZWEwZDNmMDQ5NWZk",
+        "uniqueId":"1640656417699%3583",
+        "userId":3583
+    },
+    "msg":"成功",
+    "timestamp":1640656417705
+}

@@ -1,0 +1,265 @@
+{
+  "uid" : "1f2f9e05be8de768",
+  "name" : "教师入校申请接口",
+  "fullName" : "TestCase.test_03_join_school#test_join_school",
+  "historyId" : "8309fda5b0213f1f0d977a4aded0c9df",
+  "time" : {
+    "start" : 1640656418818,
+    "stop" : 1640656418929,
+    "duration" : 111
+  },
+  "description" : "预设教师手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在",
+  "descriptionHtml" : "<p>预设教师手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656418816,
+      "stop" : 1640656418818,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "预设教师手机号登录后，提交入校申请，并且从数据库验证申请记录是否存在",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656418818,
+        "stop" : 1640656418904,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e7692ef2964c209c",
+        "name" : "接口请求参数",
+        "source" : "e7692ef2964c209c.attach",
+        "type" : "text/plain",
+        "size" : 602
+      }, {
+        "uid" : "98451a1619ab8c01",
+        "name" : "接口响应报文",
+        "source" : "98451a1619ab8c01.attach",
+        "type" : "text/plain",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656418904,
+        "stop" : 1640656418929,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656418930,
+      "stop" : 1640656418932,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "教师申请入校"
+  }, {
+    "name" : "feature",
+    "value" : "教师入校申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_join_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_03_join_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "joinSchool_args",
+    "value" : "{'name': '教师入校申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinSchool', 'body': {'schoolId': 'None', 'realName': 'None', 'classId': 'None', 'mobile': 'None', 'validateCode': 1234, 'userRole': 2}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'teacherName': 'None'}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ed021793c55ddf93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601502336,
+        "stop" : 1640601502436,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "6fa089e91855216f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598430387,
+        "stop" : 1640598431356,
+        "duration" : 969
+      }
+    }, {
+      "uid" : "76f9a0d533699748",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349504708,
+        "stop" : 1640349504789,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "b581836a1b429529",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348903264,
+        "stop" : 1640348903360,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "5d8ba31e15ba3367",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347986275,
+        "stop" : 1640347986356,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "aded2e2b5047104",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262969805,
+        "stop" : 1640262969881,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "2064d15916fbe389",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261052254,
+        "stop" : 1640261052366,
+        "duration" : 112
+      }
+    }, {
+      "uid" : "f0d9da92a150f198",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260245577,
+        "stop" : 1640260245669,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "a5f68ea8b3e98d7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258296405,
+        "stop" : 1640258296468,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "b46e1dc1c89c64f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258186248,
+        "stop" : 1640258186348,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "2f1b4aa3a636e91b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249676532,
+        "stop" : 1640249676613,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "61efbd30b000f1d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248498799,
+        "stop" : 1640248498924,
+        "duration" : 125
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "joinSchool" ]
+  },
+  "source" : "1f2f9e05be8de768.json",
+  "parameterValues" : [ "{'name': '教师入校申请接口', 'request': {'method': 'post', 'url': '/v1/school/joinSchool', 'body': {'schoolId': 'None', 'realName': 'None', 'classId': 'None', 'mobile': 'None', 'validateCode': 1234, 'userRole': 2}, 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}}, 'expect': {'msg': '成功', 'sql': {'teacherName': 'None'}}}" ]
+}

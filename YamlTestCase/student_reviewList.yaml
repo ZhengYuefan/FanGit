@@ -1,0 +1,16 @@
+-
+   name: 老师端查询学生审批列表
+   request:
+      method: get
+      url: /v1/school/listStudentReview
+      body:
+          pageNo: 1
+          pageSize: 10
+          classIds: None
+          studentName: None
+          studentNo: 6666
+      headers:
+          Authorization: None
+   expect:
+      msg: 成功
+      studentName: None

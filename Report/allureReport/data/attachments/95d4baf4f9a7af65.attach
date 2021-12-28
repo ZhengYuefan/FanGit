@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"学生端查询当前日期的每日目标",
+    "request";{
+        "body";{
+            "date";"2021-12-24"
+        },
+        "headers";{
+            "Authorization";"ODE2YWJmNmYtNTZkZi00MjAyLWI3M2YtYjg5MzQ4MGRiMjI3"
+        },
+        "method";"get",
+        "url";"/v1/planTask/listTaskByDay"
+    }
+}

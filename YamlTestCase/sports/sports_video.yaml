@@ -1,0 +1,11 @@
+-
+   name: 获取运动视频
+   request:
+      method: get
+      url: /v1/sports/getSportsVideo
+      headers:
+          Authorization: None
+      body:
+          recordId: None
+   expect:
+      msg: 成功

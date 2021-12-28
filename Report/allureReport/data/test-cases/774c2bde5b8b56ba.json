@@ -1,0 +1,265 @@
+{
+  "uid" : "774c2bde5b8b56ba",
+  "name" : "老师端计划结束详情",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_endDetail",
+  "historyId" : "3e1b67533988c3ce00208c14f63b3a6d",
+  "time" : {
+    "start" : 1640656423875,
+    "stop" : 1640656423968,
+    "duration" : 93
+  },
+  "description" : "老师端查看计划结束详情页面",
+  "descriptionHtml" : "<p>老师端查看计划结束详情页面</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656423870,
+      "stop" : 1640656423875,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端查看计划结束详情页面",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656423875,
+        "stop" : 1640656423965,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "13d0dcc6eb0e1b9f",
+        "name" : "接口请求参数",
+        "source" : "13d0dcc6eb0e1b9f.attach",
+        "type" : "text/plain",
+        "size" : 368
+      }, {
+        "uid" : "cd61d5119d11523e",
+        "name" : "接口请求参数",
+        "source" : "cd61d5119d11523e.attach",
+        "type" : "text/plain",
+        "size" : 873
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656423965,
+        "stop" : 1640656423968,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656423968,
+      "stop" : 1640656423973,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "story",
+    "value" : "计划结束详情"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planEndDetail_args",
+    "value" : "{'name': '老师端计划结束详情', 'request': {'method': 'get', 'url': '/v1/plan/end/detail', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'title': '计划终止'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c916619c1ad3f14a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601508417,
+        "stop" : 1640601508548,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "c9231a55d3a45328",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598447261,
+        "stop" : 1640598447586,
+        "duration" : 325
+      }
+    }, {
+      "uid" : "be65f6bdab95d9cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349509888,
+        "stop" : 1640349509988,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "fa4d4f4c2d508a4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348908447,
+        "stop" : 1640348908551,
+        "duration" : 104
+      }
+    }, {
+      "uid" : "bba7821813a17678",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347991691,
+        "stop" : 1640347991794,
+        "duration" : 103
+      }
+    }, {
+      "uid" : "80c0205c8cd83e59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262974946,
+        "stop" : 1640262975067,
+        "duration" : 121
+      }
+    }, {
+      "uid" : "7b8e741ac7d7a2a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261057348,
+        "stop" : 1640261057461,
+        "duration" : 113
+      }
+    }, {
+      "uid" : "58ca81c57e0a8354",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260250988,
+        "stop" : 1640260251080,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "2580d514c0fd4981",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258301786,
+        "stop" : 1640258301878,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "d404a9b05f6ef84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258191774,
+        "stop" : 1640258191877,
+        "duration" : 103
+      }
+    }, {
+      "uid" : "29bc9abe2d9c23af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249681577,
+        "stop" : 1640249681662,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "18e4e263efbfdfb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248504264,
+        "stop" : 1640248504362,
+        "duration" : 98
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "774c2bde5b8b56ba.json",
+  "parameterValues" : [ "{'name': '老师端计划结束详情', 'request': {'method': 'get', 'url': '/v1/plan/end/detail', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'title': '计划终止'}}" ]
+}

@@ -1,0 +1,6 @@
+{
+    "code";500,
+    "data";null,
+    "msg";"[500 Internal Server Error] during [PUT] to [http://physical-master-service-user/user/updateListUserClassBySchoolId?schoolId=147] [UserClient#deleteListUserClassByIds(Long)]: [{\"code\":500,\"msg\":\"nested exception is org.apache.ibatis.exceptions.PersistenceException: \\n### Error updating database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Failed t... (740 bytes)]",
+    "timestamp";1640601523158
+}

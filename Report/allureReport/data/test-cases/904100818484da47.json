@@ -1,0 +1,182 @@
+{
+  "uid" : "904100818484da47",
+  "name" : "老师端查看作业模板",
+  "fullName" : "TestCase.test_07_homework#test_homework_template",
+  "historyId" : "65500c28cb2e6a1d23abd28c4babe05b",
+  "time" : {
+    "start" : 1640248504676,
+    "stop" : 1640248504748,
+    "duration" : 72
+  },
+  "description" : "老师端创建作业",
+  "descriptionHtml" : "<p>老师端创建作业</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640248498057,
+      "stop" : 1640248498073,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640248504670,
+      "stop" : 1640248504675,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端创建作业",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640248504676,
+        "stop" : 1640248504745,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c8595c40d8fe779",
+        "name" : "接口请求参数",
+        "source" : "c8595c40d8fe779.attach",
+        "type" : "text/plain",
+        "size" : 476
+      }, {
+        "uid" : "98b7ffcdaaa9d8be",
+        "name" : "接口请求参数",
+        "source" : "98b7ffcdaaa9d8be.attach",
+        "type" : "text/plain",
+        "size" : 1500
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640248504745,
+        "stop" : 1640248504747,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取homework_id",
+      "time" : {
+        "start" : 1640248504747,
+        "stop" : 1640248504748,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640248504749,
+      "stop" : 1640248504756,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "查看作业模板"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "21680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkTemplate_args",
+    "value" : "{'name': '老师端查看作业模板', 'request': {'method': 'post', 'url': '/v1/homework/teach/template', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "904100818484da47.json",
+  "parameterValues" : [ "{'name': '老师端查看作业模板', 'request': {'method': 'post', 'url': '/v1/homework/teach/template', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功'}}" ]
+}

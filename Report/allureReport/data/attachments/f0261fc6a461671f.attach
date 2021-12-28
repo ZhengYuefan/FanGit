@@ -1,0 +1,19 @@
+{
+    "code";1,
+    "data";[
+        {
+            "classItems";[
+                {
+                    "classId";60066,
+                    "className";"一年级(1)班",
+                    "classTeacher";"",
+                    "sportTeacher";""
+                }
+            ],
+            "gradeId";533,
+            "gradeName";"一年级"
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640258303433
+}

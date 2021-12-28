@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"老师端查看作业模板",
+    "request";{
+        "body";{
+            "classId";60065,
+            "pageNo";1,
+            "pageSize";10
+        },
+        "headers";{
+            "Authorization";"YTEyNTgzNjItOTI0ZS00ZjE5LTg3YWMtMTBkMmFiYzRjYjc5",
+            "Content-Type";"application/json",
+            "version";"1.1.0"
+        },
+        "method";"post",
+        "url";"/v1/homework/teach/template"
+    }
+}

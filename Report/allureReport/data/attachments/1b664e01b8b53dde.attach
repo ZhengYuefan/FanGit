@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"老师端我的班级--作业记录",
+    "request";{
+        "body";{
+            "dateStr";"2021-12-24",
+            "homeworkId";993
+        },
+        "headers";{
+            "Authorization";"NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl"
+        },
+        "method";"get",
+        "url";"/v1/teach/classes/list"
+    }
+}

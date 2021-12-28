@@ -1,0 +1,18 @@
+{
+    "code";1,
+    "data";{
+        "distsMap";{
+            "糖分";0.91,
+            "脂肪";0.09
+        },
+        "dynamiCalories";43.7,
+        "evaluate";"评价：强度较高",
+        "myBurn";0.38,
+        "normBurn";0.15,
+        "remark";"运动强度较高,需要充分放松之后根据自身情况决定是否继续运动。",
+        "staticCalories";2.3,
+        "totalCalories";46.0
+    },
+    "msg";"成功",
+    "timestamp";1640656429801
+}

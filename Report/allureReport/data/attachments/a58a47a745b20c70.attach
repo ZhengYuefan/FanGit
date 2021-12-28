@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "totalCalories";12.5
+    },
+    "name";"跑步200m--预计消耗",
+    "request";{
+        "body";{
+            "distance";200,
+            "mode";2,
+            "sportsId";2
+        },
+        "headers";{
+            "Authorization";"ZTg5NGQ3ZWItN2JlMS00YTdiLWE2YWQtMmZiYzU4MjI3MmU3"
+        },
+        "method";"get",
+        "url";"/v1/sports/getPreBurn"
+    }
+}

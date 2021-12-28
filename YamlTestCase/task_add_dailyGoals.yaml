@@ -1,0 +1,47 @@
+-
+   name: 学生端创建每日目标：跳绳
+   request:
+      method: post
+      url: /v1/planTask/addDayTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          dataName: 跳绳
+          contentName: 100
+   expect:
+      msg: 成功
+      sql:
+         sportName: 跳绳
+
+-
+   name: 学生端创建每日目标：跑步
+   request:
+      method: post
+      url: /v1/planTask/addDayTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          dataName: 跑步
+          contentName: 200
+   expect:
+      msg: 成功
+      sql:
+         sportName: 跑步
+
+-
+   name: 学生端创建每日目标：卡路里
+   request:
+      method: post
+      url: /v1/planTask/addDayTask
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          dataName: 卡路里
+          contentName: 50
+   expect:
+      msg: 成功
+      sql:
+         sportName: 卡路里

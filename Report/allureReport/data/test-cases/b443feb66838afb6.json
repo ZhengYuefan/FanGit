@@ -1,0 +1,262 @@
+{
+  "uid" : "b443feb66838afb6",
+  "name" : "校验学校名称是否重复",
+  "fullName" : "TestCase.test_02_add_school#test_verify_schoolNameNotDuplicated",
+  "historyId" : "1792e86513c859a14b68b5a944193d3d",
+  "time" : {
+    "start" : 1640656418349,
+    "stop" : 1640656418414,
+    "duration" : 65
+  },
+  "description" : "校验学校名称是否已经存在于系统内或数据库内，存在需要删除",
+  "descriptionHtml" : "<p>校验学校名称是否已经存在于系统内或数据库内，存在需要删除</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656418348,
+      "stop" : 1640656418349,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "校验学校名称是否已经存在于系统内或数据库内，存在需要删除",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656418349,
+        "stop" : 1640656418398,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bdc3ea0edd886915",
+        "name" : "接口请求参数",
+        "source" : "bdc3ea0edd886915.attach",
+        "type" : "text/plain",
+        "size" : 270
+      }, {
+        "uid" : "bdd720a1249ecd8c",
+        "name" : "接口响应报文",
+        "source" : "bdd720a1249ecd8c.attach",
+        "type" : "text/plain",
+        "size" : 119
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656418398,
+        "stop" : 1640656418399,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656418414,
+      "stop" : 1640656418415,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "校验学校名称"
+  }, {
+    "name" : "feature",
+    "value" : "web后台创建学校模块"
+  }, {
+    "name" : "tag",
+    "value" : "addSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_add_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_02_add_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "17e7b7b6dfbec78a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601501733,
+        "stop" : 1640601501851,
+        "duration" : 118
+      }
+    }, {
+      "uid" : "305710b715e6e6d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598428497,
+        "stop" : 1640598428749,
+        "duration" : 252
+      }
+    }, {
+      "uid" : "b366af4d302e0456",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349504296,
+        "stop" : 1640349504374,
+        "duration" : 78
+      }
+    }, {
+      "uid" : "f1e3cf0b373a6d3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348902840,
+        "stop" : 1640348902905,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "2f479493c1842522",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347985847,
+        "stop" : 1640347985920,
+        "duration" : 73
+      }
+    }, {
+      "uid" : "800ab593e27d2589",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262969429,
+        "stop" : 1640262969487,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "bca873e0e2a05ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261051884,
+        "stop" : 1640261051933,
+        "duration" : 49
+      }
+    }, {
+      "uid" : "ce4589cfbe137f85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260245152,
+        "stop" : 1640260245208,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "28a5390c9d720d90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258295894,
+        "stop" : 1640258295953,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "3f9539c5a0b17b63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258185819,
+        "stop" : 1640258185875,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "c04eed9be7dc65c7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249676153,
+        "stop" : 1640249676204,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "73228c645389a0c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248498382,
+        "stop" : 1640248498444,
+        "duration" : 62
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "addSchool" ]
+  },
+  "source" : "b443feb66838afb6.json",
+  "parameterValues" : [ ]
+}

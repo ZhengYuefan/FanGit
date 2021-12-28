@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "className";"一年级(1)班",
+        "msg";"成功"
+    },
+    "name";"学校班级信息查询",
+    "request";{
+        "body";{
+            "gradeId";285,
+            "pageNo";1,
+            "pageSize";10
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/manage/school/getClassDetail"
+    }
+}

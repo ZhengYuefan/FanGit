@@ -1,0 +1,14 @@
+-
+   name: 我的页面--运动记录
+   request:
+      method: get
+      url: /v1/sports/listSportsRecord
+      headers:
+          Authorization: None
+      body:
+          sportsId: 1
+          pageNo: 1
+          pageSize: 10
+   expect:
+      msg: 成功
+      recordId: None

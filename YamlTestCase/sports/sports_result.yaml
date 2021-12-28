@@ -1,0 +1,12 @@
+-
+   name: 运动成绩
+   request:
+      method: get
+      url: /v1/sports/getSportsResult
+      headers:
+          Authorization: None
+      body:
+          recordId: None
+   expect:
+      msg: 成功
+      realName: None

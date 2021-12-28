@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "motionTarget";23,
+        "msg";"成功"
+    },
+    "name";"老师端根据计划Id获取计划信息",
+    "request";{
+        "body";{
+            "planId";196
+        },
+        "headers";{
+            "Authorization";"MTg1ZmRmYTEtN2NhYS00NDY2LWJkOTgtZWEwNzg1ZmIzM2Yw"
+        },
+        "method";"get",
+        "url";"/v1/plan/info"
+    }
+}

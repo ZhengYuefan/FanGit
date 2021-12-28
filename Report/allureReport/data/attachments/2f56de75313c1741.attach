@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "studentName";"None"
+    },
+    "name";"老师端查询学生审批列表",
+    "request";{
+        "body";{
+            "classIds";60072,
+            "pageNo";1,
+            "pageSize";10,
+            "studentName";"郑学生",
+            "studentNo";6666
+        },
+        "headers";{
+            "Authorization";"YzgxMTAwOGEtZTliOC00MTc2LThhZmMtZDdkNzNhMzU4NmY4"
+        },
+        "method";"get",
+        "url";"/v1/school/listStudentReview"
+    }
+}

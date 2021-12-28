@@ -1,0 +1,173 @@
+{
+  "uid" : "e217208ae021017b",
+  "name" : "老师端我的班级--作业记录",
+  "fullName" : "TestCase.test_07_homework#test_homework_teacher_myClass",
+  "historyId" : "87c10fede05f83ffea200395325da2f8",
+  "time" : {
+    "start" : 1640598451561,
+    "stop" : 1640598451833,
+    "duration" : 272
+  },
+  "description" : "老师端作业记录--我的班级",
+  "descriptionHtml" : "<p>老师端作业记录--我的班级</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "homeworkMyClass_args = {'expect': {'msg': '成功'}, 'name': '老师端我的班级--作业记录', 'request': {'body': {'dateStr': '2021-12-24', 'homeworkId': 993}, '...Authorization': 'NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl'}, 'method': 'get', 'url': '/v1/teach/classes/list'}}\n\n    @allure.feature('作业模块')\n    @allure.story('作业记录-我的班级--老师端')\n    @pytest.mark.homework\n    @pytest.mark.parametrize(\"homeworkMyClass_args\", homeworkMyClass_args)\n    def test_homework_teacher_myClass(homeworkMyClass_args):\n        \"\"\"老师端作业记录--我的班级\"\"\"\n        allure.dynamic.title(homeworkMyClass_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + homeworkMyClass_args['request']['url']\n            method = homeworkMyClass_args['request']['method']\n            headers = homeworkMyClass_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['teacher_token']\n            body = homeworkMyClass_args['request']['body']\n            body['homeworkId'] = read_extract_yaml()['publish_record_id']\n            body['dateStr'] = str(read_user_defined_variable()['currentDate']['date_day'])\n            lg.info(\"获取的接口参数：%s\" % homeworkMyClass_args)\n            allure.attach(\n                json.dumps(homeworkMyClass_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), homeworkMyClass_args['expect']['msg'])\n\nTestCase\\test_07_homework.py:373: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x000001C84A6852E0>\nbody = '未知异常', expected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598451555,
+      "stop" : 1640598451561,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端作业记录--我的班级",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "homeworkMyClass_args = {'expect': {'msg': '成功'}, 'name': '老师端我的班级--作业记录', 'request': {'body': {'dateStr': '2021-12-24', 'homeworkId': 993}, '...Authorization': 'NzRkMWU1MTMtM2UwYy00ZmJiLTk2OTEtZmRiNmIxMDJmZTZl'}, 'method': 'get', 'url': '/v1/teach/classes/list'}}\n\n    @allure.feature('作业模块')\n    @allure.story('作业记录-我的班级--老师端')\n    @pytest.mark.homework\n    @pytest.mark.parametrize(\"homeworkMyClass_args\", homeworkMyClass_args)\n    def test_homework_teacher_myClass(homeworkMyClass_args):\n        \"\"\"老师端作业记录--我的班级\"\"\"\n        allure.dynamic.title(homeworkMyClass_args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['appHost'] + homeworkMyClass_args['request']['url']\n            method = homeworkMyClass_args['request']['method']\n            headers = homeworkMyClass_args['request']['headers']\n            headers['Authorization'] = read_extract_yaml()['teacher_token']\n            body = homeworkMyClass_args['request']['body']\n            body['homeworkId'] = read_extract_yaml()['publish_record_id']\n            body['dateStr'] = str(read_user_defined_variable()['currentDate']['date_day'])\n            lg.info(\"获取的接口参数：%s\" % homeworkMyClass_args)\n            allure.attach(\n                json.dumps(homeworkMyClass_args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(\"返回的接口响应报文：%s\" % json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), homeworkMyClass_args['expect']['msg'])\n\nTestCase\\test_07_homework.py:373: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x000001C84A6852E0>\nbody = '未知异常', expected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598451561,
+        "stop" : 1640598451825,
+        "duration" : 264
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1b664e01b8b53dde",
+        "name" : "接口请求参数",
+        "source" : "1b664e01b8b53dde.attach",
+        "type" : "text/plain",
+        "size" : 386
+      }, {
+        "uid" : "55a901ea3a95bbac",
+        "name" : "接口响应报文",
+        "source" : "55a901ea3a95bbac.attach",
+        "type" : "text/plain",
+        "size" : 78
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598451825,
+        "stop" : 1640598451833,
+        "duration" : 8
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_07_homework.py\", line 373, in test_homework_teacher_myClass\n    AssertUtil().assert_body(str(res['msg']), homeworkMyClass_args['expect']['msg'])\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598451844,
+      "stop" : 1640598451850,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "story",
+    "value" : "作业记录-我的班级--老师端"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkMyClass_args",
+    "value" : "{'name': '老师端我的班级--作业记录', 'request': {'method': 'get', 'url': '/v1/teach/classes/list', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None', 'dateStr': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "e217208ae021017b.json",
+  "parameterValues" : [ "{'name': '老师端我的班级--作业记录', 'request': {'method': 'get', 'url': '/v1/teach/classes/list', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None', 'dateStr': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

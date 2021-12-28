@@ -1,0 +1,33 @@
+{
+    "code";1,
+    "data";[
+        {
+            "classNameAndNum";"一年级(1)班",
+            "homeworkId";100,
+            "isToday";1,
+            "jumpUrl";"http://121.37.190.62:9100/gms/${version}/physicalmaster_web/index.html?pageId=19&homeworkId=406&dateStr=2021-12-27",
+            "publishRecordId";406,
+            "speed";"50",
+            "status";"1",
+            "surplusTime";"22341",
+            "teacherName";"郑岳凡老师",
+            "title";"体育作业",
+            "totalClazzNum";0
+        },
+        {
+            "classNameAndNum";"一年级(1)班",
+            "homeworkId";99,
+            "isToday";1,
+            "jumpUrl";"http://121.37.190.62:9100/gms/${version}/physicalmaster_web/index.html?pageId=19&homeworkId=405&dateStr=2021-12-27",
+            "publishRecordId";405,
+            "speed";"0",
+            "status";"1",
+            "surplusTime";"22341",
+            "teacherName";"郑岳凡老师",
+            "title";"体育作业",
+            "totalClazzNum";0
+        }
+    ],
+    "msg";"成功",
+    "timestamp";1640598458188
+}

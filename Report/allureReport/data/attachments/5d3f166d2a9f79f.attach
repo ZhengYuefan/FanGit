@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"逻辑删除运动视频记录",
+    "request";{
+        "body";{
+            "recordId";52374
+        },
+        "headers";{
+            "Authorization";"MTg1ZmRmYTEtN2NhYS00NDY2LWJkOTgtZWEwNzg1ZmIzM2Yw",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/sports/deleteSportsVideo"
+    }
+}

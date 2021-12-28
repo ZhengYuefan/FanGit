@@ -1,0 +1,267 @@
+{
+  "uid" : "527b751932d1d02f",
+  "name" : "运动成绩",
+  "fullName" : "TestCase.test_08_sports#test_sports_result",
+  "historyId" : "2fb7dfa8dc9651ff9696a35f7ecc0b24",
+  "time" : {
+    "start" : 1640656430207,
+    "stop" : 1640656430287,
+    "duration" : 80
+  },
+  "description" : "运动结束，运动成绩页面",
+  "descriptionHtml" : "<p>运动结束，运动成绩页面</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656430198,
+      "stop" : 1640656430207,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "运动结束，运动成绩页面",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656430207,
+        "stop" : 1640656430283,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "73e8c67895af7a0c",
+        "name" : "接口请求参数",
+        "source" : "73e8c67895af7a0c.attach",
+        "type" : "text/plain",
+        "size" : 359
+      }, {
+        "uid" : "be1573276f6eb28f",
+        "name" : "接口响应报文",
+        "source" : "be1573276f6eb28f.attach",
+        "type" : "text/plain",
+        "size" : 1306
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656430283,
+        "stop" : 1640656430287,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656430288,
+      "stop" : 1640656430297,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "运动成绩"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsResult_args",
+    "value" : "{'name': '运动成绩', 'request': {'method': 'get', 'url': '/v1/sports/getSportsResult', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功', 'realName': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bbd66c2d850f954c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601514743,
+        "stop" : 1640601514827,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "e983622b80aa3be4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598464280,
+        "stop" : 1640598464586,
+        "duration" : 306
+      }
+    }, {
+      "uid" : "a6c74ce14c181845",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349515512,
+        "stop" : 1640349515587,
+        "duration" : 75
+      }
+    }, {
+      "uid" : "a1627bdcb21e3cf0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348914206,
+        "stop" : 1640348914297,
+        "duration" : 91
+      }
+    }, {
+      "uid" : "274fd479b36bacdf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347997023,
+        "stop" : 1640347997096,
+        "duration" : 73
+      }
+    }, {
+      "uid" : "ca6e35888a92e49c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262980074,
+        "stop" : 1640262980153,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "bfa7cf600cb0f0e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261061986,
+        "stop" : 1640261062067,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "83e22a6a480c116b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260255581,
+        "stop" : 1640260255656,
+        "duration" : 75
+      }
+    }, {
+      "uid" : "7909507f672a79d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258306406,
+        "stop" : 1640258306483,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "29d329fa8fd15041",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258196651,
+        "stop" : 1640258196734,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "1f3308d9f2a26120",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'realName'",
+      "time" : {
+        "start" : 1640249686729,
+        "stop" : 1640249686804,
+        "duration" : 75
+      }
+    }, {
+      "uid" : "d60e1ad13b9c0181",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'realName'",
+      "time" : {
+        "start" : 1640248509775,
+        "stop" : 1640248509862,
+        "duration" : 87
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "527b751932d1d02f.json",
+  "parameterValues" : [ "{'name': '运动成绩', 'request': {'method': 'get', 'url': '/v1/sports/getSportsResult', 'headers': {'Authorization': 'None'}, 'body': {'recordId': 'None'}}, 'expect': {'msg': '成功', 'realName': 'None'}}" ]
+}

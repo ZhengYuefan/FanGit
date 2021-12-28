@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "user_name";"None"
+        }
+    },
+    "name";"教师列表查询接口",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "teacherNameOrMobile";"岳凡"
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/manage/school/listTeacher"
+    }
+}

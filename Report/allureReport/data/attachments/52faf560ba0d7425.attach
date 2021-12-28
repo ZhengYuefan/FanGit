@@ -1,0 +1,17 @@
+{
+    "expect";{
+        "msg";"成功",
+        "realName";"None"
+    },
+    "name";"运动成绩",
+    "request";{
+        "body";{
+            "recordId";437338
+        },
+        "headers";{
+            "Authorization";"OTE4OGVjZWQtMGJiNy00YTAzLWIyN2UtMzMzMGQ5NmVjNWJm"
+        },
+        "method";"get",
+        "url";"/v1/sports/getSportsResult"
+    }
+}

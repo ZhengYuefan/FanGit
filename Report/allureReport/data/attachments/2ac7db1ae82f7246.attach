@@ -1,0 +1,28 @@
+{
+    "code";1,
+    "data";{
+        "avgEvaluate";"D",
+        "classId";60068,
+        "className";"一年级(1)班",
+        "gradeId";535,
+        "gradeName";"一年级",
+        "list";[
+            {
+                "avatarUrl";"http://125.77.202.90:9010/cervix/header/female.png",
+                "evaluate";"D",
+                "realName";"郑学学",
+                "speed";"0",
+                "status";"1",
+                "statusSort";1,
+                "taskId";"1473987851472474112",
+                "userId";1084
+            }
+        ],
+        "schoolId";371,
+        "schoolName";"Test测试学",
+        "stuCompleteNumber";0,
+        "stuNumber";1
+    },
+    "msg";"成功",
+    "timestamp";1640261064918
+}

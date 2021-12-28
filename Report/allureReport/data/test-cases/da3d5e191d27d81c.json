@@ -1,0 +1,167 @@
+{
+  "uid" : "da3d5e191d27d81c",
+  "name" : "学生端我的--任务记录",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_mine_task_record",
+  "historyId" : "890582c09ca83dd57b1c92fa293f2a80",
+  "time" : {
+    "start" : 1640258188489,
+    "stop" : 1640258188558,
+    "duration" : 69
+  },
+  "description" : "学生端查看我的->任务记录，每日目标为跳绳的任务",
+  "descriptionHtml" : "<p>学生端查看我的-&gt;任务记录，每日目标为跳绳的任务</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640258185510,
+      "stop" : 1640258185525,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640258188485,
+      "stop" : 1640258188488,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端查看我的->任务记录，每日目标为跳绳的任务",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640258188489,
+        "stop" : 1640258188554,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1e9da3247b562ef6",
+        "name" : "接口请求参数",
+        "source" : "1e9da3247b562ef6.attach",
+        "type" : "text/plain",
+        "size" : 442
+      }, {
+        "uid" : "d1a2aeca1532ebe1",
+        "name" : "接口响应报文",
+        "source" : "d1a2aeca1532ebe1.attach",
+        "type" : "text/plain",
+        "size" : 1006
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640258188554,
+        "stop" : 1640258188558,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640258188559,
+      "stop" : 1640258188562,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "我的_任务记录"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "7828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "mineTaskRecord_args",
+    "value" : "{'name': '学生端我的--任务记录', 'request': {'method': 'post', 'url': '/v1/homework/queryTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'createTime': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "da3d5e191d27d81c.json",
+  "parameterValues" : [ "{'name': '学生端我的--任务记录', 'request': {'method': 'post', 'url': '/v1/homework/queryTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'createTime': 'None'}}" ]
+}

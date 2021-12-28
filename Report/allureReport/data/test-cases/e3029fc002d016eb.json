@@ -1,0 +1,170 @@
+{
+  "uid" : "e3029fc002d016eb",
+  "name" : "删除学校",
+  "fullName" : "TestCase.test_09_delete_school#test_delete_school",
+  "historyId" : "d7555a568d7730aed528b9f9cfcd4971",
+  "time" : {
+    "start" : 1640601515674,
+    "stop" : 1640601515847,
+    "duration" : 173
+  },
+  "description" : "删除学校",
+  "descriptionHtml" : "<p>删除学校</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "@allure.feature('web后台删除学校模块')\n    # @pytest.mark.last\n    @pytest.mark.deleteSchool\n    def test_delete_school():\n        \"\"\"删除学校\"\"\"\n        args = args_all['deleteSchool']\n        allure.dynamic.story('删除学校')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['schoolId'] = read_extract_yaml()['school_id']\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n\nTestCase\\test_09_delete_school.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x000002932D2FB8E0>\nbody = '[500 Internal Server Error] during [PUT] to [http://physical-master-service-user/user/updateListUserClassBySchoolId?s...ror updating database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Failed t... (740 bytes)]'\nexpected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640601501337,
+      "stop" : 1640601501375,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640601515665,
+      "stop" : 1640601515674,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "删除学校",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "@allure.feature('web后台删除学校模块')\n    # @pytest.mark.last\n    @pytest.mark.deleteSchool\n    def test_delete_school():\n        \"\"\"删除学校\"\"\"\n        args = args_all['deleteSchool']\n        allure.dynamic.story('删除学校')\n        allure.dynamic.title(args['name'])\n        with allure.step('发送请求'):\n            url = read_config_yaml()['webHost'] + args['request']['url']\n            method = args['request']['method']\n            headers = args['request']['headers']\n            body = args['request']['body']\n            body['schoolId'] = read_extract_yaml()['school_id']\n            lg.info(\"获取的接口请求参数：%s\" % args)\n            allure.attach(json.dumps(args, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口请求参数')\n            res = ru.run_main(method, url, body, headers)\n            lg.info(json.dumps(res, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False))\n            allure.attach(json.dumps(res, sort_keys=True, indent=4, separators=(',', ';'), ensure_ascii=False),\n                          name='接口响应报文')\n        with allure.step('断言结果'):\n>           AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n\nTestCase\\test_09_delete_school.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.assert_util.AssertUtil object at 0x000002932D2FB8E0>\nbody = '[500 Internal Server Error] during [PUT] to [http://physical-master-service-user/user/updateListUserClassBySchoolId?s...ror updating database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Failed t... (740 bytes)]'\nexpected_body = '成功'\n\n    def assert_body(self, body, expected_body):\n        \"\"\"验证返回结果内容相等\"\"\"\n        try:\n>           assert body == expected_body\nE           AssertionError\n\nCommon\\assert_util.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640601515674,
+        "stop" : 1640601515835,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ca79fafe817877c8",
+        "name" : "接口请求参数",
+        "source" : "ca79fafe817877c8.attach",
+        "type" : "text/plain",
+        "size" : 375
+      }, {
+        "uid" : "ce603bbabf42de72",
+        "name" : "接口响应报文",
+        "source" : "ce603bbabf42de72.attach",
+        "type" : "text/plain",
+        "size" : 478
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640601515835,
+        "stop" : 1640601515847,
+        "duration" : 12
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\TestCase\\test_09_delete_school.py\", line 73, in test_delete_school\n    AssertUtil().assert_body(str(res['msg']), args['expect']['msg'])\n  File \"C:\\Users\\Administrator\\Desktop\\Physical_fitness_interface\\Common\\assert_util.py\", line 21, in assert_body\n    assert body == expected_body\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640601515916,
+      "stop" : 1640601515926,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除学校"
+  }, {
+    "name" : "feature",
+    "value" : "web后台删除学校模块"
+  }, {
+    "name" : "tag",
+    "value" : "deleteSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_09_delete_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "24684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_09_delete_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "deleteSchool" ]
+  },
+  "source" : "e3029fc002d016eb.json",
+  "parameterValues" : [ ]
+}

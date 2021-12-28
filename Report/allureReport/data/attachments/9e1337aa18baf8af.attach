@@ -1,0 +1,19 @@
+{
+    "code";1,
+    "data";{
+        "address";"杭州市滨江区江陵路聚光中心",
+        "classNumber";1,
+        "gradeAndClassList";[
+            {
+                "gradeId";532,
+                "gradeName";"一年级"
+            }
+        ],
+        "schoolName";"Test学校",
+        "studentNumber";0,
+        "teacherNumber";0,
+        "type";0
+    },
+    "msg";"成功",
+    "timestamp";1640258192297
+}

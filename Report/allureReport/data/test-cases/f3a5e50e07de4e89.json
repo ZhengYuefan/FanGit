@@ -1,0 +1,265 @@
+{
+  "uid" : "f3a5e50e07de4e89",
+  "name" : "老师端查询班级列表",
+  "fullName" : "TestCase.test_04_join_class#test_query_class_list",
+  "historyId" : "9ee7cbbc6a1c9a5e3e6a7e68d10a9ea0",
+  "time" : {
+    "start" : 1640656419616,
+    "stop" : 1640656419664,
+    "duration" : 48
+  },
+  "description" : "老师端审批管理页面查询班级列表",
+  "descriptionHtml" : "<p>老师端审批管理页面查询班级列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656419614,
+      "stop" : 1640656419616,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端审批管理页面查询班级列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656419616,
+        "stop" : 1640656419663,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3c41b0bde54e8922",
+        "name" : "接口请求参数",
+        "source" : "3c41b0bde54e8922.attach",
+        "type" : "text/plain",
+        "size" : 338
+      }, {
+        "uid" : "60329e9221a2bbe",
+        "name" : "接口响应参数",
+        "source" : "60329e9221a2bbe.attach",
+        "type" : "text/plain",
+        "size" : 413
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656419663,
+        "stop" : 1640656419664,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656419665,
+      "stop" : 1640656419667,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师端查询班级列表学生申请"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "queryClassList_args",
+    "value" : "{'name': '老师端查询班级列表', 'request': {'method': 'get', 'url': '/v1/school/listClass', 'body': {'schoolId': 'None'}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "db1c32cc3fc6a238",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601503241,
+        "stop" : 1640601503317,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "aa252610708006e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598434514,
+        "stop" : 1640598434798,
+        "duration" : 284
+      }
+    }, {
+      "uid" : "9d197dadc7794c0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349505387,
+        "stop" : 1640349505426,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "40b5077a6e11d1e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348903909,
+        "stop" : 1640348903949,
+        "duration" : 40
+      }
+    }, {
+      "uid" : "98a585bc2ac31625",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347986934,
+        "stop" : 1640347986970,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "78b5fa5e9642fd67",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262970443,
+        "stop" : 1640262970476,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "e6b209d80de78bc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261052919,
+        "stop" : 1640261052957,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "ab9132cbe4ea9215",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260246312,
+        "stop" : 1640260246350,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "73703f161d83802d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258297188,
+        "stop" : 1640258297223,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "2c2700c2d6dc8b54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258186889,
+        "stop" : 1640258186929,
+        "duration" : 40
+      }
+    }, {
+      "uid" : "6778dbfdcd163a44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249677129,
+        "stop" : 1640249677174,
+        "duration" : 45
+      }
+    }, {
+      "uid" : "958c1c305a0c5a56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248499572,
+        "stop" : 1640248499616,
+        "duration" : 44
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "f3a5e50e07de4e89.json",
+  "parameterValues" : [ "{'name': '老师端查询班级列表', 'request': {'method': 'get', 'url': '/v1/school/listClass', 'body': {'schoolId': 'None'}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

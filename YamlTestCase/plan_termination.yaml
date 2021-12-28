@@ -1,0 +1,13 @@
+-
+   name: 老师端终止计划
+   request:
+      method: get
+      url: /v1/plan/info/status
+      headers:
+          Authorization: None
+      body:
+          planId: None
+   expect:
+      msg: 成功
+      sql:
+          status: 5

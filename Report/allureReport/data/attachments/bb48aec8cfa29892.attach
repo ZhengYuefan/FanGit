@@ -1,0 +1,18 @@
+{
+    "expect";{
+        "data";"发布成功",
+        "msg";"成功"
+    },
+    "name";"老师端手动发布作业",
+    "request";{
+        "body";{
+            "homeworkId";102
+        },
+        "headers";{
+            "Authorization";"OTE4OGVjZWQtMGJiNy00YTAzLWIyN2UtMzMzMGQ5NmVjNWJm",
+            "Content-Type";"application/json"
+        },
+        "method";"put",
+        "url";"/v1/homework/publish"
+    }
+}

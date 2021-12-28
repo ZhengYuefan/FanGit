@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "msg";"成功",
+        "schoolName";"None"
+    },
+    "name";"学校列表查询",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "schoolName";"Test测试大学",
+            "schoolType";0
+        },
+        "headers";{
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/manage/school/listSchool"
+    }
+}

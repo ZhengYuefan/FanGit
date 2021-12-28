@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "homework_id";"None",
+        "msg";"成功"
+    },
+    "name";"老师端今日作业记录",
+    "request";{
+        "body";{
+            "dateStr";"2021-12-28",
+            "pageNo";1,
+            "pageSize";10
+        },
+        "headers";{
+            "Authorization";"Y2U2MGIwNjAtY2RiYS00MTM5LWI2Y2MtYTgxMzM2OGJlNjQ5",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/homework/teach/today/list"
+    }
+}

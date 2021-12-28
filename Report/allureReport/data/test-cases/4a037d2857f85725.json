@@ -1,0 +1,167 @@
+{
+  "uid" : "4a037d2857f85725",
+  "name" : "老师端我的班级--作业记录",
+  "fullName" : "TestCase.test_07_homework#test_homework_teacher_myClass",
+  "historyId" : "87c10fede05f83ffea200395325da2f8",
+  "time" : {
+    "start" : 1640601510288,
+    "stop" : 1640601510369,
+    "duration" : 81
+  },
+  "description" : "老师端作业记录--我的班级",
+  "descriptionHtml" : "<p>老师端作业记录--我的班级</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640601501337,
+      "stop" : 1640601501375,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640601510282,
+      "stop" : 1640601510287,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端作业记录--我的班级",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640601510288,
+        "stop" : 1640601510367,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c44f26d64c0ee552",
+        "name" : "接口请求参数",
+        "source" : "c44f26d64c0ee552.attach",
+        "type" : "text/plain",
+        "size" : 386
+      }, {
+        "uid" : "e999fdc5c197210d",
+        "name" : "接口响应报文",
+        "source" : "e999fdc5c197210d.attach",
+        "type" : "text/plain",
+        "size" : 535
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640601510367,
+        "stop" : 1640601510369,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640601510370,
+      "stop" : 1640601510376,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "story",
+    "value" : "作业记录-我的班级--老师端"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "24684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkMyClass_args",
+    "value" : "{'name': '老师端我的班级--作业记录', 'request': {'method': 'get', 'url': '/v1/teach/classes/list', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None', 'dateStr': 'None'}}, 'expect': {'msg': '成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "4a037d2857f85725.json",
+  "parameterValues" : [ "{'name': '老师端我的班级--作业记录', 'request': {'method': 'get', 'url': '/v1/teach/classes/list', 'headers': {'Authorization': 'None'}, 'body': {'homeworkId': 'None', 'dateStr': 'None'}}, 'expect': {'msg': '成功'}}" ]
+}

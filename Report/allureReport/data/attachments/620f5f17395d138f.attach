@@ -1,0 +1,18 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"班级作业详情",
+    "request";{
+        "body";{
+            "classId";60069,
+            "dateStr";"2021-12-23",
+            "relationId";963
+        },
+        "headers";{
+            "Authorization";"YTA2ZGFlZGQtNTRhZS00ODE3LWJlYjUtYTI4ZTUxZWZjZjVj"
+        },
+        "method";"get",
+        "url";"/v1/homework/task/clazz/work/detail"
+    }
+}

@@ -1,0 +1,167 @@
+{
+  "uid" : "bfc4bb2ad5314dba",
+  "name" : "老师端终止计划",
+  "fullName" : "TestCase.test_06_add_plan#test_plan_termination",
+  "historyId" : "a08a3d8c6b897271cb4b50c5a52cf577",
+  "time" : {
+    "start" : 1640347991330,
+    "stop" : 1640347991679,
+    "duration" : 349
+  },
+  "description" : "老师端手动终止进行中的",
+  "descriptionHtml" : "<p>老师端手动终止进行中的</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640347985442,
+      "stop" : 1640347985456,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640347991325,
+      "stop" : 1640347991330,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端手动终止进行中的",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640347991330,
+        "stop" : 1640347991671,
+        "duration" : 341
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "272171ef404bb6ff",
+        "name" : "接口请求参数",
+        "source" : "272171ef404bb6ff.attach",
+        "type" : "text/plain",
+        "size" : 382
+      }, {
+        "uid" : "15658adda94b22fb",
+        "name" : "接口请求参数",
+        "source" : "15658adda94b22fb.attach",
+        "type" : "text/plain",
+        "size" : 94
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640347991671,
+        "stop" : 1640347991679,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640347991680,
+      "stop" : 1640347991685,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "终止计划"
+  }, {
+    "name" : "feature",
+    "value" : "任务计划模块"
+  }, {
+    "name" : "tag",
+    "value" : "plan"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_add_plan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "26324-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_06_add_plan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "planTermination_args",
+    "value" : "{'name': '老师端终止计划', 'request': {'method': 'get', 'url': '/v1/plan/info/status', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'sql': {'status': 5}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "plan" ]
+  },
+  "source" : "bfc4bb2ad5314dba.json",
+  "parameterValues" : [ "{'name': '老师端终止计划', 'request': {'method': 'get', 'url': '/v1/plan/info/status', 'headers': {'Authorization': 'None'}, 'body': {'planId': 'None'}}, 'expect': {'msg': '成功', 'sql': {'status': 5}}}" ]
+}

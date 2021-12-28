@@ -1,0 +1,11 @@
+-
+   name: 运动能力
+   request:
+      method: get
+      url: /v1/sports/getSportsLevel
+      headers:
+          Authorization: None
+      body:
+          sportsId: 1
+   expect:
+      msg: 成功

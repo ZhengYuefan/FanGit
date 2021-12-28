@@ -1,0 +1,265 @@
+{
+  "uid" : "15c974c1ebee1253",
+  "name" : "学生端创建每日目标：跳绳",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_add_daily_goals",
+  "historyId" : "62a7a42a80e0974655ecd06593564d13",
+  "time" : {
+    "start" : 1640656420706,
+    "stop" : 1640656420789,
+    "duration" : 83
+  },
+  "description" : "学生端创建每日目标，内容为：跳绳100个",
+  "descriptionHtml" : "<p>学生端创建每日目标，内容为：跳绳100个</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656420702,
+      "stop" : 1640656420705,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端创建每日目标，内容为：跳绳100个",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656420706,
+        "stop" : 1640656420768,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3d7424f604fa5735",
+        "name" : "接口请求参数",
+        "source" : "3d7424f604fa5735.attach",
+        "type" : "text/plain",
+        "size" : 494
+      }, {
+        "uid" : "6db1d73d198375ae",
+        "name" : "接口请求参数",
+        "source" : "6db1d73d198375ae.attach",
+        "type" : "text/plain",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656420768,
+        "stop" : 1640656420788,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656420789,
+      "stop" : 1640656420792,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "学生端创建每日目标"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "addDailyGoals_args",
+    "value" : "{'name': '学生端创建每日目标：跳绳', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '跳绳', 'contentName': 100}}, 'expect': {'msg': '成功', 'sql': {'sportName': '跳绳'}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a02536a5f2993eef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601504347,
+        "stop" : 1640601504469,
+        "duration" : 122
+      }
+    }, {
+      "uid" : "918f2bc8673b3f5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598436609,
+        "stop" : 1640598437013,
+        "duration" : 404
+      }
+    }, {
+      "uid" : "a4e46468900fc740",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349505749,
+        "stop" : 1640349505832,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "cbb60d558f2bfbdd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348904304,
+        "stop" : 1640348904419,
+        "duration" : 115
+      }
+    }, {
+      "uid" : "d806cf1dc6f1eab6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347987332,
+        "stop" : 1640347987432,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "844a1163d892029b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262970960,
+        "stop" : 1640262971036,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "e4eeb25189846596",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261053318,
+        "stop" : 1640261053398,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "904741ae129ea8cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260246766,
+        "stop" : 1640260246882,
+        "duration" : 116
+      }
+    }, {
+      "uid" : "8b68b3569a9d3722",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258297576,
+        "stop" : 1640258297683,
+        "duration" : 107
+      }
+    }, {
+      "uid" : "149787cec0e9155",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258187313,
+        "stop" : 1640258187489,
+        "duration" : 176
+      }
+    }, {
+      "uid" : "405f329ff27acaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249677511,
+        "stop" : 1640249677581,
+        "duration" : 70
+      }
+    }, {
+      "uid" : "b6dd8a02ad2aa855",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248500026,
+        "stop" : 1640248500140,
+        "duration" : 114
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "15c974c1ebee1253.json",
+  "parameterValues" : [ "{'name': '学生端创建每日目标：跳绳', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '跳绳', 'contentName': 100}}, 'expect': {'msg': '成功', 'sql': {'sportName': '跳绳'}}}" ]
+}

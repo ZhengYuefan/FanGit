@@ -1,0 +1,34 @@
+{
+    "code";1,
+    "data";{
+        "abilities";[
+            {
+                "evalue";243.06,
+                "name";"上肢",
+                "numValue";0.0,
+                "svalue";243.06
+            },
+            {
+                "evalue";50.61,
+                "name";"腹部",
+                "numValue";0.0,
+                "svalue";50.61
+            },
+            {
+                "evalue";40.31,
+                "name";"协调",
+                "numValue";0.0,
+                "svalue";40.31
+            }
+        ],
+        "backUrl";"http://125.77.202.90:9010/cervix/task/zhiyaobanner@3x.png",
+        "comment";"只要开始尝试，总会得到好的结果。",
+        "speed";"1",
+        "title";"计划终止",
+        "totalCalorie";"34.50千卡",
+        "totalProject";12,
+        "totalTime";"60"
+    },
+    "msg";"成功",
+    "timestamp";1640348915186
+}

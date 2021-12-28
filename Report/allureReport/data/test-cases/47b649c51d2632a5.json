@@ -1,0 +1,182 @@
+{
+  "uid" : "47b649c51d2632a5",
+  "name" : "老师端查询学生审批列表",
+  "fullName" : "TestCase.test_04_join_class#test_students_review_list",
+  "historyId" : "7f0df4fdde195bf33da27dcf4efd7ebd",
+  "time" : {
+    "start" : 1640262970370,
+    "stop" : 1640262970436,
+    "duration" : 66
+  },
+  "description" : "老师端查询学生审批列表，是否存在学生入班申请记录，并且提取申请记录的review_id",
+  "descriptionHtml" : "<p>老师端查询学生审批列表，是否存在学生入班申请记录，并且提取申请记录的review_id</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640262969110,
+      "stop" : 1640262969127,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640262970368,
+      "stop" : 1640262970370,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端查询学生审批列表，是否存在学生入班申请记录，并且提取申请记录的review_id",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640262970370,
+        "stop" : 1640262970429,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6ec6362f6ae1b85e",
+        "name" : "接口请求参数",
+        "source" : "6ec6362f6ae1b85e.attach",
+        "type" : "text/plain",
+        "size" : 504
+      }, {
+        "uid" : "87ed9dfd787608aa",
+        "name" : "接口响应参数",
+        "source" : "87ed9dfd787608aa.attach",
+        "type" : "text/plain",
+        "size" : 410
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640262970429,
+        "stop" : 1640262970433,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取student_review_id",
+      "time" : {
+        "start" : 1640262970433,
+        "stop" : 1640262970436,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640262970437,
+      "stop" : 1640262970439,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师端查询学生申请，提取review_id"
+  }, {
+    "name" : "feature",
+    "value" : "学生入班申请模块"
+  }, {
+    "name" : "tag",
+    "value" : "joinClass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_join_class"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_04_join_class"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "reviewList_args",
+    "value" : "{'name': '老师端查询学生审批列表', 'request': {'method': 'get', 'url': '/v1/school/listStudentReview', 'body': {'pageNo': 1, 'pageSize': 10, 'classIds': 'None', 'studentName': 'None', 'studentNo': 6666}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'studentName': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "joinClass" ]
+  },
+  "source" : "47b649c51d2632a5.json",
+  "parameterValues" : [ "{'name': '老师端查询学生审批列表', 'request': {'method': 'get', 'url': '/v1/school/listStudentReview', 'body': {'pageNo': 1, 'pageSize': 10, 'classIds': 'None', 'studentName': 'None', 'studentNo': 6666}, 'headers': {'Authorization': 'None'}}, 'expect': {'msg': '成功', 'studentName': 'None'}}" ]
+}

@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "delete_flag";1
+        }
+    },
+    "name";"删除学校",
+    "request";{
+        "body";{
+            "schoolId";147
+        },
+        "headers";{
+            "Content-Type";"application/x-www-form-urlencoded"
+        },
+        "method";"delete",
+        "url";"/v1/manage/school/deleteSchool"
+    }
+}

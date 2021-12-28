@@ -1,0 +1,17 @@
+{
+    "code";1,
+    "data";{
+        "before";0,
+        "current";100,
+        "last";99,
+        "next";100,
+        "originalBar";"1",
+        "originalLevel";"100",
+        "rise";0.0,
+        "targetBar";"1",
+        "targetLevel";"100",
+        "title";"跳绳能力"
+    },
+    "msg";"成功",
+    "timestamp";1640248516171
+}

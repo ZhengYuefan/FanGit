@@ -1,0 +1,20 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"老师查看学生作业详情",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "type";3,
+            "userId";1082
+        },
+        "headers";{
+            "Authorization";"ZDMwYmFmNWUtOThiYi00N2YxLWIzOWEtY2RmYmE4ZDE4NTE2",
+            "Content-Type";"application/json"
+        },
+        "method";"post",
+        "url";"/v1/homework/task/stu/detail"
+    }
+}

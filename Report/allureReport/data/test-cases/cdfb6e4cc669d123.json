@@ -1,0 +1,265 @@
+{
+  "uid" : "cdfb6e4cc669d123",
+  "name" : "学生端创建每日目标：卡路里",
+  "fullName" : "TestCase.test_05_add_dailyGoals#test_add_daily_goals",
+  "historyId" : "02598904bf45894738af06db6fc311e9",
+  "time" : {
+    "start" : 1640656420892,
+    "stop" : 1640656420981,
+    "duration" : 89
+  },
+  "description" : "学生端创建每日目标，内容为：跳绳100个",
+  "descriptionHtml" : "<p>学生端创建每日目标，内容为：跳绳100个</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656420889,
+      "stop" : 1640656420892,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "学生端创建每日目标，内容为：跳绳100个",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656420892,
+        "stop" : 1640656420961,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c8cb7b29cdeb09c4",
+        "name" : "接口请求参数",
+        "source" : "c8cb7b29cdeb09c4.attach",
+        "type" : "text/plain",
+        "size" : 502
+      }, {
+        "uid" : "2bda711f26c24c68",
+        "name" : "接口请求参数",
+        "source" : "2bda711f26c24c68.attach",
+        "type" : "text/plain",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656420961,
+        "stop" : 1640656420981,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656420982,
+      "stop" : 1640656420985,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日目标模块"
+  }, {
+    "name" : "story",
+    "value" : "学生端创建每日目标"
+  }, {
+    "name" : "tag",
+    "value" : "dailyGoals"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_add_dailyGoals"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_05_add_dailyGoals"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "addDailyGoals_args",
+    "value" : "{'name': '学生端创建每日目标：卡路里', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '卡路里', 'contentName': 50}}, 'expect': {'msg': '成功', 'sql': {'sportName': '卡路里'}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "21a6de138dd0664d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601504686,
+        "stop" : 1640601504782,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "7665374681537604",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598437394,
+        "stop" : 1640598437793,
+        "duration" : 399
+      }
+    }, {
+      "uid" : "b22cdc1f7a7c4ee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349505914,
+        "stop" : 1640349505971,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "b92b045edc3e6c3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348904537,
+        "stop" : 1640348904633,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "d183b9c8547b66a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347987510,
+        "stop" : 1640347987577,
+        "duration" : 67
+      }
+    }, {
+      "uid" : "73c77e99a1f5c6cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262971120,
+        "stop" : 1640262971176,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "2b19d2c20c6a7c17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261053482,
+        "stop" : 1640261053548,
+        "duration" : 66
+      }
+    }, {
+      "uid" : "920667a04193e900",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260247001,
+        "stop" : 1640260247096,
+        "duration" : 95
+      }
+    }, {
+      "uid" : "3e1dd2728f12487f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258297784,
+        "stop" : 1640258297876,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "6f1e95fcecd83826",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258187602,
+        "stop" : 1640258187733,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "f54de83f3817888f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249677671,
+        "stop" : 1640249677725,
+        "duration" : 54
+      }
+    }, {
+      "uid" : "78f0d563dbad423d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248500265,
+        "stop" : 1640248500351,
+        "duration" : 86
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dailyGoals" ]
+  },
+  "source" : "cdfb6e4cc669d123.json",
+  "parameterValues" : [ "{'name': '学生端创建每日目标：卡路里', 'request': {'method': 'post', 'url': '/v1/planTask/addDayTask', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dataName': '卡路里', 'contentName': 50}}, 'expect': {'msg': '成功', 'sql': {'sportName': '卡路里'}}}" ]
+}

@@ -1,0 +1,10 @@
+-
+   name: 创建计划时的选择条件
+   request:
+      method: get
+      url: /v1/plan/dictionary
+      headers:
+          Content-Type: application/json
+          Authorization: None
+   expect:
+      msg: 成功

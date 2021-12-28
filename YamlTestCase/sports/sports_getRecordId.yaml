@@ -1,0 +1,18 @@
+-
+   name: 提交运动，提取响应报文中的recordId
+   request:
+      method: post
+      url: /v1/sports/submitSports
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          sportsId: 1
+          score: 400
+          takeTime: 02:00
+          speed: 200
+          mode: 2
+   expect:
+      msg: 成功
+      sql:
+          sports_id: 1

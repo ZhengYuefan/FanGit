@@ -1,0 +1,167 @@
+{
+  "uid" : "6d2e2b613f231ccc",
+  "name" : "老师端手动发布作业",
+  "fullName" : "TestCase.test_07_homework#test_homework_publish",
+  "historyId" : "8efd7e81873e112e4452a9f67de54b3b",
+  "time" : {
+    "start" : 1640598448600,
+    "stop" : 1640598449060,
+    "duration" : 460
+  },
+  "description" : "老师端在作业模板页面，手动点击发布按钮发布作业",
+  "descriptionHtml" : "<p>老师端在作业模板页面，手动点击发布按钮发布作业</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640598427503,
+      "stop" : 1640598427727,
+      "duration" : 224
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640598448594,
+      "stop" : 1640598448599,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端在作业模板页面，手动点击发布按钮发布作业",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640598448600,
+        "stop" : 1640598449057,
+        "duration" : 457
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "458c1c69f2b7c4af",
+        "name" : "接口请求参数",
+        "source" : "458c1c69f2b7c4af.attach",
+        "type" : "text/plain",
+        "size" : 418
+      }, {
+        "uid" : "215858d4aca8528b",
+        "name" : "接口响应报文",
+        "source" : "215858d4aca8528b.attach",
+        "type" : "text/plain",
+        "size" : 94
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640598449057,
+        "stop" : 1640598449060,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640598449061,
+      "stop" : 1640598449066,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "story",
+    "value" : "老师手动发布作业"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "6952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkPublish_args",
+    "value" : "{'name': '老师端手动发布作业', 'request': {'method': 'put', 'url': '/v1/homework/publish', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'homeworkId': 'None'}}, 'expect': {'msg': '成功', 'data': '发布成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "6d2e2b613f231ccc.json",
+  "parameterValues" : [ "{'name': '老师端手动发布作业', 'request': {'method': 'put', 'url': '/v1/homework/publish', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'homeworkId': 'None'}}, 'expect': {'msg': '成功', 'data': '发布成功'}}" ]
+}

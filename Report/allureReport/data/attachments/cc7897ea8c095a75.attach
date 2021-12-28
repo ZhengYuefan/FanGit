@@ -1,0 +1,13 @@
+{
+    "expect";{
+        "msg";"成功"
+    },
+    "name";"学生端查询我的主页",
+    "request";{
+        "headers";{
+            "Authorization";"NDY3ZGE3ZGYtMWZmYi00OWVkLWEzYmMtYzBhNDE3YjY0NWM5"
+        },
+        "method";"get",
+        "url";"/v1/user/homepage"
+    }
+}

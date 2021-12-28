@@ -1,0 +1,281 @@
+{
+  "uid" : "22c4ee41d9e9706f",
+  "name" : "删除班级",
+  "fullName" : "TestCase.test_09_delete_school#test_delete_class",
+  "historyId" : "b54b0090800c8f9c58b83ade4e1d9236",
+  "time" : {
+    "start" : 1640656430885,
+    "stop" : 1640656431081,
+    "duration" : 196
+  },
+  "description" : "删除班级",
+  "descriptionHtml" : "<p>删除班级</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 13,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656430875,
+      "stop" : 1640656430885,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "删除班级",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656430885,
+        "stop" : 1640656431031,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2b6155cf6dd7296e",
+        "name" : "接口请求参数",
+        "source" : "2b6155cf6dd7296e.attach",
+        "type" : "text/plain",
+        "size" : 407
+      }, {
+        "uid" : "dc3ebc10bf4198aa",
+        "name" : "接口响应报文",
+        "source" : "dc3ebc10bf4198aa.attach",
+        "type" : "text/plain",
+        "size" : 84
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656431031,
+        "stop" : 1640656431081,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656431082,
+      "stop" : 1640656431091,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除班级"
+  }, {
+    "name" : "feature",
+    "value" : "web后台删除学校模块"
+  }, {
+    "name" : "tag",
+    "value" : "deleteSchool"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_09_delete_school"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_09_delete_school"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ed19a05a65733502",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601515472,
+        "stop" : 1640601515653,
+        "duration" : 181
+      }
+    }, {
+      "uid" : "a6819f9c7c9185f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598929722,
+        "stop" : 1640601358100,
+        "duration" : 2428378
+      }
+    }, {
+      "uid" : "ee4472dcb8b44bef",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640598466052,
+        "stop" : 1640598466351,
+        "duration" : 299
+      }
+    }, {
+      "uid" : "115904b836085c20",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640349516016,
+        "stop" : 1640349516090,
+        "duration" : 74
+      }
+    }, {
+      "uid" : "df43b3cce1a31fec",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640348914765,
+        "stop" : 1640348914832,
+        "duration" : 67
+      }
+    }, {
+      "uid" : "5d27b1608f4cfdb4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640347997508,
+        "stop" : 1640347997568,
+        "duration" : 60
+      }
+    }, {
+      "uid" : "95a48355814561b2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640262980544,
+        "stop" : 1640262980602,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "4a361105ce2004b4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640261062460,
+        "stop" : 1640261062519,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "60d774c609b51800",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640260256054,
+        "stop" : 1640260256114,
+        "duration" : 60
+      }
+    }, {
+      "uid" : "5c6d829f99c1ddae",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640258306866,
+        "stop" : 1640258306921,
+        "duration" : 55
+      }
+    }, {
+      "uid" : "5fbcc6023c1a3df0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640258197165,
+        "stop" : 1640258197218,
+        "duration" : 53
+      }
+    }, {
+      "uid" : "b03d5fca52718d55",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640249687197,
+        "stop" : 1640249687263,
+        "duration" : 66
+      }
+    }, {
+      "uid" : "d595b2a7f5d938f7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1640248510289,
+        "stop" : 1640248510359,
+        "duration" : 70
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "deleteSchool" ]
+  },
+  "source" : "22c4ee41d9e9706f.json",
+  "parameterValues" : [ ]
+}

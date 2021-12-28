@@ -1,0 +1,16 @@
+{
+    "expect";{
+        "fulfilSpeed";100,
+        "msg";"成功",
+        "taskName";"跳绳"
+    },
+    "name";"学生端任务页首页每日目标：跳绳",
+    "request";{
+        "headers";{
+            "Authorization";"ODM2MTQ0MGEtNjI1Ni00ZmY3LThiZGUtZTMxYjhlOWM3YmM1",
+            "Content-Type";"application/json"
+        },
+        "method";"get",
+        "url";"/v1/planTask/listTask"
+    }
+}

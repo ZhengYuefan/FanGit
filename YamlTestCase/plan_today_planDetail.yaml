@@ -1,0 +1,13 @@
+-
+   name: 老师端今日计划详情
+   request:
+      method: get
+      url: /v1/plan/detail/dateStr
+      headers:
+          Authorization: None
+      body:
+          planId: None
+          dateStr: ${date_day}
+   expect:
+      msg: 成功
+      title: 今日计划目标

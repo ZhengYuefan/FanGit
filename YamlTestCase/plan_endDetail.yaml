@@ -1,0 +1,12 @@
+-
+   name: 老师端计划结束详情
+   request:
+      method: get
+      url: /v1/plan/end/detail
+      headers:
+          Authorization: None
+      body:
+          planId: None
+   expect:
+      msg: 成功
+      title: 计划终止

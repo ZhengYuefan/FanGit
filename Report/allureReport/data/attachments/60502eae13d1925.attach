@@ -1,0 +1,21 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "status";1
+        }
+    },
+    "name";"老师端更新学生审批状态",
+    "request";{
+        "body";{
+            "reviewIds";183,
+            "reviewStatus";1
+        },
+        "headers";{
+            "Authorization";"NGU1YTc5MjItYzc4Ny00YjQ3LWIzYzQtZDc3Njc5NTNiMTg1",
+            "Content-Type";"application/json"
+        },
+        "method";"put",
+        "url";"/v1/school/review"
+    }
+}

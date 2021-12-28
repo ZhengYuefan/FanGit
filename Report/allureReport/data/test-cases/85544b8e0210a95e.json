@@ -1,0 +1,182 @@
+{
+  "uid" : "85544b8e0210a95e",
+  "name" : "老师端今日作业记录",
+  "fullName" : "TestCase.test_07_homework#test_homework_today",
+  "historyId" : "a43e20c24168cd627cb13146310ef1e2",
+  "time" : {
+    "start" : 1640262975761,
+    "stop" : 1640262975857,
+    "duration" : 96
+  },
+  "description" : "老师端查看今日作业记录",
+  "descriptionHtml" : "<p>老师端查看今日作业记录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640262969110,
+      "stop" : 1640262969127,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640262975755,
+      "stop" : 1640262975760,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端查看今日作业记录",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640262975761,
+        "stop" : 1640262975847,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d28c8ab44bb777b",
+        "name" : "接口请求参数",
+        "source" : "2d28c8ab44bb777b.attach",
+        "type" : "text/plain",
+        "size" : 484
+      }, {
+        "uid" : "3deeda3e5f010477",
+        "name" : "接口响应报文",
+        "source" : "3deeda3e5f010477.attach",
+        "type" : "text/plain",
+        "size" : 968
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640262975847,
+        "stop" : 1640262975853,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "提取publish_record_id",
+      "time" : {
+        "start" : 1640262975853,
+        "stop" : 1640262975856,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640262975857,
+      "stop" : 1640262975863,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师端今日作业记录"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "31352-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "homeworkToday_args",
+    "value" : "{'name': '老师端今日作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/today/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dateStr': 'None', 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homework_id': 'None'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "85544b8e0210a95e.json",
+  "parameterValues" : [ "{'name': '老师端今日作业记录', 'request': {'method': 'post', 'url': '/v1/homework/teach/today/list', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None'}, 'body': {'dateStr': 'None', 'pageNo': 1, 'pageSize': 10}}, 'expect': {'msg': '成功', 'homework_id': 'None'}}" ]
+}

@@ -1,0 +1,55 @@
+-
+   name: 老师端创建作业--自动发布
+   request:
+      method: post
+      url: /v1/homework/addHomeworkNew
+      headers:
+          Content-Type: application/json
+          Authorization: None
+          version: 1.1.0
+      body:
+          classId: None
+          status: 1
+          publishMode: 1
+          publishType: 1
+          noticeType: 1
+          list:
+              -   id: 2
+                  name: 跑步
+                  typeName: 计数
+                  itemList:
+                      -  100m
+                      -  1组
+   expect:
+      msg: 成功
+      data_code: 200
+
+-
+   name: 老师端创建作业--手动保存，不发布
+   request:
+      method: post
+      url: /v1/homework/addHomeworkNew
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          classId: None
+          status: 0
+          publishMode: 2
+          noticeType: 0
+          list:
+              -   id: 1
+                  name: 跳绳
+                  typeName: 计时
+                  itemList:
+                      - 1分钟
+                      - 1组
+              -   id: 2
+                  name: 跑步
+                  typeName: 计数
+                  itemList:
+                      -  100m
+                      -  1组
+   expect:
+      msg: 成功
+      data_code: 200

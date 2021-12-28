@@ -1,0 +1,167 @@
+{
+  "uid" : "22056094d53c4b4d",
+  "name" : "老师端创建作业--自动发布",
+  "fullName" : "TestCase.test_07_homework#test_homework_add",
+  "historyId" : "ee07ca179eab698d0371145bb7233cbc",
+  "time" : {
+    "start" : 1640248504375,
+    "stop" : 1640248504569,
+    "duration" : 194
+  },
+  "description" : "老师端创建作业",
+  "descriptionHtml" : "<p>老师端创建作业</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640248498057,
+      "stop" : 1640248498073,
+      "duration" : 16
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640248504370,
+      "stop" : 1640248504374,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "老师端创建作业",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640248504375,
+        "stop" : 1640248504567,
+        "duration" : 192
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d3c789aaf228598",
+        "name" : "接口请求参数",
+        "source" : "d3c789aaf228598.attach",
+        "type" : "text/plain",
+        "size" : 864
+      }, {
+        "uid" : "5f7bd7007b7fab63",
+        "name" : "接口请求参数",
+        "source" : "5f7bd7007b7fab63.attach",
+        "type" : "text/plain",
+        "size" : 141
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640248504567,
+        "stop" : 1640248504569,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640248504570,
+      "stop" : 1640248504575,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "创建作业"
+  }, {
+    "name" : "feature",
+    "value" : "作业模块"
+  }, {
+    "name" : "tag",
+    "value" : "homework"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_homework"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "21680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_07_homework"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "addHomework_args",
+    "value" : "{'name': '老师端创建作业--自动发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'classId': 'None', 'status': 1, 'publishMode': 1, 'publishType': 1, 'noticeType': 1, 'list': [{'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "homework" ]
+  },
+  "source" : "22056094d53c4b4d.json",
+  "parameterValues" : [ "{'name': '老师端创建作业--自动发布', 'request': {'method': 'post', 'url': '/v1/homework/addHomeworkNew', 'headers': {'Content-Type': 'application/json', 'Authorization': 'None', 'version': '1.1.0'}, 'body': {'classId': 'None', 'status': 1, 'publishMode': 1, 'publishType': 1, 'noticeType': 1, 'list': [{'id': 2, 'name': '跑步', 'typeName': '计数', 'itemList': ['100m', '1组']}]}}, 'expect': {'msg': '成功', 'data_code': 200}}" ]
+}

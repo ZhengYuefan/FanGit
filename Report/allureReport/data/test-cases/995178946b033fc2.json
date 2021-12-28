@@ -1,0 +1,265 @@
+{
+  "uid" : "995178946b033fc2",
+  "name" : "跳绳4分钟--预计消耗",
+  "fullName" : "TestCase.test_08_sports#test_sports_expect_consumption",
+  "historyId" : "1a2d93a73d0979de1271b57effa1f003",
+  "time" : {
+    "start" : 1640656426285,
+    "stop" : 1640656426374,
+    "duration" : 89
+  },
+  "description" : "获取运动首页的运动列表",
+  "descriptionHtml" : "<p>获取运动首页的运动列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 12,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "del_schoolName",
+    "time" : {
+      "start" : 1640656418078,
+      "stop" : 1640656418116,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1640656426275,
+      "stop" : 1640656426284,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "获取运动首页的运动列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1640656426285,
+        "stop" : 1640656426371,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c8908aa6536f649b",
+        "name" : "接口请求参数",
+        "source" : "c8908aa6536f649b.attach",
+        "type" : "text/plain",
+        "size" : 421
+      }, {
+        "uid" : "851105a5b55b5bb3",
+        "name" : "接口响应报文",
+        "source" : "851105a5b55b5bb3.attach",
+        "type" : "text/plain",
+        "size" : 436
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1640656426371,
+        "stop" : 1640656426374,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1640656426375,
+      "stop" : 1640656426383,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "运动模块"
+  }, {
+    "name" : "story",
+    "value" : "预计消耗"
+  }, {
+    "name" : "tag",
+    "value" : "sport"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_sports"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-08CVKRT"
+  }, {
+    "name" : "thread",
+    "value" : "10500-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_08_sports"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sportsExpectConsumption_args",
+    "value" : "{'name': '跳绳4分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '04:00'}}, 'expect': {'msg': '成功', 'totalCalories': 55.2}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "66b8695104b0185e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640601511282,
+        "stop" : 1640601511345,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "8bce1d823139a961",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640598454376,
+        "stop" : 1640598454677,
+        "duration" : 301
+      }
+    }, {
+      "uid" : "8f8a9b627a53285",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349512376,
+        "stop" : 1640349512426,
+        "duration" : 50
+      }
+    }, {
+      "uid" : "e2bf383bd743e92f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640348910970,
+        "stop" : 1640348911017,
+        "duration" : 47
+      }
+    }, {
+      "uid" : "3464b3b4ba604b93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640347993770,
+        "stop" : 1640347993821,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "ca2f6f0e3f0fdbf0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640262977050,
+        "stop" : 1640262977097,
+        "duration" : 47
+      }
+    }, {
+      "uid" : "d5b032506f0a7b9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640261059182,
+        "stop" : 1640261059226,
+        "duration" : 44
+      }
+    }, {
+      "uid" : "e0f47da9f7d4c28a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640260252818,
+        "stop" : 1640260252866,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "8cddd0ca26289055",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258303717,
+        "stop" : 1640258303776,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "9bcfda1d966f0572",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640258193883,
+        "stop" : 1640258193946,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "6ae33b9e9a989154",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640249683643,
+        "stop" : 1640249683694,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "ea1187c9858bf87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640248506835,
+        "stop" : 1640248506885,
+        "duration" : 50
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "sport" ]
+  },
+  "source" : "995178946b033fc2.json",
+  "parameterValues" : [ "{'name': '跳绳4分钟--预计消耗', 'request': {'method': 'get', 'url': '/v1/sports/getPreBurn', 'headers': {'Authorization': 'None'}, 'body': {'sportsId': 1, 'mode': 1, 'takeTime': '04:00'}}, 'expect': {'msg': '成功', 'totalCalories': 55.2}}" ]
+}

@@ -1,0 +1,12 @@
+-
+   name: 逻辑删除运动视频记录
+   request:
+      method: post
+      url: /v1/sports/deleteSportsVideo
+      headers:
+          Content-Type: application/json
+          Authorization: None
+      body:
+          recordId: None
+   expect:
+      msg: 成功

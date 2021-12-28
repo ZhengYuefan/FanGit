@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "sql";{
+            "status";5
+        }
+    },
+    "name";"老师端终止计划",
+    "request";{
+        "body";{
+            "planId";"206"
+        },
+        "headers";{
+            "Authorization";"YzgxMTAwOGEtZTliOC00MTc2LThhZmMtZDdkNzNhMzU4NmY4"
+        },
+        "method";"get",
+        "url";"/v1/plan/info/status"
+    }
+}

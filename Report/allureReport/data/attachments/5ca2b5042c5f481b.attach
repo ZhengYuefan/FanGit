@@ -1,0 +1,19 @@
+{
+    "expect";{
+        "msg";"成功",
+        "recordId";"None"
+    },
+    "name";"我的页面--运动记录",
+    "request";{
+        "body";{
+            "pageNo";1,
+            "pageSize";10,
+            "sportsId";1
+        },
+        "headers";{
+            "Authorization";"YzgxMTAwOGEtZTliOC00MTc2LThhZmMtZDdkNzNhMzU4NmY4"
+        },
+        "method";"get",
+        "url";"/v1/sports/listSportsRecord"
+    }
+}
